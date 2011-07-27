@@ -2,7 +2,7 @@
 		if (sizeof($manufacturers) > 0)
 		{
 			?>
-				<div id="home-manufacturers">
+				<div id="home-manufacturers" class="home-box">
 					<?php
 						foreach ($manufacturers as $manufacturer)
 						{
@@ -24,7 +24,7 @@
 	<?= $page['maintext'] ?>
 	<br class="clearall" />
 
-	<div id="home-specialoffers">
+	<div id="home-specialoffers" class="home-box">
 		<h2><a href="<?= $pages['specialoffers']['pagename'] ?>/"><?= $pages['specialoffers']['linktitle'] ?></a></h2>
 		<?php
 			$i = 0;
@@ -35,11 +35,10 @@
 			}
 		?>
 		<br class="clearall" />
-		<p>View all <a rel="nofollow" href="<?= $pages['specialoffers']['pagename'] ?>/">Special Offers</a></p>
+		<div class="viewall">View all <a rel="nofollow" href="<?= $pages['specialoffers']['pagename'] ?>/">Special Offers</a></div>
 	</div>
 
-
-	<div id="home-bestsellers">
+	<div id="home-bestsellers" class="home-box">
 		<h2><a href="<?= $pages['bestsellers']['pagename'] ?>/"><?= $pages['bestsellers']['linktitle'] ?></a></h2>
 		<?php
 			$i = 0;
@@ -50,5 +49,5 @@
 			}
 		?>
 		<br class="clearall" />
-		<p>View all <a rel="nofollow" href="<?= $pages['bestsellers']['pagename'] ?>/">Best Sellers</a></p>
+		<div class="viewall">View all <a rel="nofollow" href="<?= $pages['bestsellers']['pagename'] ?>/">Best Sellers</a></div>
 	</div>
