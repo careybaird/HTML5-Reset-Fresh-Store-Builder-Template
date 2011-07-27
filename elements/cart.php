@@ -1,5 +1,5 @@
 <a href="<?= URL_SITE ?><?= $pages['basket']['pagename'] ?>/" rel="nofollow">View Cart</a>
-<p><?= ($amazon->cart ? ($amazon->cart['totalquantity'] == 1 ? '1 item' : $amazon->cart['totalquantity'].' items' : '0 items' ?> - <?= formatProductPrice($amazon->cart['subtotal']) ?></p>
+<p><?= ($amazon->cart ? ($amazon->cart['totalquantity'] == 1 ? '1 item' : $amazon->cart['totalquantity'].' items') : '0 items') ?> - <?= formatProductPrice($amazon->cart['subtotal']) ?></p>
 <?php
 	if ($amazon->cart && $amazon->cart['totalquantity'] > 0 && $showcheckoutbutton)
 	{

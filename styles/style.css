@@ -172,7 +172,7 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 header { margin: 1em 0; }
 #header-left { float: left; }
 #header-right { float: right; }
-.clearall {clear: both;}
+.clearall {clear: both;height: 0;}
 #content-right {
 	width: 66%;
 	float: right;
