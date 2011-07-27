@@ -8,7 +8,7 @@
 				$i = 0;
 				foreach($crumb as $item)
 					if ($item['url'])
-						echo "<a href=\"{$item['url']}" class="breadcrumb-item breadcrumb-level-<?=$i?>\">{$item['name']}</a> >";
+						echo "<a href=\"{$item['url']}\" class=\"breadcrumb-item breadcrumb-level-<?=$i?>\">{$item['name']}</a> >";
 					else
 						echo "<span class=\"breadcrumb-item breadcrumb-level-{$i}\">{$item['name']}</a>";
 				?>
