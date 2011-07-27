@@ -1,13 +1,11 @@
 <div id="breadcrumb">
 <?php
-	foreach  ($breadcrumb as $crumb)
+	foreach($breadcrumb as $crumb)
 	{
 		?>
-		
 			<p>
 				<?php
-				foreach ($crumb as $item)
-				{
+				foreach($crumb as $item)
 					if ($item['url'])
 					{
 					?>
@@ -15,10 +13,7 @@
 					<?php
 					}
 					else
-					{
 						echo $item['name'];
-					}
-				}
 				?>
 			</p>
 		<?php

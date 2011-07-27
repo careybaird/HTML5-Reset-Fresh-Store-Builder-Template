@@ -11,18 +11,11 @@
 		var pageTracker = _gat._getTracker("<?= GOOGLEANALYTICS_REFERENCE ?>");
 		pageTracker._initData();
 		pageTracker._trackPageview();
-		
-		<?php
-		/*
-		new Ajax.Request('/ajax/analyticslocal.php?1=<?= urlencode($pagetype) ?>&2=<?= urlencode(PAGENAME) ?>&3=<?= urlencode($_SERVER['SCRIPT_URI']) ?>&4=<?= urlencode((isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : '')) ?>');
-		*/
-		?>
-		
 		</script>
 		<?php
 	}
 
-	#ÊRaven Conversion Tracking
+	# Raven Conversion Tracking
 	if (RAVEN_ID != '' && RAVEN_CONVERSION_CODE != '' && $pagetype == 'checkout')
 	{
 		?>
@@ -33,7 +26,7 @@
 		<?php
 	}
 	
-	#ÊRaven Analytics
+	# Raven Analytics
 	if (RAVEN_ID != '' && true == false)
 	{
 		?>
