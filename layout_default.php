@@ -24,55 +24,29 @@
 		<link rel="stylesheet" type="text/css" href="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/styles/style.css">	
 		
 		<?php require('elements/analytics.php'); ?>
-		
-		<?php
-			if ($pagetype == 'category')
-			{
-				?>
-				<link href="<?= URL_SITE ?>rss/<?= PAGENAME ?>/" rel="alternate" type="application/rss+xml" title="<?= SITE_NAME ?> Products in category <?= $thiscategory['linktitle'] ?>" />
-				<?php
-			}
-		?>
-		
-		<link href="<?= URL_SITE ?>rss/all-products/" rel="alternate" type="application/rss+xml" title="<?= SITE_NAME ?> Products" />
-		<link href="<?= URL_SITE ?>rss/special-offers/" rel="alternate" type="application/rss+xml" title="<?= SITE_NAME ?> Special Offers" />
+		<?php require('elements/rss.php'); ?>
 	</head>
 	<body<?= $body_onload ?>>
 		<?php
 			if (ADMIN_LOGGED_IN && file_exists(PATH_TEMPLATES.TEMPLATE_FOLDER.'/elements/admin_stripe_'.$adminstripename.'.php'))
-			{
 				require('elements/admin_stripe_'.$adminstripename.'.php');
-			}
 		?>
 		
 		<div id="container">
 			<?php
 				if (ADMIN_LOGGED_IN)
-				{
 					require('elements/'.$editinplacename.'_editinplaceoptions.php');
-				}
 			?>
 			
 			<header>
 				<div id="header-left">
-					<a href="<?= URL_SITE ?>"><?= getTemplateImage('HEAD_LOGO', '', '', '<h1>'.SITE_NAME.'</h1>') ?></a>
+					<?php require('elements/logo.php') ?>
 				</div>
 				
 				<div id="header-right">
-					<a href="<?= URL_SITE ?><?= $pages['basket']['pagename'] ?>/" rel="nofollow"><?= gTT('HEAD_VIEW_CART') ?></a>
-					<p><?= ($amazon->cart ? ($amazon->cart['totalquantity'] == 1 ? '1 '.gTT('HEAD_ITEM') : $amazon->cart['totalquantity'].' '.gTT('HEAD_ITEMS')) : '0 '.gTT('HEAD_ITEMS')) ?> - <?= formatProductPrice($amazon->cart['subtotal']) ?></p>
-					
-					<?php
-						if ($amazon->cart && $amazon->cart['totalquantity'] > 0 && $showcheckoutbutton)
-						{
-							?>
-									<a href="<?= URL_SITE ?><?= $pages['checkout']['pagename'] ?>/" rel="nofollow">
-										<?= getTemplateImage('BUTTON_CHECKOUT') ?>
-									</a>
-							<?php
-						}
-					?>
+					<?php require('elements/cart.php') ?>
 				</div>
+				
 				<div class="clearall"></div>
 			</header>
 			
@@ -88,7 +62,6 @@
 						}
 					?>
 				</div>
-				
 				<div id="menu-left">
 					<?php require('elements/searchbox.php') ?>
 					<?php require('elements/categoriesbox.php') ?>
@@ -105,15 +78,8 @@
 			</div>
 
 			<div id="footer">
-				<div id="footer-securepayments">
-					<?= getTemplateImage('IMAGE_SECURE_SHOPPING') ?>
-				</div>
-				<p>
-					<?= sprintf(gTT('FOOTER_COPYRIGHT'), date('Y').' '.SITE_NAME) ?><br />
-					<a href="<?= URL_SITE ?>terms-of-use/">Terms of Use</a> - <a href="<?= URL_SITE ?>privacy-policy/">Privacy Policy</a> - <a href="<?= URL_SITE ?>site-map/">Site Map</a><br /><br /><?= getFooterText() ?>
-				</p>
-				
-				
+				<?php require('elements/securepayments.php') ?>
+				<?php require('elements/footerlinks.php') ?>
 			</div>
 			
 		</div>
