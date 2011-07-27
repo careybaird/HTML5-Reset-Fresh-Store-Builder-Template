@@ -3,19 +3,16 @@
 	foreach($breadcrumb as $crumb)
 	{
 		?>
-			<p>
+			<div class="breadcrumb-line">
 				<?php
+				$i = 0;
 				foreach($crumb as $item)
 					if ($item['url'])
-					{
-					?>
-					<a href="<?= $item['url'] ?>"><?= $item['name'] ?></a> >
-					<?php
-					}
+						echo "<a href=\"{$item['url']}" class="breadcrumb-item breadcrumb-level-<?=$i?>\">{$item['name']}</a> >";
 					else
-						echo $item['name'];
+						echo "<span class=\"breadcrumb-item breadcrumb-level-{$i}\">{$item['name']}</a>";
 				?>
-			</p>
+			</div>
 		<?php
 	}
 ?>
