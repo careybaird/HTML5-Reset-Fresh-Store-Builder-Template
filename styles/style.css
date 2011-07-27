@@ -188,6 +188,7 @@ h1{font-size: 200%;}
 h2{font-size: 175%;}
 h3{font-size: 150%;}
 h4{font-size: 125%;}
+.originalprice{text-transform: line-through;}
 
 /* Administrator */
 #admin-stripe {
