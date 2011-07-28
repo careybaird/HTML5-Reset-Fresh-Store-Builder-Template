@@ -121,7 +121,7 @@
 
 	<div id="product-image-box">
 		<a href="<?= URL_SITE ?>img/<?= $product['pagename'] ?>_<?= $mainimage['id'] ?>_500.jpg" rel="lightbox[product]" title="<?= $product['title'] ?>">
-			<img class="product-photo" src="<?= URL_SITE ?>img/<?= $product['pagename'] ?>_<?= $mainimage['id'] ?>_250.jpg" />
+			<img class="product-photo" src="<?= URL_SITE ?>img/<?= $product['pagename'] ?>_<?= $mainimage['id'] ?>_250.jpg" alt="<?= $product['title'] ?>" />
 		</a>
 	
 		<?php
@@ -139,7 +139,7 @@
 			}
 		?>
 	</div>
-	<br clear="all" />
+	<br class="clearall" />
 
 	<?php
 		if (trim($product['description']) != '' || ADMIN_LOGGED_IN)
