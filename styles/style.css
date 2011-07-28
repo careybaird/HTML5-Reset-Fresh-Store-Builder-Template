@@ -140,6 +140,7 @@ a:link {-webkit-tap-highlight-color: #fcd700;}
 
 ins {background-color: #fcd700; color: #000; text-decoration: none;}
 mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+.clearall{clear:both;height:0;}
 
 /* Print styles!
 -------------------------------------------------------------------------------*/
@@ -162,6 +163,9 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 }
 
 /* Blank FSB layout
+   Delete anything below this line if you want a completely blank style. I would
+   suggest holding on to some of the styles though, such as the ones for edit in
+   panel or the administrator stripe
 -------------------------------------------------------------------------------*/
 
 /* Basic structure */
@@ -169,7 +173,6 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 header{margin:1em 0;}
 #header-left{float:left;}
 #header-right{float:right;}
-.clearall{clear:both;height:0;}
 #content-right{width:66%;float:right;}
 #menu-left{width:32%;float:left;}
 .product-listing-box{width:24%;margin-right:1%;float:left;}
@@ -181,7 +184,7 @@ h3{font-size:150%;}
 h4{font-size:125%;}
 .product-price-original{text-decoration:line-through;}
 
-/* Administrator */
+/* Administrator stripe */
 #admin-stripe{background-color:#EDFBD8;border-bottom:1px solid #BFDE84;padding:5px;}
 #admin-stripe-left{float:left;}
 #admin-stripe-right{float:right;}

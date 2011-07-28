@@ -1,5 +1,5 @@
 <div id="admin-stripe">
-	<?php require('elements/admin_stripe_left.php'); ?>
+	<?php require('admin_stripe_left.php'); ?>
 	
 	<div id="admin-stripe-right">
 		<a href="#" id="stripe_togglefields" onclick="Effect.BlindDown('page_editinplacebox'); return false;">
