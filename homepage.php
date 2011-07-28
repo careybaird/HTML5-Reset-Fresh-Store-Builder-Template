@@ -20,8 +20,8 @@
 		}
 	?>
 
-	<h2><?= $page['title'] ?></h2>
-	<?= $page['maintext'] ?>
+	<h2 class="page-title"><?= $page['title'] ?></h2>
+	<div class="page-maintext"><?= $page['maintext'] ?></div>
 	<br class="clearall" />
 
 	<div id="home-specialoffers" class="home-box">

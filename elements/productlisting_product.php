@@ -1,4 +1,4 @@
-<div class="product-listing-box"<?= ($i % 4 == 0 ? ' style="margin-right: 0;"' : '') ?>>
+<div class="product product-listing-box"<?= ($i % 4 == 0 ? ' style="margin-right: 0;"' : '') ?>>
 	
 	<div class="product-listing-image product-image">
 		<a href="<?= URL_SITE ?><?= $product['pagename'] ?>/">
@@ -11,9 +11,9 @@
 	
 	<?php
 		if ($product['offer']['isreduced'])
-			echo "<span class=\"originalprice\">{$product['offer']['originalpriceformatted']}</span>";
+			echo "<span class=\"product-listing-price product-listing-price-original product-price-original\">{$product['offer']['originalpriceformatted']}</span>";
 		else
-			echo "<span class=\"notreduced\">only</span>";
+			echo "<span class=\"product-listing-notreduced product-notreduced\">only</span>";
 	?>
 	<span class="product-listing-price product-price">
 	<?php

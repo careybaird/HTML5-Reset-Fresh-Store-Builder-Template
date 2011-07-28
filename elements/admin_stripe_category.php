@@ -1,14 +1,5 @@
 <div id="admin-stripe">
-	<div id="admin-stripe-left">
-		<strong><a href="<?= URL_SITE.'freshadmin/' ?>">Control Panel</a></strong>
-		- <strong><a href="<?= URL_SITE ?>freshadmin/user/logout/">Log Out</a></strong>
-		- <a href="http://www.freshstorebuilder.com/account/">My Account</a>
-		- <a href="http://www.freshstorebuilder.com/guides/">Guides</a>
-		- <a href="http://www.freshstorebuilder.com/tools/">Tools</a>
-		- <a href="http://www.freshstorebuilder.com/extras/">Extras</a>
-		- <a href="http://forum.freshstorebuilder.com/">Forum</a>
-		- <a href="http://www.freshstorebuilder.com/support/">Support</a>
-	</div>
+	<?php require('elements/admin_stripe_left.php'); ?>
 	
 	<div id="admin-stripe-right">
 		<a href="#" id="stripe_togglefields" onclick="Effect.BlindDown('category_editinplacebox'); return false;">
@@ -20,11 +11,9 @@
 		<a href="<?= URL_SITE ?>freshadmin/product/bycategorylist/<?= $thiscategory['id'] ?>/">
 			<img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/icons/admin_productlist.png" alt="List Products in Admin" title="List Products in Admin" />
 		</a>
-		
 		<a href="<?= URL_SITE ?>freshadmin/category/populate/<?= $thiscategory['id'] ?>/">
 			<img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/icons/admin_autopopulateedit.png" alt="Auto Populate Settings" title="Auto Populate Settings" />
 		</a>
-		
 		<?php
 			if ($thiscategory['populationtype'] !== '' && $thiscategory['populationtype'] !== 'cancel' )
 			{
@@ -35,7 +24,6 @@
 				<?php
 			}
 		?>
-		
 	</div>
 	
 	<br class="clearall" />

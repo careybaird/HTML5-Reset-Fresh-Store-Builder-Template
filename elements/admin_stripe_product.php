@@ -1,16 +1,8 @@
 <div id="admin-stripe">
-	<div id="admin-stripe-left">
-		<strong><a href="<?= URL_SITE.'freshadmin/' ?>">Control Panel</a></strong>
-		- <strong><a href="<?= URL_SITE ?>freshadmin/user/logout/">Log Out</a></strong>
-		- <a href="http://www.freshstorebuilder.com/account/">My Account</a>
-		- <a href="http://www.freshstorebuilder.com/guides/">Guides</a>
-		- <a href="http://www.freshstorebuilder.com/tools/">Tools</a>
-		- <a href="http://www.freshstorebuilder.com/extras/">Extras</a>
-		- <a href="http://forum.freshstorebuilder.com/">Forum</a>
-		- <a href="http://www.freshstorebuilder.com/support/">Support</a>
-	</div>
+	<?php require('elements/admin_stripe_left.php'); ?>
 	
 	<div id="admin-stripe-right">
+		Sales Rank: <?= $product['salesrank'] ?> &nbsp;-&nbsp; ASIN: <?= $product['asin'] ?>
 		<a href="#" id="stripe_togglefields" onclick="Effect.BlindDown('product_editinplacebox'); return false;">
 			<img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/icons/admin_quickeditshow.png" alt="Show Quick Edit Options" title="Show Quick Edit Options" />
 		</a>
@@ -38,10 +30,7 @@
 		<a href="<?= URL_SITE ?>freshadmin/product/delete/<?= $product['id'] ?>/">
 			<img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/icons/admin_delete.png" alt="Delete" title="Delete" />
 		</a>
-		
 	</div>
-	
-	<p>Sales Rank: <?= $product['salesrank'] ?> &nbsp;-&nbsp; ASIN: <?= $product['asin'] ?></p>
-	
+
 	<br class="clearall" />
 </div>
