@@ -179,7 +179,7 @@ h1{font-size:200%;}
 h2{font-size:175%;}
 h3{font-size:150%;}
 h4{font-size:125%;}
-.originalprice{text-decoration:line-through;}
+.product-price-original{text-decoration:line-through;}
 
 /* Administrator */
 #admin-stripe{background-color:#EDFBD8;border-bottom:1px solid #BFDE84;padding:5px;}
