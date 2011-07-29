@@ -1,7 +1,5 @@
-<h1><?= $page['title'] ?></h1>
-		
-<?= $page['maintext'] ?>
-
+<h2 class="page-title"><?= $page['title'] ?></h2>
+<div class="page-maintext"><?= $page['maintext'] ?></div>
 
 	<form action="<?= URL_SITE ?>filter-products/" method="post" id="filterform">
 	

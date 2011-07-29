@@ -14,7 +14,7 @@
 		}
 	?>
 
-	<h1 class="product-title" id="product-title"><?= $product['title'] ?></h1>
+	<h2 class="product-title" id="product-title"><?= $product['title'] ?></h2>
 	<br class="clearall" />
 
 	<div id="product-price-box">
@@ -145,7 +145,7 @@
 		if (trim($product['description']) != '' || ADMIN_LOGGED_IN)
 		{
 			?>	
-				<h2 class="product-description-title product-subtitle">Introducing: <?= $product['linktitle'] ?></h2>
+				<h3 class="product-description-title product-subtitle">Introducing: <?= $product['linktitle'] ?></h3>
 				<div class="product-description" id="product-description"><?= $product['description'] ?></div>
 			<?php
 		}
@@ -153,7 +153,7 @@
 		if (trim($amazoncontent['description']) != '' && PRODUCT_INFO_DISPLAY_AZDESC != '0')
 		{
 			?>
-				<h2 class="product-azdescription-title product-subtitle">Manufacturer Description</h2>
+				<h3 class="product-azdescription-title product-subtitle">Manufacturer Description</h3>
 				<div class="product-description" id="product-azdescription"><?= $amazoncontent['description'] ?></div>
 			<?php
 		}
@@ -162,7 +162,7 @@
 		{
 			?>
 				<div id="product-review-box">			
-					<h2 class="product-subtitle product-reviews-title"><a href="<?= URL_SITE ?><?= $product['pagename'] ?>/reviews/" rel="nofollow">See All Product Reviews</a></h2>
+					<h3 class="product-subtitle product-reviews-title"><a href="<?= URL_SITE ?><?= $product['pagename'] ?>/reviews/" rel="nofollow">See All Product Reviews</a></h3>
 				</div>
 			<?php
 		}
@@ -170,7 +170,7 @@
 		if (sizeof($product['keyfeatures']) > 0 && $product['keyfeatures'][0] != '')
 		{
 			?>
-				<h2 class="product-features-title product-subtitle">Product Features</h2>
+				<h3 class="product-features-title product-subtitle">Product Features</h3>
 			
 				<ul class="product-list product-features">
 					<?php
@@ -194,7 +194,7 @@
 		{
 			?>
 				<div id="product-details-box">
-					<h2 class="product-information-title product-subtitle">Key Information</h2>
+					<h3 class="product-information-title product-subtitle">Key Information</h3>
 					<ul class="product-list product-information">
 					<?php
 						foreach ($attributes as $name => $value)

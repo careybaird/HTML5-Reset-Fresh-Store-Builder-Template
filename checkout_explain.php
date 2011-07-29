@@ -1,6 +1,6 @@
 <div class="checkout-heading">
 	<img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/images/checkout_loading.gif" title="Connecting to Amazon" alt="Connecting to Amazon" />
-	<h1><?= gTT('CHECKOUT_CONNECTING') ?></h1>
+	<h2 class="page-title"><?= gTT('CHECKOUT_CONNECTING') ?></h2>
 	<br class="clearall" />
 </div>
 

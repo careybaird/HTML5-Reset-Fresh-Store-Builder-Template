@@ -1,3 +1,2 @@
-<h1 id="custompage-title"><?= $page['title'] ?></h1>
-
-<div id="custompage-maintext"><?= $page['maintext'] ?></div>
+<h2 class="page-title custompage-title"><?= $page['title'] ?></h2>
+<div class="page-maintext custompage-maintext"><?= $page['maintext'] ?></div>
