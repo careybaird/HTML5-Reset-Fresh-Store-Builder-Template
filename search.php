@@ -1,6 +1,6 @@
 <?php require('elements/productlisting_filteroptions.php') ?>
 
-<h1><?= sprintf(gtt('SEARCH_RESULTSFOR'), $keywords) ?></h1>
+<h2 class="page-title"><?= sprintf(gtt('SEARCH_RESULTSFOR'), $keywords) ?></h2>
 
 <?php require('elements/productlisting_options.php') ?>
 <?php require('elements/productlisting_previousnext.php') ?>

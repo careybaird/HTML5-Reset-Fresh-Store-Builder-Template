@@ -1,11 +1,9 @@
-<h1>The <?= SITE_NAME ?> Newsletter</h1>
-
-<?= $page['maintext'] ?>
+<h2 class="page-title">The <?= SITE_NAME ?> Newsletter</h2>
+<div class="main-text"><?= $page['maintext'] ?></div>
 
 <p>Simply enter your email below to receive our Newsletter.</p>
 
 <form action="<?= URL_SITE ?>newsletter/" method="post">
-
 	<input type="hidden" name="newsletter_action" value="subscribe" />
 	
 	<p>
