@@ -9,15 +9,13 @@
 	}
 ?>
 
-<h1 id="manufacturer-pageheading"><?= $manufacturer['pageheading'] ?></h1>
+<h2 class="page-title" id="manufacturer-pageheading"><?= $manufacturer['pageheading'] ?></h2>
 
 <br class="clearall" />
 
 <?php require('elements/productlisting_options.php') ?>
 
 <?php require('elements/productlisting_previousnext.php') ?>
-
-
 
 <?php
 	$i=0;

@@ -1,11 +1,10 @@
-<h1><?= $page['title'] ?> - Page <?= $pagination['currentpage'] ?> of <?= $pagination['pages'] ?></h1>
-
-<?= $page['maintext'] ?>
+<h2 class="page-title"><?= $page['title'] ?> - Page <?= $pagination['currentpage'] ?> of <?= $pagination['pages'] ?></h2>
+<div class="page-maintext"><?= $page['maintext'] ?></div>
 
 <? if($pagination['currentpage']==1){?>
-<h2>Main Pages</h2>
 
-<ul>
+<h3 class="page-subtitle">Main Pages</h3>
+<ul class="sitemap-list sitemap-pages">
 	<?php
 		foreach ($sitemappages as $page)
 		{
@@ -16,10 +15,8 @@
 	?>
 </ul>
 
-
-<h2>Shop Categories</h2>
-
-<ul>
+<h3 class="page-subtitle">Shop Categories</h3>
+<ul class="sitemap-list sitemap-categories">
 	<?php
 		foreach ($categories as $category)
 		{
@@ -30,9 +27,9 @@
 	?>
 </ul>
 <? } ?>
-<h2>Products</h2>
 
-<ul>
+<h3 class="page-subtitle">Products</h3>
+<ul class="sitemap-list sitemap-products">
 	<?php
 		foreach ($products as $product)
 		{
@@ -43,6 +40,4 @@
 	?>
 </ul>
 
-<?php require('elements/page_previousnext.php') ?>
-
-   
+<?php require('elements/page_previousnext.php') ?>   
