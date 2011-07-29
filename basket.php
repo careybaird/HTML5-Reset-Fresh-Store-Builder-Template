@@ -1,12 +1,11 @@
-<h1><?= $page['title'] ?></h1>
-
+<h2 class="page-title"><?= $page['title'] ?></h2>
 
 <?php
 	if (!$amazon->cart || sizeof($amazon->cart['items']) == 0)
 	{
 		?>
 		
-		<p><?= gTT('BASKET_NOITEMS') ?></p>
+		<p>No items</p>
 		
 		<?php
 	}
@@ -14,15 +13,13 @@
 	{
 		?>
 		
-		
-		
 		<table id="basket-products">
 			<thead>
 				<tr>
-					<th colspan="2"><?= gTT('BASKET_COL_ITEMS') ?></th>
-					<th><?= gTT('BASKET_COL_QTY') ?></th>
-					<th class="remove"><?= gTT('BASKET_COL_REMOVE') ?></th>
-					<th class="price"><?= gTT('BASKET_COL_PRICE') ?></th>
+					<th colspan="2">Items</th>
+					<th>Quantity</th>
+					<th class="remove">Remove</th>
+					<th class="price">Price</th>
 				</tr>
 			</thead>
 			<tfoot>
@@ -46,7 +43,7 @@
 					<th>&nbsp;</th>
 					<th>&nbsp;</th>
 					<th>&nbsp;</th>
-					<th><em><?= gTT('BASKET_TOTAL') ?></em></th>
+					<th>Total:</th>
 					<th class="price">
 						<?= formatProductPrice($amazon->cart['subtotal']) ?>
 					</th>
