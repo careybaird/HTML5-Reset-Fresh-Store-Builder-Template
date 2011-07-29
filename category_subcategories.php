@@ -1,4 +1,3 @@
-
 <?php
 	if (sizeof ($categoryimages) > 0)
 	{
@@ -10,7 +9,7 @@
 	}
 ?>
 
-<h1 id="category-title"><?= $thiscategory['title'] ?></h1>
+<h2 class="page-title category-title"><?= $thiscategory['title'] ?></h2>
 
 <div id="category-description"><?= $thiscategory['description'] ?></div>
 

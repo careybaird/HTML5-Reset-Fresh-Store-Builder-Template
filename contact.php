@@ -1,7 +1,5 @@
-<h1>Contact the <?= SITE_NAME ?> Team</h1>
-
-
-<?= $page['maintext'] ?>
+<h2 class="page-title">Contact the <?= SITE_NAME ?> Team</h2>
+<div class="page-maintext"><?= $page['maintext'] ?></div>
 
 <hr />
 
@@ -10,7 +8,6 @@
 
 <div id="contact-form">
 	<form action="<?= URL_SITE.PAGENAME ?>/" method="post" id="contactform">
-	
 	
 		<p>
 			<label for="contact-fullname">Name:</label>

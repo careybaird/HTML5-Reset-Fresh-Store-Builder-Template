@@ -13,24 +13,13 @@
 	}
 ?>
 
-<div id="rss-icon">
-	<a href="<?= URL_SITE ?>rss/<?=  $thiscategory['pagename'] ?>/">
-		<img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/icons/rss.png" width="30px" />
-	</a>
-</div>
-
-
-
-<h1 id="category-title"><?= $thiscategory['title'] ?></h1>
-
-<div id="category-description"><?= $thiscategory['description'] ?></div>
+<h2 class="page-title category-title"><?= $thiscategory['title'] ?></h2>
+<div class="page-maintext category-description"><?= $thiscategory['description'] ?></div>
 
 <br class="clearall" />
 
-
 <?php require('elements/productlisting_options.php') ?>
 <?php require('elements/productlisting_previousnext.php') ?>
-
 
 <?php
 	$i=0;
@@ -56,11 +45,10 @@
 
 <?php require('elements/productlisting_previousnext.php') ?>
 
-<div id="category-descriptionbottom"><?= $thiscategory['descriptionbottom'] ?></div>
+<div class="category-descriptionbottom"><?= $thiscategory['descriptionbottom'] ?></div>
 
 <br class="clearall" />
 
 </div>
-
 
 <br class="clearall" />

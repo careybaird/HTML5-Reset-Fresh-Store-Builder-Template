@@ -1,4 +1,4 @@
-<h1><?= $page['title'] ?></h1>
+<h2 class="page-title"><?= $page['title'] ?></h2>
 
 <br class="clearall" />
 
