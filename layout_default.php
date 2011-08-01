@@ -1,6 +1,5 @@
 <!DOCTYPE HTML>
 <html>
-
 	<head>
 		<title><?= $page_title ?></title>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
@@ -37,7 +36,7 @@
 					require('elements/'.$editinplacename.'_editinplaceoptions.php');
 			?>
 			
-			<header>
+			<header id="header">
 				<div id="header-left">
 					<?php
 						require('elements/logo.php');
