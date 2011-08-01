@@ -45,6 +45,7 @@
 				
 				<div id="header-right">
 					<?php
+						require('elements/navigation.php');
 						require('elements/cart.php');
 					?>
 				</div>
