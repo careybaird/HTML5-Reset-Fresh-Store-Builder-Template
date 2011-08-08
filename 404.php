@@ -1,5 +1,4 @@
 <h2 class="page-title">This Page Could Not Be Found</h2>
-
 <div class="page-maintext">
 	<p>Unfortunately we could not find the page you are looking for. Either this page no longer exists or you have followed a bad link.</p>
 
