@@ -1,5 +1,5 @@
 <a href="http://www.freshstorebuilder.com/">
-	<img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/images/fsb_logo.png" style="float: right; display:inline; margin: 20px;" />
+	<img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/images/fsb_logo.png" style="float: right; display:inline; margin: 20px;" alt="Fresh Store Builder" />
 </a>
 
 <h2 class="page-title"><?= SITE_NAME ?></h2>
