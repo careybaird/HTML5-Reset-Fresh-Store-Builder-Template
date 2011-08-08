@@ -18,10 +18,6 @@
 		</script>
 		<link rel="stylesheet" type="text/css" href="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/styles/style.css">
 		<link rel="stylesheet" type="text/css" href="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/styles/application.css">	
-		<?php
-			require('elements/analytics.php');
-			require('elements/rss.php');
-		?>
 	</head>
 	
 	<body<?= $body_onload ?>>
@@ -89,7 +85,13 @@
 		</div>
 		
 	<script type="text/javascript" src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/scripts/main.js"></script>
-	<?php if (isset($includescripts) && is_array($includescripts)) foreach ($includescripts as $script) echo "<script type=\"text/javascript\" src=\"{$script}\"></script>"; ?>	
+	<?php
+		if (isset($includescripts) && is_array($includescripts))
+			foreach ($includescripts as $script)
+				echo "<script type=\"text/javascript\" src=\"{$script}\"></script>";
+		require('elements/analytics.php');
+		require('elements/rss.php');
+	?>
 	</body>
 	
 </html>
