@@ -61,7 +61,6 @@
 
 	<?php
 		if (ADMIN_LOGGED_IN)
-			require_once 'elements/productlisting_product.php';
+			require_once 'elements/productlisting_admin.php';
 	?>
-
 </div>
