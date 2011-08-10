@@ -3,7 +3,7 @@
 	{
 		?>
 			<div class="menu-left-header">
-				<h4><?= gTT('MAIN_FILTER_TITLE') ?> - <a href="<?= URL_SITE ?><?= $pages['filterproducts']['pagename'] ?>/"><?= gTT('MAIN_FILTER_MORE') ?></a></h4>
+				<h4>Filter Options - <a href="<?= URL_SITE ?><?= $pages['filterproducts']['pagename'] ?>/">More</a></h4>
 			</div>
 		
 			<div class="menu-left-contents">
@@ -16,10 +16,10 @@
 					{
 						?>
 							<div class="sidefilteroption">
-							<label for="side-filterprice"><strong><?= gTT('MAIN_FILTER_PRICE') ?>:</strong></label>
+							<label for="side-filterprice"><strong>Price:</strong></label>
 							
 							<select name="filterprice" id="side-filterprice">
-								<option value="-1"><?= gTT('MAIN_FILTER_ANY') ?></option>
+								<option value="-1">Any</option>
 								<?php
 									$filterprices = $item;
 									foreach ($filterprices as $key => $item)
@@ -39,10 +39,10 @@
 					{
 						?>
 							<div class="sidefilteroption">
-							<label for="side-filtermanufacturer"><strong><?= gTT('MAIN_FILTER_MANUFACTURER') ?>:</strong></label>
+							<label for="side-filtermanufacturer"><strong>Manufacturer:</strong></label>
 
 							<select name="filtermanufacturer" id="side-filtermanufacturer">
-								<option value="-1"><?= gTT('MAIN_FILTER_ANY') ?></option>
+								<option value="-1">Any</option>
 								<?php
 									$filtermanufacturers = $item;
 									foreach ($filtermanufacturers as $key => $item)
@@ -131,7 +131,7 @@
 						if ($_SESSION['productfilters'])
 						{
 							?>
-								<br /><br /><a href="<?= URL_SITE ?><?= $pages['filterproducts']['pagename'] ?>/cancel/"><img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/icons/delete.png" /><?= gTT('MAIN_FILTER_REMOVE') ?></a>
+								<br /><br /><a href="<?= URL_SITE ?><?= $pages['filterproducts']['pagename'] ?>/cancel/"><img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/icons/delete.png" />Remove Filters</a>
 							<?php
 						}
 					?>
