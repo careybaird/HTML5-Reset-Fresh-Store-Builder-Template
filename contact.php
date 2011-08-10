@@ -27,5 +27,6 @@
 				<td></td>
 				<td><input class="submit" type="submit" value="Send" /></td>
 			</tr>
+		</table>
 	</form>
 </div>
