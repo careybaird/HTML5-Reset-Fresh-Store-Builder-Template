@@ -6,23 +6,17 @@
 <?php require('elements/productlisting_previousnext.php') ?>
 
 <?php
-	$i=0;
-	if (sizeof($results) > 0)
+	$i = 0;
+	foreach ($results as $product)
 	{
-		foreach ($results as $product)
-		{
-			$i++;
-			
-			require('elements/productlisting_product.php');
-			
-			if ($i % 4 == 0) echo '<br class="clearall" />';
-		}
+		$i++;
+		require('elements/productlisting_product.php');
+		if ($i % 4 == 0) echo '<br class="clearall" />';
 	}
-	else
+	
+	if ($i == 0)
 	{
-		?>
-		<p><?= sprintf(gtt('SEARCH_NORESULTS'), $keywords) ?></p>
-		<?php
+		require('elements/productlisting_noproducts.php');
 	}
 ?>
 

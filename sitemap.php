@@ -1,7 +1,7 @@
 <h2 class="page-title"><?= $page['title'] ?> - Page <?= $pagination['currentpage'] ?> of <?= $pagination['pages'] ?></h2>
 <div class="page-maintext"><?= $page['maintext'] ?></div>
 
-<? if($pagination['currentpage']==1){?>
+<?php if($pagination['currentpage'] == 1) { ?>
 
 <h3 class="page-subtitle">Main Pages</h3>
 <ul class="sitemap-list sitemap-pages">
@@ -26,7 +26,7 @@
 		}
 	?>
 </ul>
-<? } ?>
+<?php } ?>
 
 <h3 class="page-subtitle">Products</h3>
 <ul class="sitemap-list sitemap-products">
