@@ -1,3 +1,7 @@
-/* This is just some stuff that is needed for the core layout of FSB. You
-   could delete it but you would have to rewrite it anyway
+/* This is some basic page structure. You can start from scratch but hopefully
+   this could help you
 -------------------------------------------------------------------------------*/
+
+body{background-color:#eee;}
+#container{width:1000px;background-color:#FFF;margin:0 auto;padding:25px;}
+#header{border:5px solid #ddd;background-color:#ededed;padding:15px;margin-bottom;15px;}
