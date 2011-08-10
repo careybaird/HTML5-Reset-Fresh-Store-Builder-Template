@@ -21,7 +21,7 @@
 			</tr>
 			<tr>
 				<td><label for="contact-query">Your Query:</label></td>
-				</td><textarea id="contact-query" name="query" rows="15" cols="40"></textarea></td>
+				<td><textarea id="contact-query" name="query" rows="15" cols="40"></textarea></td>
 			</tr>
 			<tr>
 				<td></td>
