@@ -3,9 +3,7 @@
 
 <?php
 	if (!$amazon->cart || sizeof($amazon->cart['items']) == 0)
-	{
 		require('elements/cart_empty.php');
-	}
 	else
 	{
 		require('elements/cart_products.php');

@@ -26,4 +26,3 @@
 <?php require('elements/productlisting_previousnext.php') ?>
 
 <div class="page-bottomtext"><?= $page['descriptionbottom'] ?></div>
-<br class="clearall" />

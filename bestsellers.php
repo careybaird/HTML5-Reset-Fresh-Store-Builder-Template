@@ -10,5 +10,10 @@
 		require('elements/productlisting_product.php');
 		if ($i % 4 == 0) echo '<br class="clearall" />';
 	}
+	
+	if ($i == 0)
+	{
+		require('elements/productlisting_noproducts.php');
+	}
 ?>
 <br class="clearall" />

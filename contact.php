@@ -1,33 +1,31 @@
 <h2 class="page-title">Contact the <?= SITE_NAME ?> Team</h2>
 <div class="page-maintext"><?= $page['maintext'] ?></div>
 
-<hr />
-
 <h3 class="page-subtitle">Email <?= SITE_NAME ?></h3>
 <p><em>All of the fields are optional but please enter as much detail as you can.</em></p>
 
-<div id="contact-form">
+<div class="contact-form">
 	<form action="<?= URL_SITE.PAGENAME ?>/" method="post" id="contactform">
-		<p>
-			<label for="contact-fullname">Name:</label>
-			<input class="text" id="contact-fullname" name="fullname" />
-		</p>
-		<p>
-			<label for="contact-email">Email Address:</label>
-			<input class="text" id="contact-email" name="email" />
-		</p>
-		<p>
-			<label for="contact-phone">Phone Number:</label>
-			<input class="text" id="contact-phone" name="phone" />
-		</p>
-		<p>
-			<label for="contact-query">Your Query:</label>
-			<textarea id="contact-query" name="query" rows="15" cols="40"></textarea>
-		</p>
-		<p>
-			<input class="submit" type="submit" value="Send" />
-		</p>
+		<table class="contact-table">
+			<tr>
+				<td><label for="contact-fullname">Name:</label></td>
+				<td><input class="text" id="contact-fullname" name="fullname" /></td>
+			</tr>
+			<tr>
+				<td><label for="contact-email">Email Address:</label></td>
+				<td><input class="text" id="contact-email" name="email" /></td>
+			</tr>
+			<tr>
+				<td><label for="contact-phone">Phone Number:</label></td>
+				<td><input class="text" id="contact-phone" name="phone" /></td>
+			</tr>
+			<tr>
+				<td><label for="contact-query">Your Query:</label></td>
+				</td><textarea id="contact-query" name="query" rows="15" cols="40"></textarea></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input class="submit" type="submit" value="Send" /></td>
+			</tr>
 	</form>
-	
-	<div class="clearall"></div>
 </div>

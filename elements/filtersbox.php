@@ -126,7 +126,7 @@
 					}
 					?>
 					
-					<input type="submit" value="<?= gTT('MAIN_FILTER_BUTTON') ?>" id="sidefilteroptionssubmit" />
+					<input type="submit" value="Filter Products" id="sidefilteroptionssubmit" />
 					<?php
 						if ($_SESSION['productfilters'])
 						{

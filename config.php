@@ -12,16 +12,6 @@ $template['meta']['url'] = 'http://austingulati.com/';
 
 /* Options */
 
-# Language
-$t = array();
-$t['name'] = 'Template Language';
-$t['description'] = 'The language to use for images and default text.';
-$t['datatype'] = 'options';
-$t['options'] = 'en|de|it';
-$t['editable'] = '1';
-$t['default_value'] = 'en';
-$template['options']['TEMPLATE_LANGUAGE'] = $t;
-
 # Homepage Logos
 $t = array();
 $t['name'] = 'Homepage Brand Logos';
