@@ -1,3 +1,6 @@
+<?php
+	// This page needs to be cleaned up
+?>
 <h2 class="page-title"><?= $page['title'] ?></h2>
 <div class="page-maintext"><?= $page['maintext'] ?></div>
 
@@ -10,12 +13,12 @@
 				{
 					?>
 					<div class="filter-form-attribute">
-									
-						<div class="filter-form-title"><?= gTT('FILTEROPTIONS_PRICE') ?></div>
+
+						<div class="filter-form-title">Price</div>
 						
 						<div class="filter-form-field">
 							<select name="filterprice">
-								<option value="-1"><?= gTT('FILTEROPTIONS_ANY') ?></option>
+								<option value="-1">Any</option>
 								<?php
 									$filterprices = $item;
 									foreach ($filterprices as $key => $item)

@@ -1,7 +1,7 @@
 <?php require('elements/productlisting_filteroptions.php') ?>
 
 <?php
-	if (sizeof ($categoryimages) > 0)
+	if(sizeof ($categoryimages) > 0)
 	{
 		?>
 		<div class="category-image">

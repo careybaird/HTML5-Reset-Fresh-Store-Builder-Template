@@ -14,7 +14,7 @@
 		}
 	?>
 
-	<h2 class="product-title" id="product-title"><?= $product['title'] ?></h2>
+	<h2 class="page-title product-title"><?= $product['title'] ?></h2>
 	<br class="clearall" />
 
 	<div id="product-price-box">

@@ -5,13 +5,13 @@
 
 <form action="<?= URL_SITE ?>newsletter/" method="post">
 	<input type="hidden" name="newsletter_action" value="subscribe" />
-	
 	<p>
 		<label for="newsletter_sub_email">Email: </label>
 		<input class="text" type="text" id="newsletter_sub_email" name="newsletter_email" value="<?= $email ?>" />
 	</p>
-	
-	<p><input class="submit" type="submit" value="Join" /></p>
+	<p>
+		<input class="submit" type="submit" value="Join" />
+	</p>
 </form>
 
 <br clear="all" />
