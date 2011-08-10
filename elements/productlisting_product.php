@@ -6,7 +6,7 @@
 		</a>
 	</div>
 	
-	<h3 class="product-listing-title product-title"><a href="<?= URL_SITE ?><?= $product['pagename'] ?>/"><?= substr($product['linktitle'],0,40).(strlen($product['linktitle']) > 40 ? '...' : '') ?></a></h3>
+	<h<?php echo (defined('IS_HOME'))? 4 : 3;?> class="product-listing-title product-title"><a href="<?= URL_SITE ?><?= $product['pagename'] ?>/"><?= substr($product['linktitle'],0,40).(strlen($product['linktitle']) > 40 ? '...' : '') ?></a></h<?php echo (defined('IS_HOME'))? 4 : 3;?>>
 	<?= ($product['parent'] && $product['optionsummary']['minprice'] != $product['optionsummary']['maxprice'] ? 'from ' : '') ?>
 	
 	<?php

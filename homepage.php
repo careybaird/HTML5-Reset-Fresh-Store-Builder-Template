@@ -1,4 +1,5 @@
 <?php
+	define('IS_HOME', true);
 	require_once('elements/manufacturersbox.php');
 ?>
 
