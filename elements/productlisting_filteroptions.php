@@ -3,15 +3,12 @@
 	{
 		?>
 			<div id="product-filter-options">
-		
-		
-					
-				
+
 				<div id="product-filter-options-links">
 					<a href="<?= URL_SITE ?>filter-products/"><img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/icons/edit.png" /> <?= gTT('FILTEROPTIONS_CHANGE') ?></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="<?= URL_SITE ?>filter-products/cancel/"><img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/icons/delete.png" /> <?= gTT('FILTEROPTIONS_REMOVE') ?></a>
 				</div>
 				
-				<?= gTT('FILTEROPTIONS_CURRENTLY') ?>
+				Current Filter Options
 				
 				<br class="clearall" />
 				
