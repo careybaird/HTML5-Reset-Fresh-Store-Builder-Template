@@ -1,12 +1,6 @@
-<?php require('elements/productlisting_filteroptions.php') ?>
-
 <?php
-	if (isset($manufacturerimage) && is_array($manufacturerimage))
-	{
-		?>
-			<img id="manufacturer-logo" src="<?= URL_SITE ?>i/?src=<?= RELATIVE_URL_IMAGES_MANUFACTURER.$manufacturerimage['filename'] ?>&w=200&h=200" />
-		<?php
-	}
+	require('elements/productlisting_filteroptions.php');
+	require('elements/manufacturer_images.php');
 ?>
 
 <h2 class="page-title manufacturer-title"><?= $manufacturer['pageheading'] ?></h2>
@@ -23,6 +17,11 @@
 		$i++;
 		require('elements/productlisting_product.php');
 		if ($i % 4 == 0) echo '<br class="clearall" />';
+	}
+	
+	if ($i == 0)
+	{
+		require('elements/productlisting_noproducts.php');
 	}
 ?>
 

@@ -3,7 +3,7 @@
 
 <p>Simply enter your email below to receive our Newsletter.</p>
 
-<form action="<?= URL_SITE ?>newsletter/" method="post">
+<form action="<?= URL_SITE ?>newsletter/" method="post" class="newsletter-form">
 	<input type="hidden" name="newsletter_action" value="subscribe" />
 	<p>
 		<label for="newsletter_sub_email">Email: </label>
