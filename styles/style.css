@@ -2,6 +2,10 @@
    this could help you
 -------------------------------------------------------------------------------*/
 
-body{background-color:#eee;}
+body{background-color:#eee;color:#111;}
 #container{width:1000px;background-color:#FFF;margin:0 auto;padding:25px;}
-#header{border:5px solid #ddd;background-color:#ededed;padding:15px;margin-bottom;15px;}
+#header{border:5px solid #ddd;background-color:#ededed;padding:15px;margin-bottom:15px;}
+#header #header-left{float:left;}
+#header #header-left h1{color:#111;}
+#header #header-left h1:hover{color:#000;}
+#header #header-right{float:right;}
