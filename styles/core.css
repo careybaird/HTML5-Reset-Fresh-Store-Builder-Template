@@ -194,3 +194,8 @@ h4{font-size:125%;}
 input.eip_editfield{margin:0;/*font-size:100%;*/color:#333;border-top:1px solid #7c7c7c;border-left:1px solid #c3c3c3; border-right:1px solid #c3c3c3; border-bottom:1px solid #ddd;padding:5px;width:650px;margin-bottom:20px;}
 textarea.eip_editfield{width:650px;color:#333;border-top:1px solid #7c7c7c;border-left:1px solid #c3c3c3;border-right:1px solid #c3c3c3;border-bottom:1px solid #ddd; padding: 5px;margin:0 0 20px 0;}
 .eip_buttons{float:right;display:inline;}
+
+/* Resets some Amazon styles that cause things to look weird */
+#product-azdescription table{max-width:580px;}
+#product-azdescription a{color:#000;}
+#product-azdescription a:hover{color:#000;}
