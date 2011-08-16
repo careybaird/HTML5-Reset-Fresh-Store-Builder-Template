@@ -9,7 +9,7 @@
 				foreach ($reducedproducts as $product)
 				{
 					$i++;
-					require('elements/productlisting_product.php');
+					require('productlisting_product.php');
 				}
 			?>
 			<br class="clearall" />
