@@ -1,5 +1,6 @@
-<h2 class="page-title">The <?= SITE_NAME ?> Newsletter</h2>
-<div class="main-text"><?= $page['maintext'] ?></div>
+<h2 id="page-title">The <?= SITE_NAME ?> Newsletter</h2>
+<div id="main-text"><?= $page['maintext'] ?></div>
+<div class="clearall"></div>
 
 <p>Simply enter your email below to receive our Newsletter.</p>
 
@@ -13,8 +14,6 @@
 		<input class="submit" type="submit" value="Join" />
 	</p>
 </form>
-
-<br clear="all" />
 
 <?php
 	# Move to another page

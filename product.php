@@ -1,7 +1,7 @@
 <div class="product product-full">
 
-	<h2 class="page-title product-title"><?= $product['title'] ?></h2>
-	<br class="clearall" />
+	<h2 id="page-title" class="product-title"><?= $product['title'] ?></h2>
+	<div class="clearall"></div>
 
 	<?php
 		require_once('elements/product_pricebox.php');

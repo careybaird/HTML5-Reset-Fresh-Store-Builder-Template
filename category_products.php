@@ -3,9 +3,9 @@
 	require('elements/category_images.php');
 ?>
 
-<h2 class="page-title category-title"><?= $thiscategory['title'] ?></h2>
-<div class="page-maintext category-description"><?= $thiscategory['description'] ?></div>
-<br class="clearall" />
+<h2 id="page-title" class="category-title"><?= $thiscategory['title'] ?></h2>
+<div id="page-maintext" class="category-description"><?= $thiscategory['description'] ?></div>
+<div class="clearall"></div>
 
 <?php
 	require('elements/productlisting_options.php');
@@ -18,7 +18,7 @@
 	{
 		$i++;
 		require('elements/productlisting_product.php');
-		if ($i % 4 == 0) echo '<br class="clearall" />';
+		clearAll($i);
 	}
 	
 	if ($i == 0)
@@ -30,4 +30,4 @@
 
 <?php require('elements/productlisting_previousnext.php') ?>
 
-<div class="page-bottomtext category-descriptionbottom"><?= $thiscategory['descriptionbottom'] ?></div>
+<div id="page-bottomtext" class="category-description"><?= $thiscategory['descriptionbottom'] ?></div>

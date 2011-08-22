@@ -3,9 +3,9 @@
 	require_once('elements/manufacturersbox.php');
 ?>
 
-<h2 class="page-title"><?= $page['title'] ?></h2>
-<div class="page-maintext"><?= $page['maintext'] ?></div>
-<br class="clearall" />
+<h2 id="page-title"><?= $page['title'] ?></h2>
+<div id="page-maintext"><?= $page['maintext'] ?></div>
+<div class="clearall"></div>
 
 <?php
 	require_once('elements/specialoffersbox.php');

@@ -1,5 +1,5 @@
-<h2 class="page-title"><?= $page['title'] ?> - Page <?= $pagination['currentpage'] ?> of <?= $pagination['pages'] ?></h2>
-<div class="page-maintext"><?= $page['maintext'] ?></div>
+<h2 id="page-title"><?= $page['title'] ?> - Page <?= $pagination['currentpage'] ?> of <?= $pagination['pages'] ?></h2>
+<div id="page-maintext"><?= $page['maintext'] ?></div>
 
 <?php if($pagination['currentpage'] == 1) { ?>
 
@@ -9,7 +9,7 @@
 		foreach ($sitemappages as $page)
 		{
 			?>
-			<li><a href="<?= URL_SITE ?><?= $page['pagename'] ?>/"><?= $page['linktitle'] ?></a></li>
+			<li class="sitemap-item"><a href="<?= URL_SITE ?><?= $page['pagename'] ?>/"><?= $page['linktitle'] ?></a></li>
 			<?php
 		}
 	?>
@@ -21,7 +21,7 @@
 		foreach ($categories as $category)
 		{
 			?>
-			<li><a href="<?= URL_SITE ?><?= $category['pagename'] ?>/"><?= $category['linktitle'] ?></a></li>
+			<li class="sitemap-item"><a href="<?= URL_SITE ?><?= $category['pagename'] ?>/"><?= $category['linktitle'] ?></a></li>
 			<?php
 		}
 	?>
@@ -34,7 +34,7 @@
 		foreach ($products as $product)
 		{
 			?>
-			<li><a href="<?= URL_SITE ?><?= $product['pagename'] ?>/"><?= $product['linktitle'] ?></a></li>
+			<li class="sitemap-item"><a href="<?= URL_SITE ?><?= $product['pagename'] ?>/"><?= $product['linktitle'] ?></a></li>
 			<?php
 		}
 	?>

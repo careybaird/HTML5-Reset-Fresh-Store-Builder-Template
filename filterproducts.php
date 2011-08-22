@@ -1,10 +1,11 @@
 <?php
 	// This page needs to be cleaned up
 ?>
-<h2 class="page-title"><?= $page['title'] ?></h2>
-<div class="page-maintext"><?= $page['maintext'] ?></div>
+<h2 id="page-title"><?= $page['title'] ?></h2>
+<div id="page-maintext"><?= $page['maintext'] ?></div>
+<div class="clearall"></div>
 
-<form action="<?= URL_SITE ?>filter-products/" method="post" id="filterform">
+<form action="<?= URL_SITE ?>filter-products/" method="post" class="filter-form">
 	<?php
 		foreach ($filteroptions as $key => $item)
 		{

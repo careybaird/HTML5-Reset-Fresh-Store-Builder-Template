@@ -1,6 +1,7 @@
 <?php require('elements/productlisting_filteroptions.php') ?>
 
-<h2 class="page-title"><?= sprintf(gtt('SEARCH_RESULTSFOR'), $keywords) ?></h2>
+<h2 id="page-title"><?= sprintf('Search Results for %s', $keywords) ?></h2>
+<div class="clearall"></div>
 
 <?php require('elements/productlisting_options.php') ?>
 <?php require('elements/productlisting_previousnext.php') ?>
@@ -11,7 +12,7 @@
 	{
 		$i++;
 		require('elements/productlisting_product.php');
-		if ($i % 4 == 0) echo '<br class="clearall" />';
+		clearAll($i);
 	}
 	
 	if ($i == 0)
@@ -20,6 +21,6 @@
 	}
 ?>
 
-<br class="clearall" />
+<div class="clearall"></div>
 
 <?php require('elements/productlisting_previousnext.php') ?>

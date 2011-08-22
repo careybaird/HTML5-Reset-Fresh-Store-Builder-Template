@@ -10,9 +10,9 @@
 				{
 					$i++;
 					require('productlisting_product.php');
+					clearAll($i);
 				}
 			?>
-			<br class="clearall" />
 			<div class="viewall">View all <a rel="nofollow" href="<?= $pages['bestsellers']['pagename'] ?>/">Best Sellers</a></div>
 		</div>
 		<?php

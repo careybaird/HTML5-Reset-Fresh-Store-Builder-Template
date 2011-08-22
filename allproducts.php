@@ -1,7 +1,7 @@
 <?php require('elements/productlisting_filteroptions.php') ?>
 
 <h2 id="page-title"><?= $page['title'] ?></h2>
-<div id="page-maintext"><?= $page['maintext'] ?></div>
+<div id="page-maintext"><?= $page['description'] ?></div>
 <div class="clearall"></div>
 
 <?php require('elements/productlisting_options.php') ?>
@@ -13,7 +13,7 @@
 	{
 		$i++;
 		require('elements/productlisting_product.php');
-		if ($i % PRODUCTLISTING_ROW_COUNT == 0) echo '<br class="clearall" />';
+		clearAll($i);
 	}
 	
 	if ($i == 0)

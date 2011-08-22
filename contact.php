@@ -1,11 +1,12 @@
-<h2 class="page-title">Contact the <?= SITE_NAME ?> Team</h2>
-<div class="page-maintext"><?= $page['maintext'] ?></div>
+<h2 id="page-title">Contact the <?= SITE_NAME ?> Team</h2>
+<div id="page-maintext"><?= $page['maintext'] ?></div>
+<div class="clear"></div>
 
 <h3 class="page-subtitle">Email <?= SITE_NAME ?></h3>
 <p><em>All of the fields are optional but please enter as much detail as you can.</em></p>
 
 <div class="contact-form">
-	<form action="<?= URL_SITE.PAGENAME ?>/" method="post" id="contactform">
+	<form action="<?= URL_SITE.PAGENAME ?>/" method="post" class="contact-form">
 		<table class="contact-table">
 			<tr>
 				<td><label for="contact-fullname">Name:</label></td>

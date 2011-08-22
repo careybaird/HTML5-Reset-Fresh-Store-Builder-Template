@@ -1,15 +1,15 @@
 <div class="checkout-heading">
 	<img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/images/checkout_loading.gif" title="Connecting to Amazon" alt="Connecting to Amazon" />
-	<h2 class="page-title">Checkout Connecting</h2>
-	<br class="clearall" />
+	<h2 id="page-title">Checkout Connecting</h2>
+	<div class="clearall"></div>
 </div>
 
 <div class="checkout-logos">
 	<?= getTemplateImage('HEAD_LOGO') ?>
-	<img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/images/amazon_logo_<?= strtolower($amazon->locale) ?>.gif" class="checkout-logo" alt="Amazon Logo" Title="Amazon Logo" />
+	<img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/images/amazon_logo_<?= strtolower($amazon->locale) ?>.gif" class="checkout-logo" alt="Amazon Logo" title="Amazon Logo" />
 </div>
 
-<br class="clearall" />
+<div class="clearall"></div>
 
 <h3 class="page-subtitle">Checkout Connected</h2>
 <div class="checkout-info">

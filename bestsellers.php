@@ -1,6 +1,6 @@
-<h2 class="page-title"><?= $page['title'] ?></h2>
-<div class="page-maintext"><?= $page['description'] ?></div>
-<br class="clearall" />
+<h2 id="page-title"><?= $page['title'] ?></h2>
+<div id="page-maintext"><?= $page['description'] ?></div>
+<div class="clearall"></div>
 
 <?php
 	$i = 0;
@@ -8,7 +8,7 @@
 	{
 		$i++;
 		require('elements/productlisting_product.php');
-		if ($i % 4 == 0) echo '<br class="clearall" />';
+		clearAll($i);
 	}
 	
 	if ($i == 0)

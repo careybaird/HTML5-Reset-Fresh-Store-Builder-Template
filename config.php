@@ -4,11 +4,14 @@
 # Configuration File
 # http://www.freshstorebuilder.com/
 
+require_once 'functions.php';
+
 # General template information
 $template['meta']['uid'] = 'html5-reset';
 $template['meta']['name'] = 'HTML5 Reset';
 $template['meta']['author'] = 'Austin Gulati';
 $template['meta']['url'] = 'http://austingulati.com/';
+$template['meta']['parent'] = '';
 
 /* Options */
 
@@ -71,6 +74,16 @@ $t['options'] = '';
 $t['editable'] = '1';
 $t['default_value'] = '4';
 $template['options']['PRODUCTLISTING_ROW_COUNT'] = $t;
+
+# Category Listing Row Count
+$t = array();
+$t['name'] = 'Category Listing Row Count';
+$t['description'] = 'The number of categories that go across in a row on a category listing page.';
+$t['datatype'] = 'int';
+$t['options'] = '';
+$t['editable'] = '1';
+$t['default_value'] = '2';
+$template['options']['CATEGORYLISTING_ROW_COUNT'] = $t;
 
 /* Images */
 # Logo

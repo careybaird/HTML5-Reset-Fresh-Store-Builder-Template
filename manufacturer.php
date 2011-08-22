@@ -3,9 +3,9 @@
 	require('elements/manufacturer_images.php');
 ?>
 
-<h2 class="page-title manufacturer-title"><?= $manufacturer['pageheading'] ?></h2>
-<div class="page-maintext manufacturer-description"><?= $manufacturer['description'] ?></div>
-<br class="clearall" />
+<h2 id="page-title" class="manufacturer-title"><?= $manufacturer['pageheading'] ?></h2>
+<div id="page-maintext" class="manufacturer-description"><?= $manufacturer['description'] ?></div>
+<div class="clearall"></div>
 
 <?php require('elements/productlisting_options.php') ?>
 <?php require('elements/productlisting_previousnext.php') ?>
@@ -16,7 +16,7 @@
 	{
 		$i++;
 		require('elements/productlisting_product.php');
-		if ($i % 4 == 0) echo '<br class="clearall" />';
+		clearAll($i);
 	}
 	
 	if ($i == 0)
@@ -25,5 +25,6 @@
 	}
 ?>
 
-<br class="clearall" />
+<div class="clearall"></div>
+
 <?php require('elements/productlisting_previousnext.php') ?>
