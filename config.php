@@ -62,6 +62,16 @@ $t['editable'] = '1';
 $t['default_value'] = '4';
 $template['options']['PRODUCTDETAIL_RELATED_PRODUCTS'] = $t;
 
+# Product Listing Row Count
+$t = array();
+$t['name'] = 'Product Listing Row Count';
+$t['description'] = 'The number of products that go across in a row on a product listing page.';
+$t['datatype'] = 'int';
+$t['options'] = '';
+$t['editable'] = '1';
+$t['default_value'] = '4';
+$template['options']['PRODUCTLISTING_ROW_COUNT'] = $t;
+
 /* Images */
 # Logo
 $i = array();
