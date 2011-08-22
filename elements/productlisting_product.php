@@ -9,30 +9,32 @@
 	<h<?php echo (defined('IS_HOME'))? 4 : 3;?> class="product-listing-title product-title"><a href="<?= URL_SITE ?><?= $product['pagename'] ?>/"><?= substr($product['linktitle'],0,40).(strlen($product['linktitle']) > 40 ? '...' : '') ?></a></h<?php echo (defined('IS_HOME'))? 4 : 3;?>>
 	<?= ($product['parent'] && $product['optionsummary']['minprice'] != $product['optionsummary']['maxprice'] ? 'from ' : '') ?>
 	
-	<?php
-		if ($product['offer']['isreduced'])
-			echo "<span class=\"product-listing-price product-listing-price-original product-price-original\">{$product['offer']['originalpriceformatted']}</span>";
-		else
-			echo "<span class=\"product-listing-notreduced product-notreduced\">only</span>";
-	?>
-	<span class="product-listing-price product-price">
-	<?php
-		if ($product['offer'] && $product['offer']['price'] > 0)
-			echo $product['offer']['priceformatted'];
-		else if ($product['offer'] && $product['offer']['price'] == 0)
-			echo '<small>Click for Details</small>';
-		else if ($product['parent'] == 1)
-			echo formatProductPrice($product['optionsummary']['minprice']);
-		else if ($product['price'] > 0)
-			echo $product['priceformatted'];
-		else
-			echo '<small>Price not available</small>';
-	?>
+	<span class="product-listing-price-detail">
+		<?php
+			if ($product['offer']['isreduced'])
+				echo "<span class=\"product-listing-price product-listing-price-original product-price-original\">{$product['offer']['originalpriceformatted']}</span>";
+			else
+				echo "<span class=\"product-listing-notreduced product-notreduced\">only</span>";
+		?>
+		<span class="product-price product-listing-price">
+			<?php
+				if ($product['offer'] && $product['offer']['price'] > 0)
+					echo $product['offer']['priceformatted'];
+				else if ($product['offer'] && $product['offer']['price'] == 0)
+					echo '<small>Click for Details</small>';
+				else if ($product['parent'] == 1)
+					echo formatProductPrice($product['optionsummary']['minprice']);
+				else if ($product['price'] > 0)
+					echo $product['priceformatted'];
+				else
+					echo '<small>Price not available</small>';
+			?>
+		</span>
 	</span>
 	
 	<div class="product-listing-availibility product-availibility">
 		<?php
-			if ($product['offer'])
+			if ($product['offer'] || ($product['optionsummary']['minprice'] && $product['optionsummary']['maxprice'])
 				echo '<div class="in_stock">In Stock</div>';
 			else
 				echo '<div class="out_stock">Out of Stock</div>';
