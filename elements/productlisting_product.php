@@ -34,7 +34,7 @@
 	
 	<div class="product-listing-availibility product-availibility">
 		<?php
-			if ($product['offer'] || ($product['optionsummary']['minprice'] && $product['optionsummary']['maxprice'])
+			if ($product['offer'] || ($product['optionsummary']['minprice'] && $product['optionsummary']['maxprice']))
 				echo '<div class="in_stock">In Stock</div>';
 			else
 				echo '<div class="out_stock">Out of Stock</div>';
