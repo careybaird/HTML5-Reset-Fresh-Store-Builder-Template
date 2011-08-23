@@ -25,7 +25,7 @@
 	<body<?= $body_onload ?>>
 		<?php
 			if (ADMIN_LOGGED_IN)
-				loadTemplateElement('adminstrip', $adminstripename);
+				loadTemplateElement('adminstripe', $adminstripename);
 		?>
 		
 		<div id="container">
