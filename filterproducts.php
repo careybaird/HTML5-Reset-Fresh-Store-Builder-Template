@@ -7,11 +7,11 @@
 		foreach ($filteroptions as $key => $item)
 		{
 			if ($key === 'filterprices')
-				require('elements/filterproducts/filterproducts_prices.php');
+				loadTemplateElement('filterproducts', 'prices');
 			else if ($key === 'filtermanufacturer')
-				require('elements/filterproducts/filterproducts_manufacturers.php');
+				loadTemplateElement('filterproducts', 'manufacturers');
 			else
-				require('elements/filterproducts/filterproducts_general.php');
+				loadTemplateElement('filterproducts', 'general');
 		}
 	?>
 	<input type="submit" value="Filter Products" id="filter-form-submit" />

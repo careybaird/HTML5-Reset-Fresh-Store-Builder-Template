@@ -1,11 +1,13 @@
-<?php require('elements/productlisting/productlisting_filteroptions.php') ?>
+<?php loadTemplateElement('productlisting', 'filteroptions'); ?>
 
 <h2 id="page-title"><?= $page['title'] ?></h2>
 <div id="page-maintext"><?= $page['description'] ?></div>
 <div class="clearall"></div>
 
-<?php require('elements/productlisting/productlisting_options.php') ?>
-<?php require('elements/productlisting/productlisting_previousnext.php') ?>
+<?php
+	loadTemplateElement('productlisting', 'options');
+	loadTemplateElement('productlisting', 'previousnext');
+?>
 
 <?php
 	$i = 0;
@@ -17,10 +19,10 @@
 	}
 	
 	if ($i == 0)
-		require('elements/productlisting/productlisting_noproducts.php');
+		loadTemplateElement('productlisting', 'noproducts');
 ?>
 <div class="clearall"></div>
 
-<?php require('elements/productlisting/productlisting_previousnext.php') ?>
+<?php loadTemplateElement('productlisting', 'previousnext'); ?>
 
 <div id="page-bottomtext"><?= $page['descriptionbottom'] ?></div>
