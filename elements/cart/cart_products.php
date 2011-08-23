@@ -36,7 +36,6 @@
 	</tfoot>	
 	<tbody>
 
-
 <?php
 foreach ($basketitems as $item)
 {
