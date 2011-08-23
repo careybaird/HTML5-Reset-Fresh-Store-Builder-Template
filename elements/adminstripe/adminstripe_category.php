@@ -1,5 +1,5 @@
 <div id="admin-stripe">
-	<?php require('admin_stripe_left.php'); ?>
+	<?php loadTemplateElement('adminstripe', 'left'); ?>
 	
 	<div id="admin-stripe-right">
 		<a href="#" id="stripe_togglefields" onclick="Effect.BlindDown('category_editinplacebox'); return false;">

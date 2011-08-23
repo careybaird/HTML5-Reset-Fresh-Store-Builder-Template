@@ -1,5 +1,5 @@
 <div id="admin-stripe">
-	<?php require('admin_stripe_left.php'); ?>
+	<?php loadTemplateElement('adminstripe', 'left'); ?>
 	
 	<div id="admin-stripe-right">
 		Sales Rank: <?= $product['salesrank'] ?> &nbsp;-&nbsp; ASIN: <?= $product['asin'] ?>
