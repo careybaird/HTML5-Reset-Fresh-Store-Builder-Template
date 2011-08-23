@@ -24,27 +24,27 @@
 	
 	<body<?= $body_onload ?>>
 		<?php
-			if (ADMIN_LOGGED_IN && file_exists(PATH_TEMPLATES.TEMPLATE_FOLDER.'/elements/admin_stripe_'.$adminstripename.'.php'))
-				require('elements/admin_stripe_'.$adminstripename.'.php');
+			if (ADMIN_LOGGED_IN)
+				loadElement('adminstrip', $adminstripename);
 		?>
 		
 		<div id="container">
 			<?php
 				if (ADMIN_LOGGED_IN)
-					require('elements/'.$editinplacename.'_editinplaceoptions.php');
+					loadElement($editinplacename, 'editinplaceoptions');
 			?>
 			
 			<header id="header">
 				<div id="header-left">
 					<?php
-						require('elements/logo.php');
+						loadElement('header', 'logo');
 					?>
 				</div>
 				
 				<div id="header-right">
 					<?php
-						require('elements/navigation.php');
-						require('elements/cart.php');
+						loadElement('header', 'navigation');
+						loadElement('header', 'cart');
 					?>
 				</div>
 				
@@ -54,23 +54,23 @@
 			<div id="main">
 				<div id="content-right">
 					<?php
-						require('elements/breadcrumb.php');
-						require('elements/messages.php');
+						loadElement('header', 'breadcrumb');
+						loadElement('header', 'messages');
 						echo $pagecontents;
 						if (ADMIN_LOGGED_IN && $editinplacename != '')
-							require('elements/'.$editinplacename.'_editinplacejs.php');
+							loadElement($editinplacename, 'editinplacejs');
 					?>
 				</div>
 				
 				<div id="menu-left">
 					<?php
-						require('elements/searchbox.php');
-						require('elements/categoriesbox.php');
-						require('elements/brandsbox.php');
-						require('elements/filtersbox.php');
+						loadElement('sidebox', 'search');
+						loadElement('sidebox', 'categories');
+						loadElement('sidebox', 'brands');
+						loadElement('sidebox', 'filters');
 						foreach ($sideboxes as $sidebox)
-							require('elements/sidebox_'.$sidebox['type'].'.php');
-						require('elements/amazonlogo.php');
+							loadElement('sidebox', $sidebox['type']);
+						loadElement('sidebox', 'amazonlogo');
 					?>
 				</div>
 					
@@ -79,8 +79,8 @@
 
 			<footer>
 				<?php
-					require('elements/securepayments.php');
-					require('elements/footerlinks.php');
+					loadElement('footer', 'securepayments');
+					loadElement('footer', 'links');
 				?>
 			</footer>
 			
@@ -91,7 +91,7 @@
 		if (isset($includescripts) && is_array($includescripts))
 			foreach ($includescripts as $script)
 				echo "<script type=\"text/javascript\" src=\"{$script}\"></script>";
-		require('elements/analytics.php');
+		loadElement('footer', 'analytics');
 	?>
 	</body>
 	
