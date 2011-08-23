@@ -7,6 +7,12 @@
 		if ($i % $break == 0) echo '<div class="clearall"></div>';
 	}
 	
+	// Loads a template file, right now it's just a require but in the future it will look to parent template(s) if necessary
+	function loadElement($type, $name)
+	{
+		require PATH_TEMPLATES.TEMPLATE_FOLDER."/elements/{$type}/{$type}_{$name}.php";
+	}
+	
 	// Logic to determine the product price
 	function displayProductPrice($product, $offer = array())
 	{

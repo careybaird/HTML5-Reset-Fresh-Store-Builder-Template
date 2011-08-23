@@ -1,5 +1,5 @@
 <?php
-	require('elements/category_images.php');
+	require('elements/category/category_images.php');
 ?>
 
 <h2 id="page-title" class="category-title"><?= $thiscategory['title'] ?></h2>
@@ -23,7 +23,7 @@
 	}
 	
 	if ($i == 0)
-		require('elements/productlisting_noproducts.php');
+		require('elements/productlisting/productlisting_noproducts.php');
 ?>
 
 <div id="category-descriptionbottom" class="category-description"><?= $thiscategory['descriptionbottom'] ?></div>

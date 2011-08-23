@@ -12,7 +12,7 @@
 	foreach ($products as $product)
 	{
 		$i++;
-		require('elements/productlisting/productlisting_product.php');
+		loadElement('productlisting', 'product');
 		clearAll($i);
 	}
 	
