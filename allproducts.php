@@ -12,7 +12,7 @@
 	foreach ($products as $product)
 	{
 		$i++;
-		loadElement('productlisting', 'product');
+		loadTemplateElement('productlisting', 'product');
 		clearAll($i);
 	}
 	

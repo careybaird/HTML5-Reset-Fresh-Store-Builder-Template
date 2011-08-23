@@ -17,34 +17,34 @@
 			window.siteurl = '<?= URL_SITE ?>';
 		</script>
 		<?php
-			loadElement('header', 'stylesheets');
-			loadElement('header', 'rss');
+			loadTemplateElement('header', 'stylesheets');
+			loadTemplateElement('header', 'rss');
 		?>
 	</head>
 	
 	<body<?= $body_onload ?>>
 		<?php
 			if (ADMIN_LOGGED_IN)
-				loadElement('adminstrip', $adminstripename);
+				loadTemplateElement('adminstrip', $adminstripename);
 		?>
 		
 		<div id="container">
 			<?php
 				if (ADMIN_LOGGED_IN)
-					loadElement($editinplacename, 'editinplaceoptions');
+					loadTemplateElement($editinplacename, 'editinplaceoptions');
 			?>
 			
 			<header id="header">
 				<div id="header-left">
 					<?php
-						loadElement('header', 'logo');
+						loadTemplateElement('header', 'logo');
 					?>
 				</div>
 				
 				<div id="header-right">
 					<?php
-						loadElement('header', 'navigation');
-						loadElement('header', 'cart');
+						loadTemplateElement('header', 'navigation');
+						loadTemplateElement('header', 'cart');
 					?>
 				</div>
 				
@@ -54,23 +54,23 @@
 			<div id="main">
 				<div id="content-right">
 					<?php
-						loadElement('header', 'breadcrumb');
-						loadElement('header', 'messages');
+						loadTemplateElement('header', 'breadcrumb');
+						loadTemplateElement('header', 'messages');
 						echo $pagecontents;
 						if (ADMIN_LOGGED_IN && $editinplacename != '')
-							loadElement($editinplacename, 'editinplacejs');
+							loadTemplateElement($editinplacename, 'editinplacejs');
 					?>
 				</div>
 				
 				<div id="menu-left">
 					<?php
-						loadElement('sidebox', 'search');
-						loadElement('sidebox', 'categories');
-						loadElement('sidebox', 'brands');
-						loadElement('sidebox', 'filters');
+						loadTemplateElement('sidebox', 'search');
+						loadTemplateElement('sidebox', 'categories');
+						loadTemplateElement('sidebox', 'brands');
+						loadTemplateElement('sidebox', 'filters');
 						foreach ($sideboxes as $sidebox)
-							loadElement('sidebox', $sidebox['type']);
-						loadElement('sidebox', 'amazonlogo');
+							loadTemplateElement('sidebox', $sidebox['type']);
+						loadTemplateElement('sidebox', 'amazonlogo');
 					?>
 				</div>
 					
@@ -79,8 +79,8 @@
 
 			<footer>
 				<?php
-					loadElement('footer', 'securepayments');
-					loadElement('footer', 'links');
+					loadTemplateElement('footer', 'securepayments');
+					loadTemplateElement('footer', 'links');
 				?>
 			</footer>
 			
@@ -91,7 +91,7 @@
 		if (isset($includescripts) && is_array($includescripts))
 			foreach ($includescripts as $script)
 				echo "<script type=\"text/javascript\" src=\"{$script}\"></script>";
-		loadElement('footer', 'analytics');
+		loadTemplateElement('footer', 'analytics');
 	?>
 	</body>
 	

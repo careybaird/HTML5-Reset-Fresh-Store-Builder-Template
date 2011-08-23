@@ -1,6 +1,6 @@
 <?php
 	define('IS_HOME', true);
-	require_once('elements/manufacturersbox.php');
+	loadTemplateElement('homepage', 'manufacturers');
 ?>
 
 <h2 id="page-title"><?= $page['title'] ?></h2>
@@ -8,5 +8,5 @@
 <div class="clearall"></div>
 
 <?php
-	require_once('elements/specialoffersbox.php');
-	require_once('elements/bestsellersbox.php');
+	loadTemplateElement('homepage', 'specialoffers');
+	loadTemplateElement('homepage', 'bestsellers');
