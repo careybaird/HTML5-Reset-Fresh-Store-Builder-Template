@@ -7,13 +7,11 @@
 	foreach ($products as $product)
 	{
 		$i++;
-		require('elements/productlisting_product.php');
+		require('elements/productlisting/productlisting_product.php');
 		clearAll($i);
 	}
 	
 	if ($i == 0)
-	{
-		require('elements/productlisting_noproducts.php');
-	}
+		require('elements/productlisting/productlisting_noproducts.php');
 ?>
-<br class="clearall" />
+<div class="clearall"></div>

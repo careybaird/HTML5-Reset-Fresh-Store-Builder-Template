@@ -23,9 +23,7 @@
 	}
 	
 	if ($i == 0)
-	{
 		require('elements/productlisting_noproducts.php');
-	}
 ?>
 
-<div id="category-descriptionbottom"><?= $thiscategory['descriptionbottom'] ?></div>
+<div id="category-descriptionbottom" class="category-description"><?= $thiscategory['descriptionbottom'] ?></div>

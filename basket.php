@@ -4,11 +4,11 @@
 
 <?php
 	if (!$amazon->cart || sizeof($amazon->cart['items']) == 0)
-		require('elements/cart_empty.php');
+		require('elements/cart/cart_empty.php');
 	else
 	{
-		require('elements/cart_products.php');
-		require('elements/cart_delivery.php');
-		require('elements/cart_checkoutlink.php');
+		require('elements/cart/cart_products.php');
+		require('elements/cart/cart_delivery.php');
+		require('elements/cart/cart_checkoutlink.php');
 	}
 ?>
