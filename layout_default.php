@@ -17,8 +17,8 @@
 			window.siteurl = '<?= URL_SITE ?>';
 		</script>
 		<?php
-			require('elements/stylesheets.php');
-			require('elements/rss.php');
+			loadElement('header', 'stylesheets');
+			loadElement('header', 'rss');
 		?>
 	</head>
 	
