@@ -14,7 +14,7 @@
 	foreach ($products as $product)
 	{
 		$i++;
-		loadTemplateElement('productlisting', 'product', array('i' => $i, 'product' => $product);
+		loadTemplateElement('productlisting', 'product', array('i' => $i, 'product' => $product));
 		clearAll($i);
 	}
 	
