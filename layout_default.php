@@ -64,7 +64,7 @@
 				
 				<div id="menu-left">
 					<?php
-						loadTemplateElement('sidebox', 'search', 'pages' => $pages);
+						loadTemplateElement('sidebox', 'search', array('pages' => $pages));
 						loadTemplateElement('sidebox', 'categories', array('leftmenucategories' => $leftmenucategories));
 						loadTemplateElement('sidebox', 'brands', array('leftmenumanufacturers' => $leftmenumanufacturers));
 						loadTemplateElement('sidebox', 'filters', array('sidebarfilters' => $sidebarfilters);
