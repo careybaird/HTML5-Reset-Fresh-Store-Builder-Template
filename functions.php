@@ -9,8 +9,14 @@
 	
 	// Loads a template file, right now it's just a require but in the future it will look to parent template(s) if necessary
 	// A similar function will need to be available for controllers to access the main template files
-	function loadTemplateElement($type, $name)
+	function loadTemplateElement($type, $name, $variables = array())
 	{
+		foreach ($variables as $key => $item)
+		{
+			# Defined here so they are in scope
+			$$key = $item;
+		}
+		
 		require PATH_TEMPLATES.TEMPLATE_FOLDER."/elements/{$type}/{$type}_{$name}.php";
 	}
 	

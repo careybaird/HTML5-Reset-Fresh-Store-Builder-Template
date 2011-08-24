@@ -1,4 +1,3 @@
-<?php global $product; ?>
 <div class="product product-listing-box"<?= ($i % 4 == 0 ? ' style="margin-right: 0;"' : '') ?>>
 	
 	<div class="product-listing-image product-image">
