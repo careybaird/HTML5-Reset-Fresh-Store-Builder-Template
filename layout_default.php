@@ -18,20 +18,20 @@
 		</script>
 		<?php
 			loadTemplateElement('header', 'stylesheets');
-			loadTemplateElement('header', 'rss');
+			loadTemplateElement('header', 'rss', array('pagetype' => $pagetype));
 		?>
 	</head>
 	
 	<body<?= $body_onload ?>>
 		<?php
 			if (ADMIN_LOGGED_IN)
-				loadTemplateElement('adminstripe', $adminstripename);
+				loadTemplateElement('adminstripe', $adminstripename, $editinplacevariables);
 		?>
 		
 		<div id="container">
 			<?php
 				if (ADMIN_LOGGED_IN)
-					loadTemplateElement($editinplacename, 'editinplaceoptions');
+					loadTemplateElement($editinplacename, 'editinplaceoptions', $editinplacevariables);
 			?>
 			
 			<header id="header">
@@ -44,7 +44,7 @@
 				<div id="header-right">
 					<?php
 						loadTemplateElement('header', 'navigation');
-						loadTemplateElement('header', 'cart');
+						loadTemplateElement('header', 'cart', array('pages' => $pages, 'amazon' => $amazon, 'showcheckoutbutton' => $showcheckoutbutton));
 					?>
 				</div>
 				
@@ -54,23 +54,23 @@
 			<div id="main">
 				<div id="content-right">
 					<?php
-						loadTemplateElement('header', 'breadcrumb');
+						loadTemplateElement('header', 'breadcrumb', array('breadcrumb' => $breadcrumb));
 						loadTemplateElement('header', 'messages');
 						echo $pagecontents;
 						if (ADMIN_LOGGED_IN && $editinplacename != '')
-							loadTemplateElement($editinplacename, 'editinplacejs');
+							loadTemplateElement($editinplacename, 'editinplacejs', $editinplacevariables);
 					?>
 				</div>
 				
 				<div id="menu-left">
 					<?php
-						loadTemplateElement('sidebox', 'search');
-						loadTemplateElement('sidebox', 'categories');
-						loadTemplateElement('sidebox', 'brands');
-						loadTemplateElement('sidebox', 'filters');
+						loadTemplateElement('sidebox', 'search', 'pages' => $pages);
+						loadTemplateElement('sidebox', 'categories', array('leftmenucategories' => $leftmenucategories));
+						loadTemplateElement('sidebox', 'brands', array('leftmenumanufacturers' => $leftmenumanufacturers));
+						loadTemplateElement('sidebox', 'filters', array('sidebarfilters' => $sidebarfilters);
 						foreach ($sideboxes as $sidebox)
-							loadTemplateElement('sidebox', $sidebox['type']);
-						loadTemplateElement('sidebox', 'amazonlogo');
+							loadTemplateElement('sidebox', $sidebox['type'], array('sidebox' => $sidebox);
+						loadTemplateElement('sidebox', 'amazonlogo', array('amazon' => $amazon));
 					?>
 				</div>
 					
@@ -91,7 +91,7 @@
 		if (isset($includescripts) && is_array($includescripts))
 			foreach ($includescripts as $script)
 				echo "<script type=\"text/javascript\" src=\"{$script}\"></script>";
-		loadTemplateElement('footer', 'analytics');
+		loadTemplateElement('footer', 'analytics', array('pagetype' => $pagetype, 'amazon' => $amazon));
 	?>
 	</body>
 	

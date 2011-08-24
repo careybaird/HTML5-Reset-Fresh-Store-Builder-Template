@@ -59,3 +59,14 @@
 		if ($offer && $offer['quantity'] > 0 && $offer['quantity'] < 5)
 			echo "<div class=\"product-lowstock\">Only {$offer['quantity']} left in stock - order now to avoid dissapointment.</div>";
 	}
+	
+	/* Template functions end here, general logic starts
+	   This should probably be moved to somewhere else */
+	
+	// Generate edit and place options, this will probably require refinement
+	if($product)
+		$editinplacevariables = array('product' => $product);
+	elseif($category)
+		$editinplacevariables = array('category' => $category);
+	else
+		$editinplacevariables = array();
