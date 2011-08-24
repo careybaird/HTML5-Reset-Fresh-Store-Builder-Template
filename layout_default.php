@@ -69,7 +69,7 @@
 						loadTemplateElement('sidebox', 'brands', array('leftmenumanufacturers' => $leftmenumanufacturers));
 						loadTemplateElement('sidebox', 'filters', array('sidebarfilters' => $sidebarfilters));
 						foreach ($sideboxes as $sidebox)
-							loadTemplateElement('sidebox', $sidebox['type'], array('sidebox' => $sidebox);
+							loadTemplateElement('sidebox', $sidebox['type'], array('sidebox' => $sidebox));
 						loadTemplateElement('sidebox', 'amazonlogo', array('amazon' => $amazon));
 					?>
 				</div>
