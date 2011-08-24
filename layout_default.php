@@ -67,7 +67,7 @@
 						loadTemplateElement('sidebox', 'search', array('pages' => $pages));
 						loadTemplateElement('sidebox', 'categories', array('leftmenucategories' => $leftmenucategories));
 						loadTemplateElement('sidebox', 'brands', array('leftmenumanufacturers' => $leftmenumanufacturers));
-						loadTemplateElement('sidebox', 'filters', array('sidebarfilters' => $sidebarfilters);
+						loadTemplateElement('sidebox', 'filters', array('sidebarfilters' => $sidebarfilters));
 						foreach ($sideboxes as $sidebox)
 							loadTemplateElement('sidebox', $sidebox['type'], array('sidebox' => $sidebox);
 						loadTemplateElement('sidebox', 'amazonlogo', array('amazon' => $amazon));
