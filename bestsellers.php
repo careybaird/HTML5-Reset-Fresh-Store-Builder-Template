@@ -7,11 +7,11 @@
 	foreach ($products as $product)
 	{
 		$i++;
-		require('elements/productlisting/productlisting_product.php');
+		loadTemplateElement('productlisting', 'product', array('i' => $i, 'product' => $product));
 		clearAll($i);
 	}
 	
 	if ($i == 0)
-		require('elements/productlisting/productlisting_noproducts.php');
+		loadTemplateElement('productlisting', 'noproducts');
 ?>
 <div class="clearall"></div>

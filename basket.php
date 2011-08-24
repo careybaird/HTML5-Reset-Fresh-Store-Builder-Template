@@ -7,8 +7,8 @@
 		loadTemplateElement('cart', 'empty');
 	else
 	{
-		loadTemplateElement('cart', 'products');
-		loadTemplateElement('cart', 'delivery');
+		loadTemplateElement('cart', 'products', array('freedelivery' => $freedelivery, 'basketitems' => $basketitems));
+		loadTemplateElement('cart', 'delivery', array('freedelivery' => $freedelivery, 'supersavercount' => $supersavercount));
 		loadTemplateElement('cart', 'checkoutlink');
 	}
 ?>

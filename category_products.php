@@ -1,6 +1,6 @@
 <?php
-	loadTemplateElement('productlisting', 'filteroptions');
-	loadTemplateElement('category', 'images');
+	loadTemplateElement('productlisting', 'filteroptions', array('currentproductfilters' => $currentproductfilters));
+	loadTemplateElement('category', 'images', array('categoryimages' => $categoryimages));
 ?>
 
 <h2 id="page-title" class="category-title"><?= $thiscategory['title'] ?></h2>
@@ -8,14 +8,16 @@
 <div class="clearall"></div>
 
 <?php
-	loadTemplateElement('productlisting', 'options');
-	loadTemplateElement('productlisting', 'previousnext');
+	loadTemplateElement('productlisting', 'options', array('pagination' => $pagination));
+	loadTemplateElement('productlisting', 'previousnext', array('pagination' => $pagination));
+?>
 
+<?php
 	$i = 0;
 	foreach ($products as $product)
 	{
 		$i++;
-		loadTemplateElement('productlisting', 'product');
+		loadTemplateElement('productlisting', 'product', array('i' => $i, 'product' => $product));
 		clearAll($i);
 	}
 	
@@ -24,6 +26,6 @@
 ?>
 <div class="clearall"></div>
 
-<?php loadTemplateElement('productlisting', 'previousnext'); ?>
+<?php loadTemplateElement('productlisting', 'previousnext', array('pagination' => $pagination)); ?>
 
 <div id="page-bottomtext" class="category-description"><?= $thiscategory['descriptionbottom'] ?></div>
