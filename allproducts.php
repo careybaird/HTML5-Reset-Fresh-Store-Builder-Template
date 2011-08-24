@@ -1,4 +1,4 @@
-<?php loadTemplateElement('productlisting', 'filteroptions', array('currentproductfilters' => $currentproductfilters); ?>
+<?php loadTemplateElement('productlisting', 'filteroptions', array('currentproductfilters' => $currentproductfilters)); ?>
 
 <h2 id="page-title"><?= $page['title'] ?></h2>
 <div id="page-maintext"><?= $page['description'] ?></div>
