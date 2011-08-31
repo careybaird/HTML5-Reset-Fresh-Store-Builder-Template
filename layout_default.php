@@ -30,7 +30,7 @@
 		
 		<div id="container">
 			<?php
-				if (ADMIN_LOGGED_IN)
+				if (ADMIN_LOGGED_IN && $editinplacename != '')
 					loadTemplateElement($editinplacename, 'editinplaceoptions', $editinplacevariables);
 			?>
 			

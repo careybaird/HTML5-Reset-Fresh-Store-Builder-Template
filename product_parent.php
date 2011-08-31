@@ -4,14 +4,14 @@
 	<div class="clearall"></div>
 
 	<?php
-		require_once('elements/product_pricebox.php');
-		require_once('elements/product_imagebox.php');
-		require_once('elements/product_descriptionbox.php');
-		require_once('elements/product_azdescriptionbox.php');
-		require_once('elements/product_reviewbox.php');
-		require_once('elements/product_attributesbox.php');
-		require_once('elements/product_secondarydescriptionbox.php');
-		require_once('elements/product_manufacturerbox.php');
+		loadTemplateElement('product', 'pricebox', array('product' => $product, 'offer' => $offer));
+		loadTemplateElement('product', 'imagebox', array('product' => $product, 'mainimage' => $mainimage));
+		loadTemplateElement('product', 'descriptionbox', array('product' => $product));
+		loadTemplateElement('product', 'azdescriptionbox', array('amazondescription' => $amazondescription));
+		loadTemplateElement('product', 'reviewbox', array('product' => $product));
+		loadTemplateElement('product', 'attributesbox', array('attributes' => $attributes));
+		loadTemplateElement('product', 'secondarydescriptionbox', array('product' => $product));
+		loadTemplateElement('product', 'manufacturerbox', array('manufacturer' => $manufacturer));
 	?>
 	
 </div>

@@ -24,24 +24,22 @@
 	
 	<body<?= $body_onload ?> id="checkout">
 		<?php
-			if (ADMIN_LOGGED_IN && file_exists(PATH_TEMPLATES.TEMPLATE_FOLDER.'/elements/admin_stripe_'.$adminstripename.'.php'))
-			{
-				require('elements/admin_stripe_'.$adminstripename.'.php');
-			}
+			if (ADMIN_LOGGED_IN)
+				loadTemplateElement('adminstripe', $adminstripename, $editinplacevariables);
 		?>
 		<div id="content">
 
 			<?php
 				if (ADMIN_LOGGED_IN)
-					require('elements/'.$editinplacename.'_editinplaceoptions.php');
+					loadTemplateElement($editinplacename, 'editinplaceoptions', $editinplacevariables);
 			?>
 				
 			<div id="main">
 				<?php
-					require('elements/messages.php');
+					loadTemplateElement('header', 'messages');
 				 	echo $pagecontents;
 					if (ADMIN_LOGGED_IN && $editinplacename != '')
-						require('elements/'.$editinplacename.'_editinplacejs.php');
+						loadTemplateElement($editinplacename, 'editinplacejs', $editinplacevariables);
 				?>
 			</div>
 				

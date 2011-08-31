@@ -40,4 +40,4 @@
 	?>
 </ul>
 
-<?php require('elements/page_previousnext.php') ?>   
+<?php loadTemplateElement('page', 'previousnext', array('pagination' => $pagination)); ?>

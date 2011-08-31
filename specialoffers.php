@@ -2,16 +2,17 @@
 <div id="page-maintext"><?= $page['description'] ?></div>
 <div class="clearall"></div>
 
-<?php
-	$i=0;
-	foreach ($products as $product)
-	{
-		$i++;
-		require('elements/productlisting_product.php');
-		clearAll($i);
-	}
+<div class="product-listing">
+	<?php
+		$i = 0;
+		foreach ($products as $product)
+		{
+			$i++;
+			loadTemplateElement('productlisting', 'product', array('i' => $i, 'product' => $product));
+			clearAll($i);
+		}
 	
-	if ($i == 0)
-	{
-		require('elements/productlisting_noproducts.php');
-	}
+		if ($i == 0)
+			loadTemplateElement('productlisting', 'noproducts');
+	?>
+</div>

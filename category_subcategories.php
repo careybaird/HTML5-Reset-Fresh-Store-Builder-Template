@@ -6,17 +6,19 @@
 <div id="page-maintext" class="category-description"><?= $thiscategory['description'] ?></div>
 <div class="clearall"></div>
 
-<?php
-	$i = 0;
-	foreach ($subcategories as $subcategory)
-	{
-		$i++;
-		loadTemplateElement('categorylisting', 'category');
-		clearAll($i, CATEGORYLISTING_ROW_COUNT);
-	}
+<div class="category-listing">
+	<?php
+		$i = 0;
+		foreach ($subcategories as $subcategory)
+		{
+			$i++;
+			loadTemplateElement('categorylisting', 'category');
+			clearAll($i, CATEGORYLISTING_ROW_COUNT);
+		}
 	
-	if ($i == 0)
-		loadTemplateElement('categorylisting', 'nocategories');
-?>
+		if ($i == 0)
+			loadTemplateElement('categorylisting', 'nocategories');
+	?>
+</div>
 
 <div id="category-descriptionbottom" class="category-description"><?= $thiscategory['descriptionbottom'] ?></div>

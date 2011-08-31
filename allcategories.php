@@ -2,15 +2,17 @@
 <div id="page-maintext"><?= $page['maintext'] ?></div>
 <div class="clearall"></div>
 
-<ul class="categories-list">
+<div class="category-listing">
 	<?php
+		$i = 0;
 		foreach ($categories as $category)
 		{
-			?>
-			<li class="categories-item categories-item-<?= $category['level'] ?>">
-				<a href="<?= URL_SITE ?><?= $category['pagename'] ?>/" class="category-link"><?= $category['linktitle'] ?></a>
-			</li>
-			<?php
+			$i++;
+			loadTemplateElement('categorylisting', 'category');
+			clearAll($i, CATEGORYLISTING_ROW_COUNT);
 		}
+		
+		if ($i == 0)
+			loadTemplateElement('categorylisting', 'nocategories');
 	?>
-</ul>
+</div>

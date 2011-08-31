@@ -16,5 +16,4 @@
 	{
 		new Ajax.Request('/ajax/product_removefromcategory.php?product_id='+product_id+'&category_id='+category_id,{method:'get',onLoading:function(){ element.src = '/icons/common_loading.gif'; },onComplete:function(){ element.src = '/icons/admin_success.png'; }});
 	}
-	
 </script>

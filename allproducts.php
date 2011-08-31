@@ -9,19 +9,21 @@
 	loadTemplateElement('productlisting', 'previousnext', array('pagination' => $pagination));
 ?>
 
-<?php
-	$i = 0;
-	foreach ($products as $product)
-	{
-		$i++;
-		loadTemplateElement('productlisting', 'product', array('i' => $i, 'product' => $product));
-		clearAll($i);
-	}
+<div class="product-listing">
+	<?php
+		$i = 0;
+		foreach ($products as $product)
+		{
+			$i++;
+			loadTemplateElement('productlisting', 'product', array('i' => $i, 'product' => $product));
+			clearAll($i);
+		}
 	
-	if ($i == 0)
-		loadTemplateElement('productlisting', 'noproducts');
-?>
-<div class="clearall"></div>
+		if ($i == 0)
+			loadTemplateElement('productlisting', 'noproducts');
+	?>
+	<div class="clearall"></div>
+</div>
 
 <?php loadTemplateElement('productlisting', 'previousnext', array('pagination' => $pagination)); ?>
 
