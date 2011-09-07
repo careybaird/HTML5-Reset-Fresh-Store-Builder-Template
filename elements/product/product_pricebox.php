@@ -11,14 +11,14 @@
 		?>
 		<span class="product-price">
 			<?php
-				displayProductPrice($product, $offer);
+				echo getProductPrice($product, $offer);
 			?>
 		</span>
 	</div>
 
 	<div class="product-availability-detail">
 		<?php
-			displayProductAvailability($product, $offer);
+			echo getProductAvailability($product, $offer);
 		?>
 	</div>
 	

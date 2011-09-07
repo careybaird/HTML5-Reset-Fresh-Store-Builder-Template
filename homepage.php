@@ -1,6 +1,6 @@
 <?php
 	define('IS_HOME', true);
-	loadTemplateElement('homepage', 'manufacturers');
+	loadTemplateElement('homepage', 'manufacturers', array('manufacturers' => $manufacturers));
 ?>
 
 <h2 id="page-title"><?= $page['title'] ?></h2>
@@ -8,5 +8,5 @@
 <div class="clearall"></div>
 
 <?php
-	loadTemplateElement('homepage', 'specialoffers');
-	loadTemplateElement('homepage', 'bestsellers');
+	loadTemplateElement('homepage', 'specialoffers', array('reducedproducts' => $reducedproducts));
+	loadTemplateElement('homepage', 'bestsellers', array('topproducts' => $topproducts));

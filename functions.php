@@ -21,7 +21,7 @@
 	}
 	
 	// Logic to determine the product price
-	function displayProductPrice($product, $offer = array())
+	function getProductPrice($product, $offer = array())
 	{
 		if ($offer && $offer['price'] > 0)
 			return $offer['priceformatted'];
@@ -34,7 +34,7 @@
 	}
 	
 	// Logic to determine a products availability
-	function displayProductAvailability($product, $offer = array())
+	function getProductAvailability($product, $offer = array())
 	{
 		if ($offer && $offer['price'] == 0)
 			echo '<p><small><strong>Why is the price not displayed here?</strong><br />The price is lower than the manufacturers "minimum advertised price" and we are legally not allowed to display it until it is requested. To request the price, simply click add to shopping cart below.</small></p>';	
