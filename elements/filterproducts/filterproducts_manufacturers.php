@@ -1,8 +1,8 @@
 <div class="filter-form-attribute filter-form-manufacturers">
-	<div class="filter-form-title">Manufacturer:</div>
+	<div class="filter-form-title"><?=gTT('MAIN_FILTER_MANUFACTURER')?></div>
 	<div class="filter-form-field">
 		<select name="filtermanufacturer">
-			<option value="-1">Any</option>
+			<option value="-1"><?=gTT('MAIN_FILTER_ANY')?></option>
 			<?php
 				$filtermanufacturers = $item;
 				foreach ($filtermanufacturers as $key => $item)

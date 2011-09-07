@@ -25,7 +25,7 @@
 				{
 					?>
 					<select name="<?= $item['originalname'] ?>">
-						<option value="-1">Any</option>
+						<option value="-1"><?=gTT('MAIN_FILTER_ANY')?></option>
 						<?php
 						foreach ($item['values'] as $valuekey => $valueitem)
 						{
@@ -41,7 +41,7 @@
 				{
 					?>
 					<select name="<?= $item['originalname'] ?>">
-						<option value="-1">Any</option>
+						<option value="-1"><?=gTT('MAIN_FILTER_ANY')?></option>
 						<?php
 						foreach ($item['values'] as $valuekey => $valueitem)
 						{

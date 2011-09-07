@@ -1,12 +1,11 @@
 <div class="cart">
-	<a href="<?= URL_SITE ?><?= $pages['basket']['pagename'] ?>/" rel="nofollow" class="view_cart">
-		View Cart</a>
-	<p><?= ($amazon->cart ? ($amazon->cart['totalquantity'] == 1 ? '1 item' : $amazon->cart['totalquantity'].' items') : '0 items') ?> - <?= formatProductPrice($amazon->cart['subtotal']) ?></p>
+	<a href="<?= URL_SITE ?><?= $pages['basket']['pagename'] ?>/" rel="nofollow" class="view_cart"><?=gTT('HEAD_VIEW_CART')?></a>
+	<p><?= ($amazon->cart ? ($amazon->cart['totalquantity'] == 1 ? '1 '.gTT('HEAD_ITEM') : $amazon->cart['totalquantity'].gTT('HEAD_ITEMS')) : '0 '.gTT('HEAD_ITEMS')) ?> - <?= formatProductPrice($amazon->cart['subtotal']) ?></p>
 	<?php
 		if ($amazon->cart && $amazon->cart['totalquantity'] > 0 && $showcheckoutbutton)
 		{
 			?>
-			<a href="<?= URL_SITE ?><?= $pages['checkout']['pagename'] ?>/" rel="nofollow" class="check_out">Checkout</a>
+			<a href="<?= URL_SITE ?><?= $pages['checkout']['pagename'] ?>/" rel="nofollow" class="check_out"><?=gTT('HEAD_CHECKOUT')?></a>
 			<?php
 		}
 	?>
