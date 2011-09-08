@@ -13,7 +13,7 @@
 					clearAll($i);
 				}
 			?>
-			<div class="viewall">View all <a rel="nofollow" href="<?= $pages['specialoffers']['pagename'] ?>/">Special Offers</a></div>
+			<div class="viewall"><?=gTT('HOME_VIEW_ALL')?> <a rel="nofollow" href="<?= $pages['specialoffers']['pagename'] ?>/"><?= $pages['specialoffers']['linktitle'] ?></a></div>
 		</div>
 		<?php
 	}

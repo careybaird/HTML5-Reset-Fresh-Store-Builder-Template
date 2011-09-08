@@ -16,8 +16,8 @@
 						$i++;
 					}
 					?>
-					<span class="filter-form-checkbox-reset">
-						<a href="#" onclick="unCheck($('filterform'), '<?= $item['originalname'] ?>'); return false;">Reset</a>
+					<span class="filter-form-checkbox-<?=gTT('FILTEROPTIONS_RESET')?>">
+						<a href="#" onclick="unCheck($('filterform'), '<?= $item['originalname'] ?>'); return false;"><?=gTT('FILTEROPTIONS_RESET')?></a>
 					</span>
 					<?php
 				}
@@ -25,7 +25,7 @@
 				{
 					?>
 					<select name="<?= $item['originalname'] ?>">
-						<option value="-1"><?=gTT('MAIN_FILTER_ANY')?></option>
+						<option value="-1"><?=gTT('FILTEROPTIONS_ANY')?></option>
 						<?php
 						foreach ($item['values'] as $valuekey => $valueitem)
 						{
@@ -41,12 +41,12 @@
 				{
 					?>
 					<select name="<?= $item['originalname'] ?>">
-						<option value="-1"><?=gTT('MAIN_FILTER_ANY')?></option>
+						<option value="-1"><?=gTT('FILTEROPTIONS_ANY')?></option>
 						<?php
 						foreach ($item['values'] as $valuekey => $valueitem)
 						{
 							?>
-							<option value="<?= $valueitem['value'] ?>"<?= $_SESSION['productfilters'][$item['originalname']] == $valueitem['value'] ? ' selected' : '' ?> ><?= $valueitem['value'] == '1' ? 'Yes' : 'No' ?></option>
+							<option value="<?= $valueitem['value'] ?>"<?= $_SESSION['productfilters'][$item['originalname']] == $valueitem['value'] ? ' selected' : '' ?> ><?= $valueitem['value'] == '1' ? gTT('FILTEROPTIONS_YES') : gTT('FILTEROPTIONS_NO') ?></option>
 							<?php
 						}
 						?>

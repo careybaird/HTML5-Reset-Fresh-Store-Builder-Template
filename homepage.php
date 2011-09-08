@@ -1,5 +1,5 @@
 <?php
-	define('IS_HOME', true);
+	define('IS_HOME', true); # This will need to be removed, I forgot what I added it for
 	loadTemplateElement('homepage', 'manufacturers', array('manufacturers' => $manufacturers));
 ?>
 

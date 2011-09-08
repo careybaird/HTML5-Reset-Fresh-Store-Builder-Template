@@ -1,10 +1,10 @@
 <div id="basket-delivery-information">
 	<?php
 		if ($freedelivery)
-			echo 'Shipped with <strong>free Super Saver Shipping</strong>';
+			echo gTT('BASKET_SHIPPINGTEXT_FREE');
 		else if ($supersavercount > 0)
-			echo sprintf('Super Saver Shipping limit: %d', formatProductPrice($amazon->supersavershippinglimit, false));
+			echo sprintf(gTT('BASKET_SHIPPINGTEXT_PARTSUPERSAVER'), formatProductPrice($amazon->supersavershippinglimit, false));
 		else
-			echo 'No Super Saver Shipping';
+			echo gTT('BASKET_SHIPPINGTEXT_NOSUPERSAVER');
 	?>
 </div>

@@ -14,5 +14,5 @@
 				loadTemplateElement('filterproducts', 'general');
 		}
 	?>
-	<input type="submit" value="<?=gTT('MAIN_FILTER_BUTTON')?>" id="filter-form-submit" />
+	<input type="submit" value="<?=gTT('FILTEROPTIONS_BUTTON')?>" id="filter-form-submit" />
 </form>

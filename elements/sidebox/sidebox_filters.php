@@ -3,7 +3,7 @@
 	{
 		?>
 			<div class="menu-left-header">
-				<h4>Filter Options - <a href="<?= URL_SITE ?><?= $pages['filterproducts']['pagename'] ?>/">More</a></h4>
+				<h4><?=gTT('FILTEROPTIONS_TITLE')?> - <a href="<?= URL_SITE ?><?= $pages['filterproducts']['pagename'] ?>/"><?=gTT('FILTEROPTIONS_MORE')?></a></h4>
 			</div>
 		
 			<div class="menu-left-contents">
@@ -16,10 +16,10 @@
 					{
 						?>
 							<div class="sidefilteroption">
-							<label for="side-filterprice"><strong>Price:</strong></label>
+							<label for="side-filterprice"><strong><?=gTT('FILTEROPTIONS_PRICE')?>:</strong></label>
 							
 							<select name="filterprice" id="side-filterprice">
-								<option value="-1">Any</option>
+								<option value="-1"><?=gTT('FILTEROPTIONS_ANY')?></option>
 								<?php
 									$filterprices = $item;
 									foreach ($filterprices as $key => $item)
@@ -39,10 +39,10 @@
 					{
 						?>
 							<div class="sidefilteroption">
-							<label for="side-filtermanufacturer"><strong>Manufacturer:</strong></label>
+							<label for="side-filtermanufacturer"><strong><?=gTT('FILTEROPTIONS_MANUFACTURER')?>:</strong></label>
 
 							<select name="filtermanufacturer" id="side-filtermanufacturer">
-								<option value="-1">Any</option>
+								<option value="-1"><?=gTT('FILTEROPTIONS_ANY')?></option>
 								<?php
 									$filtermanufacturers = $item;
 									foreach ($filtermanufacturers as $key => $item)
@@ -66,7 +66,7 @@
 									if ($item['valuetype'] == 'checkbox')
 									{
 										?>
-										<strong><?= $item['displayname'] ?></strong> - <a href="#" onclick="unCheck($('sidefilterform'), '<?= $item['originalname'] ?>'); return false;">Reset</a><br />
+										<strong><?= $item['displayname'] ?></strong> - <a href="#" onclick="unCheck($('sidefilterform'), '<?= $item['originalname'] ?>'); return false;"><?=gTT('FILTEROPTIONS_RESET')?></a><br />
 										<?php
 									
 										$i = 0;
@@ -88,7 +88,7 @@
 										?>
 										<label for="side-<?= $item['originalname'] ?>"><strong><?= $item['displayname'] ?></strong></label>
 										<select name="<?= $item['originalname'] ?>" id="side-<?= $item['originalname'] ?>">
-											<option value="-1">Any</option>
+											<option value="-1"><?=gTT('FILTEROPTIONS_ANY')?></option>
 											<?php
 											foreach ($item['values'] as $valuekey => $valueitem)
 											{
@@ -105,12 +105,12 @@
 										?>
 										<label for="side-<?= $item['originalname'] ?>"><strong><?= $item['displayname'] ?></strong></label>
 										<select name="<?= $item['originalname'] ?>" id="side-<?= $item['originalname'] ?>">
-											<option value="-1">Any</option>
+											<option value="-1"><?=gTT('FILTEROPTIONS_ANY')?></option>
 											<?php
 											foreach ($item['values'] as $valuekey => $valueitem)
 											{
 												?>
-												<option value="<?= $valueitem['value'] ?>"<?= $_SESSION['productfilters'][$item['originalname']] == $valueitem['value'] ? ' selected' : '' ?> ><?= $valueitem['value'] == '1' ? 'Yes' : 'No' ?></option>
+												<option value="<?= $valueitem['value'] ?>"<?= $_SESSION['productfilters'][$item['originalname']] == $valueitem['value'] ? ' selected' : '' ?> ><?= $valueitem['value'] == '1' ? gTT('FILTEROPTIONS_YES') : gTT('FILTEROPTIONS_NO') ?></option>
 												<?php
 											}
 											?>
@@ -131,7 +131,7 @@
 						if ($_SESSION['productfilters'])
 						{
 							?>
-								<br /><br /><a href="<?= URL_SITE ?><?= $pages['filterproducts']['pagename'] ?>/cancel/"><img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/icons/delete.png" />Remove Filters</a>
+								<br /><br /><a href="<?= URL_SITE ?><?= $pages['filterproducts']['pagename'] ?>/cancel/"><img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/icons/delete.png" /><?=gTT('FILTEROPTIONS_REMOVE')?></a>
 							<?php
 						}
 					?>
