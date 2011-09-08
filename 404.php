@@ -1,4 +1,4 @@
-<h2 id="page-title">This Page Could Not Be Found</h2>
+<h2 id="page-title"><?=gTT('404_TITLE')?></h2>
 <div id="page-maintext">
 	<p>Unfortunately we could not find the page you are looking for. Either this page no longer exists or you have followed a bad link.</p>
 

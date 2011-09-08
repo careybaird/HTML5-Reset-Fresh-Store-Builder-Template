@@ -30,9 +30,9 @@
 			{
 				?>
 					<span class="product-availability">
-						<span class="value-title" title="In stock">In Stock</span><br />
+						<span class="value-title" title="In stock"><?=gTT('PRODUCT_STOCK_IN')?></span><br />
 						<a href="<?= URL_SITE ?>basket/add/<?= $product['id'] ?>/<?= $offer['id'] ?>/" rel="nofollow">
-							<?= ($offer['ispreorder'])? 'Preorder' : 'Add to basket'; ?>
+							<?= ($offer['ispreorder'])? gTT('PRODUCT_BUY_PREORDER') : gTT('PRODUCT_BUY'); ?>
 						</a>
 					</span>
 				<?php
@@ -41,8 +41,9 @@
 			{
 				?>
 					<span class="product-availability">
-						<span class="value-title" title="Out of Stock">Out of Stock</span><br /><br />
-						<span class="product-outofstock">Discontinued</span> - Unfortunately this product has been discontinued and we will not be receiving any more stock. <a href="<?= URL_SITE ?>buy-amazon/<?= $product['id'] ?>/3/">Click here for alternative products</a>.
+						<span class="value-title" title="<?=gTT('PRODUCT_STOCK_OUT')?>"><?=gTT('PRODUCT_STOCK_OUT')?></span><br /><br />
+						<span class="product-outofstock"><?=gTT('PRODUCT_STOCK_DISC')?></span>
+						<?=sprintf(gTT('PRODUCT_STOCK_FINDMORE'), URL_SITE, $product['id'])?>
 					</span>
 				<?php
 			}
@@ -50,7 +51,7 @@
 			{
 				?>
 					<span class="product-availability">
-						<span class="value-title outofstock" title="Out of Stock">Out of Stock</span> - stock arriving soon
+						<span class="value-title outofstock" title="<?=gTT('PRODUCT_STOCK_OUT')?>"><?=gTT('PRODUCT_STOCK_OUT')?></span><?=gTT('PRODUCT_STOCK_ARRIVE')?>
 					</span>
 				<?php
 			}
@@ -61,7 +62,7 @@
 			?>
 				<br /><br />
 				<a href="<?= URL_SITE ?>buy-amazon/<?= $product['id'] ?>/<?= $product['expired'] ? '3' : '2' ?>/" rel="nofollow" class="product-amazon-link">
-					Buy at Amazon
+					<?=gTT('PRODUCT_BUY_AMAZON')?>
 				</a>
 			<?php
 		}
