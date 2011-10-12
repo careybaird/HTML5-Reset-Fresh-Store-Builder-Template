@@ -112,4 +112,12 @@
 	# Miscellaneous
 	$tt['PAGE'] = 'page';
 	$tt['OF'] = 'of';
+	$tt['CONTROL PANEL'] = 'Control Panel';
+	$tt['LOG_OUT'] = 'Log Out';
+	$tt['MY_ACCOUNT'] = 'My Account';
+	$tt['GUIDES'] = 'Guides';
+	$tt['TOOLS'] = 'Tools';
+	$tt['EXTRAS'] = 'Extras';
+	$tt['FORUM'] = 'Forum';
+	$tt['SUPPORT'] = 'Support';
 ?>
