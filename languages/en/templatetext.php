@@ -91,6 +91,24 @@
 	$tt['SITEMAP_CATEGORIES'] = 'Shop Categories';
 	$tt['SITEMAP_PRODUCTS'] = 'Products';
 	
+	# Admin stripe
+	$tt['ADMIN_STRIPE_QUICK_EDIT'] = 'Show Quick Edit Options';
+	$tt['ADMIN_STRIPE_EDIT'] = 'Edit';
+	$tt['ADMIN_STRIPE_EDIT_IMAGES'] = 'Edit Images';
+	$tt['ADMIN_STRIPE_EDIT_MANUFACTURER'] = 'Edit Manufacturer';
+	$tt['ADMIN_STRIPE_LIST_PRODUCTS'] = 'List Products in Admin';
+	$tt['ADMIN_STRIPE_LIST_CATEGORIES'] = 'List Categories in Admin';
+	$tt['ADMIN_STRIPE_LIST_MANUFACTURERS'] = 'List Manufacturers in Admin';
+	$tt['ADMIN_STRIPE_LIST_PAGES'] = 'List Pages in Admin';
+	$tt['ADMIN_STRIPE_AUTOPOPULATE'] = 'Auto Populate Settings';
+	$tt['ADMIN_STRIPE_RUN_AUTOPOPULATE'] = 'Manually Run Auto Populate';
+	$tt['ADMIN_STRIPE_GENERATE_CONTENT'] = 'Generate Content';
+	$tt['ADMIN_STRIPE_UPDATE'] = 'Update';
+	$tt['ADMIN_STRIPE_AMAZON'] = 'View on Amazon';
+	$tt['ADMIN_STRIPE_PRODUCT_STATUS'] = 'Change Product Status';
+	$tt['ADMIN_STRIPE_HIDE'] = 'Hide';
+	$tt['ADMIN_STRIPE_DELETE'] = 'Delete';
+	
 	# Miscellaneous
 	$tt['PAGE'] = 'page';
 	$tt['OF'] = 'of';
