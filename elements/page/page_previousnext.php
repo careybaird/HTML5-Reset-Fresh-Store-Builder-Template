@@ -8,7 +8,7 @@
 				if ($pagination['currentpage'] <> 1)
 				{
 					?>
-						<a href="<?= buildListingLink($pagination['baselink'], $pagination['currentpage']-1, $pagination['currentsort'], key($pagination['sortoptions']), $pagination['currentperpage'], $defaultperpage) ?>">&lsaquo; Previous</a>
+						<a href="<?= buildListingLink($pagination['baselink'], $pagination['currentpage']-1, $pagination['currentsort'], key($pagination['sortoptions']), $pagination['currentperpage'], $defaultperpage) ?>"><?=gTT('PREVIOUS')?></a>
 					<?php
 				}
 				else
@@ -25,7 +25,7 @@
 				if ($pagination['currentpage'] <> $pagination['pages'])
 				{
 					?>
-						<a href="<?= buildListingLink($pagination['baselink'], $pagination['currentpage']+1, $pagination['currentsort'], key($pagination['sortoptions']), $pagination['currentperpage'], $defaultperpage) ?>">Next &rsaquo;</a>
+						<a href="<?= buildListingLink($pagination['baselink'], $pagination['currentpage']+1, $pagination['currentsort'], key($pagination['sortoptions']), $pagination['currentperpage'], $defaultperpage) ?>"><?=gTT('NEXT')?></a>
 					<?php
 				}
 				else
@@ -37,7 +37,7 @@
 				?>
 			</div>
 			
-			<p><em><?= 1 + (($pagination['currentpage'] - 1) * $pagination['currentperpage']) ?> to <?= ($pagination['currentpage'] == $pagination['pages'] ? $pagination['quantity'] : $pagination['currentpage'] * $pagination['currentperpage']) ?> of <?=  $pagination['quantity'] ?> pages</em></p>
+			<p><em><?= 1 + (($pagination['currentpage'] - 1) * $pagination['currentperpage']) ?> <?=gTT('TO')?> <?= ($pagination['currentpage'] == $pagination['pages'] ? $pagination['quantity'] : $pagination['currentpage'] * $pagination['currentperpage']) ?> <?=gTT('OF')?> <?=  $pagination['quantity'] ?> <?=gTT('PAGES')?></em></p>
 			
 			<br class="clearall" />
 		</div>

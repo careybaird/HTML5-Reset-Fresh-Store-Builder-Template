@@ -3,7 +3,7 @@
 	{
 		?>
 			<div class="product-manufacturer">
-				View our full range of <a href="<?= URL_SITE.$manufacturer['pagename'] ?>/"><?= $manufacturer['name'] ?></a>
+				<?=sprintf(gTT('PRODUCT_MANUFACTURER_LINK'), "<a href=\"".URL_SITE.$manufacturer['pagename']."/\">{$manufacturer['name']}</a>")?>
 			</div>
 		<?php
 	}

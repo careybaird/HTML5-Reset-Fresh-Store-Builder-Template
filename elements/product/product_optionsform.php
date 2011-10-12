@@ -12,7 +12,7 @@
 		<p>
 			<label id="productoptionlabel_<?= $i ?>"><?= $item['displayname'] ?></label>
 			<select id="productoption_<?= $i ?>" name="<?= $item['name'] ?>" onchange="populateOptions(<?= $product_id ?>, <?= $i ?>);"<?= ($i==0 ? '' : ' disabled') ?>>
-				<option value="0">-- Choose <?= $item['displayname'] ?>--</option>
+				<option value="0"><?=sprintf(gTT('PRODUCT_OPTION_CHOOSE'), $item['displayname'])?></option>
 				<?php
 					if ($i == 0)
 					{
@@ -32,5 +32,5 @@
 ?>
 
 <div id="product-option-offer">
-	<p><em>Please choose from the options above to see price and availability.</em></p>
+	<p><em><?=gTT('PRODUCT_OPTION_DESCRIPTION')?></em></p>
 </div>

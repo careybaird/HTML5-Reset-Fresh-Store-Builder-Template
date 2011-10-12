@@ -2,7 +2,7 @@
 	if (sizeof($product['keyfeatures']) > 0 && $product['keyfeatures'][0] != '')
 	{
 		?>
-			<h3 class="product-features-title product-subtitle">Product Features</h3>
+			<h3 class="product-features-title product-subtitle"><?=gTT('PRODUCT_FEATURES')?></h3>
 		
 			<ul class="product-list product-features">
 				<?php

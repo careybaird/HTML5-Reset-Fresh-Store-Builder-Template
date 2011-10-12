@@ -11,7 +11,14 @@
 	$tt['HEAD_VIEW_CART'] = 'View Your Cart';
 	$tt['HEAD_ITEM'] = 'Item';
 	$tt['HEAD_ITEMS'] = 'Items';
-	$tt['FOOTER_COPYRIGHT'] = 'Copyright &copy; %s. All rights reserved.';
+	$tt['HEAD_RSS_CATEGORY'] = '%s Products in category %s';
+	$tt['HEAD_RSS_PRODUCTS'] = '%s Products';
+	$tt['HEAD_RSS_SPECIAL_OFFERS'] = '%s Special Offers';
+	$tt['FOOT_COPYRIGHT'] = 'Copyright &copy; %s. All rights reserved.';
+	$tt['FOOT_TERMS_OF_USE'] = 'Terms of Use';
+	$tt['FOOT_PRIVACY_POLICY'] = 'Privacy Policy';
+	$tt['FOOT_SITE_MAP'] = 'Site Map';
+	$tt['FOOT_SECURE_PAYMENTS'] = 'Secure payments';
 	
 	# Filter options
 	$tt['FILTEROPTIONS_TITLE'] = 'Filter Options';
@@ -60,6 +67,13 @@
 	$tt['PRODUCT_BUY'] = 'Add to basket';
 	$tt['PRODUCT_NO_PRODUCTS'] = 'Sorry, we currently have no available products here. Please check the categories to the left.';
 	$tt['PRODUCT_REVIEWS'] = '%s Reviews';
+	$tt['PRODUCT_DESCRIPTION_MANUFACTURER'] = 'Manufacturer Description';
+	$tt['PRODUCT_DESCRIPTION'] = 'Description of %s';
+	$tt['PRODUCT_FEATURES'] = 'Product Features';
+	$tt['PRODUCT_ENLARGE_IMAGES'] = 'Click images to enlarge';
+	$tt['PRODUCT_MANUFACTURER_LINK'] = 'View our full range of %s';
+	$tt['PRODUCT_OPTION_CHOOSE'] = '-- Choose %s --';
+	$tt['PRODUCT_OPTION_DESCRIPTION'] = 'Please choose from the options above to see price and availability.';
 	
 	# Home page
 	$tt['HOME_VIEW_ALL'] = 'View All';
@@ -118,7 +132,11 @@
 	
 	# Miscellaneous
 	$tt['PAGE'] = 'page';
+	$tt['PAGES'] = 'pages';
 	$tt['OF'] = 'of';
+	$tt['TO'] = 'to';
+	$tt['NEXT'] = 'Next &rsaquo;';
+	$tt['PREVIOUS'] = '&lsaquo; Previous';
 	$tt['CONTROL PANEL'] = 'Control Panel';
 	$tt['LOG_OUT'] = 'Log Out';
 	$tt['MY_ACCOUNT'] = 'My Account';
