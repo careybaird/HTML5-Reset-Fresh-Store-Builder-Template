@@ -1,1 +1,1 @@
-<p>Sorry, we currently have no categories here. Please check the other categories to the left.</p>
+<p><?=gTT('CATEGORY_NO_CATEGORIES')?></p>

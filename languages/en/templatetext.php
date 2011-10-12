@@ -110,6 +110,11 @@
 	$tt['ADMIN_STRIPE_PRODUCT_STATUS'] = 'Change Product Status';
 	$tt['ADMIN_STRIPE_HIDE'] = 'Hide';
 	$tt['ADMIN_STRIPE_DELETE'] = 'Delete';
+
+	# Category page
+	$tt['CATEGORY_PRODUCT_STOCK'] = '%d products in stock.';
+	$tt['CATEGORY_VIEW_ALL'] = 'View all';
+	$tt['CATEGORY_NO_CATEGORIES'] = 'Sorry, we currently have no categories here. Please check the other categories to the left.';
 	
 	# Miscellaneous
 	$tt['PAGE'] = 'page';
