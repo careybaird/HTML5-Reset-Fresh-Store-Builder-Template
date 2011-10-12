@@ -1,10 +1,10 @@
 <table id="basket-products">
 	<thead>
 		<tr>
-			<th colspan="2">Items</th>
-			<th>Quantity</th>
-			<th class="remove">Remove</th>
-			<th class="price">Price</th>
+			<th colspan="2"><?=gTT('BASKET_COL_ITEMS')?></th>
+			<th><?=gTT('BASKET_COL_QUANTITY')?></th>
+			<th class="remove"><?=gTT('BASKET_COL_REMOVE')?></th>
+			<th class="price"><?=gTT('BASKET_COL_PRICE')?></th>
 		</tr>
 	</thead>
 	<tfoot>
@@ -16,7 +16,7 @@
 				<th>&nbsp;</th>
 				<th>&nbsp;</th>
 				<th>&nbsp;</th>
-				<th><em>Delivery:</em></th>
+				<th><em><?=gTT('BASKET_DELIVERY')?></em></th>
 				<th class="price">
 					<?= formatProductPrice(0) ?>
 				</th>
@@ -28,7 +28,7 @@
 			<th>&nbsp;</th>
 			<th>&nbsp;</th>
 			<th>&nbsp;</th>
-			<th>Total:</th>
+			<th><?=gTT('BASKET_TOTAL')?></th>
 			<th class="price">
 				<?= formatProductPrice($amazon->cart['subtotal']) ?>
 			</th>
@@ -79,7 +79,7 @@ foreach ($basketitems as $item)
 		</td>
 		<td class="remove">
 			<a href="<?= URL_SITE ?>basket/remove/<?= $item['asin'] ?>/">
-				<img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/icons/basket_delete.png" alt="Remove from Cart" />
+				<img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/icons/basket_delete.png" alt="<?=gTT('BASKET_REMOVE_CART')?>" />
 			</a>
 		</td>
 		<td class="price">
