@@ -21,13 +21,13 @@
 				if ($product['offer'] && $product['offer']['price'] > 0)
 					echo $product['offer']['priceformatted'];
 				else if ($product['offer'] && $product['offer']['price'] == 0)
-					echo '<small>Click for Details</small>';
+					echo gTT('PRODUCT_PRICE_CLICK');
 				else if ($product['parent'] == 1)
 					echo formatProductPrice($product['optionsummary']['minprice']);
 				else if ($product['price'] > 0)
 					echo $product['priceformatted'];
 				else
-					echo '<small>Price not available</small>';
+					echo gTT('PRODUCT_PRICE_NOTAVAIL');
 			?>
 		</span>
 	</span>
@@ -35,14 +35,14 @@
 	<div class="product-listing-availibility product-availibility">
 		<?php
 			if ($product['offer'] || ($product['optionsummary']['minprice'] && $product['optionsummary']['maxprice']))
-				echo '<div class="in_stock">In Stock</div>';
+				echo '<div class="in_stock">'.gTT('PRODUCT_STOCK_IN').'</div>';
 			else
-				echo '<div class="out_stock">Out of Stock</div>';
+				echo '<div class="out_stock">'.gTT('PRODUCT_STOCK_OUT').'</div>';
 		?>
 	</div>
 	
 	<div class="product-listing-buttons">
-		<a rel="nofollow" href="<?= URL_SITE.$product['pagename'] ?>/"  class="product-listing-button product-listing-button-view">View Product</a>
+		<a rel="nofollow" href="<?= URL_SITE.$product['pagename'] ?>/"  class="product-listing-button product-listing-button-view"><?=gTT('PRODUCT_VIEW')?></a>
 		<?php
 			if ($product['offer'])
 			{
@@ -57,7 +57,7 @@
 				<?php
 			}
 		?>
-			Add to Basket
+			<?=gTT('PRODUCT_BUY')?>
 		</a>
 	</div>
 

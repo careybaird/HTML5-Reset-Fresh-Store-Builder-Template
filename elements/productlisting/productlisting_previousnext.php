@@ -8,7 +8,7 @@
 				if ($pagination['currentpage'] <> 1)
 				{
 					?>
-						<a href="<?= buildListingLink($pagination['baselink'], $pagination['currentpage']-1, $pagination['currentsort'], key($pagination['sortoptions']), $pagination['currentperpage'], PER_PAGE_PRODUCTSBYCATEGORY) ?>">&lsaquo; Previous</a>
+						<a href="<?= buildListingLink($pagination['baselink'], $pagination['currentpage']-1, $pagination['currentsort'], key($pagination['sortoptions']), $pagination['currentperpage'], PER_PAGE_PRODUCTSBYCATEGORY) ?>"><?=gTT('PREVIOUS')?></a>
 					<?php
 				}
 				else
@@ -25,7 +25,7 @@
 				if ($pagination['currentpage'] <> $pagination['pages'])
 				{
 					?>
-						<a href="<?= buildListingLink($pagination['baselink'], $pagination['currentpage']+1, $pagination['currentsort'], key($pagination['sortoptions']), $pagination['currentperpage'], PER_PAGE_PRODUCTSBYCATEGORY) ?>">Next &rsaquo;</a>
+						<a href="<?= buildListingLink($pagination['baselink'], $pagination['currentpage']+1, $pagination['currentsort'], key($pagination['sortoptions']), $pagination['currentperpage'], PER_PAGE_PRODUCTSBYCATEGORY) ?>"><?=gTT('NEXT')?></a>
 					<?php
 				}
 				else

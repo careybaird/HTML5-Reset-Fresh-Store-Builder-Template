@@ -32,6 +32,7 @@
 	$tt['FILTEROPTIONS_REMOVE'] = 'Remove Filters';
 	$tt['FILTEROPTIONS_YES'] = 'Yes';
 	$tt['FILTEROPTIONS_NO'] = 'No';
+	$tt['FILTEROPTIONS_CURRENT'] = 'Current Filter Options';
 	
 	# Contact page
 	$tt['CONTACT_TITLE'] = 'Contact the %s Team';
@@ -50,6 +51,7 @@
 	# Product page and listing
 	$tt['PRODUCT_PRICE_INCART'] = 'Price shown when you add to cart';
 	$tt['PRODUCT_PRICE_NOTAVAIL'] = 'Price not available at this time';
+	$tt['PRODUCT_PRICE_CLICK'] = '<small>Click for Details</small>';
 	$tt['PRODUCT_AVAIL_NOPRICE'] = '<p><small><strong>Why is the price not displayed here?</strong><br />The price is lower than the manufacturers "minimum advertised price" and we are legally not allowed to display it until it is requested. To request the price, simply click add to shopping cart below.</small></p>';
 	$tt['PRODUCT_AVAIL_SAVINGS'] = 'Save %s%!';
 	$tt['PRODUCT_AVAIL_PREORDER'] = 'Available to Pre-order now!<br />Your card will not be charged until the item is dispatched. You will pay the lowest price this item has been available for in the Pre-order period - guaranteed.';
@@ -74,6 +76,8 @@
 	$tt['PRODUCT_MANUFACTURER_LINK'] = 'View our full range of %s';
 	$tt['PRODUCT_OPTION_CHOOSE'] = '-- Choose %s --';
 	$tt['PRODUCT_OPTION_DESCRIPTION'] = 'Please choose from the options above to see price and availability.';
+	$tt['PRODUCT_VIEW'] = 'View Product';
+	
 	
 	# Home page
 	$tt['HOME_VIEW_ALL'] = 'View All';
@@ -124,6 +128,8 @@
 	$tt['ADMIN_STRIPE_PRODUCT_STATUS'] = 'Change Product Status';
 	$tt['ADMIN_STRIPE_HIDE'] = 'Hide';
 	$tt['ADMIN_STRIPE_DELETE'] = 'Delete';
+	$tt['ADMIN_STRIPE_REMOVE_CATEGORY'] = 'Remove from category';
+	$tt['ADMIN_STRIPE_PRODUCT_STATUS'] = 'Change Product Status';
 
 	# Category page
 	$tt['CATEGORY_PRODUCT_STOCK'] = '%d products in stock.';
@@ -145,4 +151,6 @@
 	$tt['EXTRAS'] = 'Extras';
 	$tt['FORUM'] = 'Forum';
 	$tt['SUPPORT'] = 'Support';
+	$tt['SORT_BY'] = 'Sort by';
+	$tt['PER_PAGE'] = '%d per page';
 ?>

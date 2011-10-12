@@ -5,7 +5,7 @@
 		<form action="/" method="get">
 
 			<div class="pagination-options">
-				<label>Sort by </label>
+				<label><?=gTT('PRODUCT_SORT_BY')?> </label>
 				<select onchange="window.location = this.value;">
 					<?php
 					$i=0;
@@ -28,7 +28,7 @@
 					{
 						$i++;
 						?>	
-							<option value="<?= buildListingLink($pagination['baselink'], $pagination['currentpage'], $pagination['currentsort'], '', ($i * PER_PAGE_PRODUCTSBYCATEGORY), PER_PAGE_PRODUCTSBYCATEGORY) ?>" <?= (($i * PER_PAGE_PRODUCTSBYCATEGORY) == $pagination['currentperpage'] ? 'selected' : '') ?>><?= $i * PER_PAGE_PRODUCTSBYCATEGORY ?> per page</option>
+							<option value="<?= buildListingLink($pagination['baselink'], $pagination['currentpage'], $pagination['currentsort'], '', ($i * PER_PAGE_PRODUCTSBYCATEGORY), PER_PAGE_PRODUCTSBYCATEGORY) ?>" <?= (($i * PER_PAGE_PRODUCTSBYCATEGORY) == $pagination['currentperpage'] ? 'selected' : '') ?>><?=sprint_f(gTT('PER_PAGE'), $i * PER_PAGE_PRODUCTSBYCATEGORY) ?></option>
 						<?php
 					}
 				?>
@@ -38,13 +38,13 @@
 					if ($pagination['pages'] > 1)
 					{
 						?>
-						<label>Page:</label>
+						<label><?=gTT('PAGE')?></label>
 						
 						<?php
 						if ($pagination['currentpage'] > 1)
 						{
 							?>
-							<a href="<?= buildListingLink($pagination['baselink'], $pagination['currentpage']-1, $pagination['currentsort'], key($pagination['sortoptions']), $pagination['currentperpage'], PER_PAGE_PRODUCTSBYCATEGORY) ?>">&lsaquo; prev</a>
+							<a href="<?= buildListingLink($pagination['baselink'], $pagination['currentpage']-1, $pagination['currentsort'], key($pagination['sortoptions']), $pagination['currentperpage'], PER_PAGE_PRODUCTSBYCATEGORY) ?>"><?=gTT('PREVIOUS')?></a>
 							<?php
 						}
 						?>
@@ -58,7 +58,7 @@
 							}
 							?>
 						</select>
-						<a href="<?= buildListingLink($pagination['baselink'], $pagination['currentpage']+1, $pagination['currentsort'], key($pagination['sortoptions']), $pagination['currentperpage'], PER_PAGE_PRODUCTSBYCATEGORY) ?>">next &rsaquo;</a>
+						<a href="<?= buildListingLink($pagination['baselink'], $pagination['currentpage']+1, $pagination['currentsort'], key($pagination['sortoptions']), $pagination['currentperpage'], PER_PAGE_PRODUCTSBYCATEGORY) ?>"><?=gTT('NEXT')?></a>
 						<?php
 					}
 				?>

@@ -8,7 +8,7 @@
 					<a href="<?= URL_SITE ?>filter-products/"><img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/icons/edit.png" /> <?= gTT('FILTEROPTIONS_CHANGE') ?></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="<?= URL_SITE ?>filter-products/cancel/"><img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/icons/delete.png" /> <?= gTT('FILTEROPTIONS_REMOVE') ?></a>
 				</div>
 				
-				Current Filter Options
+				<?=gTT('FILTEROPTIONS_CURRENT')?>
 				
 				<br class="clearall" />
 				
