@@ -1,6 +1,6 @@
 <?php loadTemplateElement('productlisting', 'filteroptions', array('currentproductfilters' => $currentproductfilters)); ?>
 
-<h2 id="page-title"><?= sprintf('Search Results for %s', $keywords) ?></h2>
+<h2 id="page-title"><?= sprintf(gTT('SEARCH_RESULTSFOR'), $keywords) ?></h2>
 <div class="clearall"></div>
 
 <?php
@@ -19,7 +19,7 @@
 		}
 	
 		if ($i == 0)
-			loadTemplateElement('productlisting', 'noproducts');
+			loadTemplateElement('productlisting', 'noproducts', array('text' => sprintf(gTT('SEARCH_NORESULTS'), $keywords));
 	?>
 	<div class="clearall"></div>
 </div>

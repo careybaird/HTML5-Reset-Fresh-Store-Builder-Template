@@ -1,9 +1,9 @@
-<h2 id="page-title"><?= $page['title'] ?> - Page <?= $pagination['currentpage'] ?> of <?= $pagination['pages'] ?></h2>
+<h2 id="page-title"><?= $page['title'] ?> - <?=ucwords(gTT('PAGE'))?> <?= $pagination['currentpage'] ?> <?=gTT('OF')?> <?= $pagination['pages'] ?></h2>
 <div id="page-maintext"><?= $page['maintext'] ?></div>
 
 <?php if($pagination['currentpage'] == 1) { ?>
 
-<h3 class="page-subtitle">Main Pages</h3>
+<h3 class="page-subtitle"><?=gTT('SITEMAP_PAGES')?></h3>
 <ul class="sitemap-list sitemap-pages">
 	<?php
 		foreach ($sitemappages as $page)
@@ -15,7 +15,7 @@
 	?>
 </ul>
 
-<h3 class="page-subtitle">Shop Categories</h3>
+<h3 class="page-subtitle"><?=gTT('SITEMAP_CATEGORIES')?></h3>
 <ul class="sitemap-list sitemap-categories">
 	<?php
 		foreach ($categories as $category)
@@ -28,7 +28,7 @@
 </ul>
 <?php } ?>
 
-<h3 class="page-subtitle">Products</h3>
+<h3 class="page-subtitle"><?=gTT('SITEMAP_PRODUCTS')?></h3>
 <ul class="sitemap-list sitemap-products">
 	<?php
 		foreach ($products as $product)

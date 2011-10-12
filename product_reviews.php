@@ -1,4 +1,4 @@
-<h2 class="page-title product-title"><?= $product['title'] ?> Reviews</h2>
+<h2 class="page-title product-title"><?= sprintf(gTT('PRODUCT_REVIEWS'), $product['title']) ?></h2>
 
 <?php
 	loadTemplateElement('product', 'pricebox', array('product' => $product, 'offer' => $offer));

@@ -1,24 +1,19 @@
 <?php
 
-	# English Language File
+	/* ============================================================
+	   English Language File
+	   ============================================================ */
 	
+	# Page not found
 	$tt['404_TITLE'] = 'This Page Could Not Be Found';
 
+	# Header and footer
 	$tt['HEAD_VIEW_CART'] = 'View Your Cart';
 	$tt['HEAD_ITEM'] = 'Item';
 	$tt['HEAD_ITEMS'] = 'Items';
+	$tt['FOOTER_COPYRIGHT'] = 'Copyright &copy; %s. All rights reserved.';
 	
-	/*
-	Is this necessary? What's the difference between this and FILTEROPTIONS. I'm going to use FILTEROPTIONS for now
-	$tt['MAIN_FILTER_TITLE'] = 'Filter Options';
-	$tt['MAIN_FILTER_PRICE'] = 'Price';
-	$tt['MAIN_FILTER_MANUFACTURER'] = 'Manufacturer';
-	$tt['MAIN_FILTER_ANY'] = 'Any';
-	$tt['MAIN_FILTER_BUTTON'] = 'Filter';
-	$tt['MAIN_FILTER_REMOVE'] = 'Remove Current Filters';
-	$tt['MAIN_FILTER_MORE'] = 'more';
-	*/
-	
+	# Filter options
 	$tt['FILTEROPTIONS_TITLE'] = 'Filter Options';
 	$tt['FILTEROPTIONS_PRICE'] = 'Price';
 	$tt['FILTEROPTIONS_ANY'] = 'Any';
@@ -31,6 +26,7 @@
 	$tt['FILTEROPTIONS_YES'] = 'Yes';
 	$tt['FILTEROPTIONS_NO'] = 'No';
 	
+	# Contact page
 	$tt['CONTACT_TITLE'] = 'Contact the %s Team';
 	$tt['CONTACT_SUBTITLE'] = 'Email %s';
 	$tt['CONTACT_OPTIONAL'] = 'All of the fields are optional but please enter as much detail as you can.';
@@ -39,10 +35,12 @@
 	$tt['CONTACT_PHONE'] = 'Phone Number';
 	$tt['CONTACT_QUERY'] = 'Your Query';
 	
+	# Newsletter page
 	$tt['NEWSLETTER_TITLE'] = 'The %s Newsletter';
 	$tt['NEWSLETTER_TEXT'] = 'Simply enter your email below to receive our Newsletter.';
 	$tt['NEWSLETTER_EMAIL'] = $tt['CONTACT_EMAIL'];
 	
+	# Product page and listing
 	$tt['PRODUCT_PRICE_INCART'] = 'Price shown when you add to cart';
 	$tt['PRODUCT_PRICE_NOTAVAIL'] = 'Price not available at this time';
 	$tt['PRODUCT_AVAIL_NOPRICE'] = '<p><small><strong>Why is the price not displayed here?</strong><br />The price is lower than the manufacturers "minimum advertised price" and we are legally not allowed to display it until it is requested. To request the price, simply click add to shopping cart below.</small></p>';
@@ -60,11 +58,13 @@
 	$tt['PRODUCT_BUY_AMAZON'] = 'Buy at Amazon';
 	$tt['PRODUCT_BUY_PREORDER'] = 'Preorder';
 	$tt['PRODUCT_BUY'] = 'Add to basket';
+	$tt['PRODUCT_NO_PRODUCTS'] = 'Sorry, we currently have no available products here. Please check the categories to the left.';
+	$tt['PRODUCT_REVIEWS'] = '%s Reviews';
 	
-	$tt['FOOTER_COPYRIGHT'] = 'Copyright &copy; %s. All rights reserved.';
-	
+	# Home page
 	$tt['HOME_VIEW_ALL'] = 'View All';
 	
+	# Basket
 	$tt['BASKET_NOITEMS'] = 'You currently have no items in your cart.';
 	$tt['BASKET_COL_ITEMS'] = 'Items You Have Selected';
 	$tt['BASKET_COL_QTY'] = 'Quantity';
@@ -75,13 +75,23 @@
 	$tt['BASKET_SHIPPINGTEXT_PARTSUPERSAVER'] = '<strong>Shipping</strong> - part of your order qualifies for free super saver delivery. Super saver delivery applies to products over %s, on selected products only. <em>Your full shipping options will be shown during checkout.</em>';
 	$tt['BASKET_SHIPPINGTEXT_NOSUPERSAVER'] = '<strong>Shipping</strong> - Your full shipping options will be shown during checkout.';
 	
+	# Search page
 	$tt['SEARCH_RESULTSFOR'] = 'Search Results for "%s"';
 	$tt['SEARCH_NORESULTS'] = 'No products matching "%s" were found. Please try searching again with different words or browse the categories on the left.';
 	
-	
+	# Checkout page
 	$tt['CHECKOUT_CONNECTED_AMAZON'] = 'You are now being connected to Amazon to complete your order.';
 	$tt['CHECKOUT_CONNECTING'] = '...connecting to amazon';
 	$tt['CHECKOUT_INFO'] = '<span>Important: </span> click the %s button on the next page to ensure you save all your products and get the lowest prices.';
 	$tt['CHECKOUT_WAITING'] = 'Still waiting?';
 	$tt['CHECKOUT_CLICK_CONTINUE'] = 'Click to continue to Amazon';
+	
+	# Site map page
+	$tt['SITEMAP_PAGES'] = 'Main Pages';
+	$tt['SITEMAP_CATEGORIES'] = 'Shop Categories';
+	$tt['SITEMAP_PRODUCTS'] = 'Products';
+	
+	# Miscellaneous
+	$tt['PAGE'] = 'page';
+	$tt['OF'] = 'of';
 ?>
