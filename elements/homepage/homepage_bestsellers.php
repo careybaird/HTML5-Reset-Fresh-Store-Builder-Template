@@ -9,7 +9,7 @@
 				foreach ($topproducts as $product)
 				{
 					$i++;
-					require('productlisting_product.php');
+					loadTemplateElement('productlisting', 'product', array('i' => $i, 'product' => $product));
 					clearAll($i);
 				}
 			?>
