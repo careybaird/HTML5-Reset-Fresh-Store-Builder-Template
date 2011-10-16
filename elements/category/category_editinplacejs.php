@@ -1,13 +1,13 @@
 <script type="text/javascript">
-	EditInPlace.defaults['save_url'] = '/ajax/category_savefield.php?id=<?= $thiscategory['id'] ?>';
+	save_url = '/ajax/category_savefield.php?id=<?= $thiscategory['id'] ?>';
 	
-	$('category-title').editInPlace({});
-	$('category-description').editInPlace({form_type: 'textarea', empty_text: '<em>'.gTT('EDITINPLACE_ADD_DESCRIPTION').'</em>', save_on_enter: false, display_buttons: 'inherit'});
-	$('category-descriptionbottom').editInPlace({form_type: 'textarea', empty_text: '<em>'.gTT('EDITINPLACE_ADD_DESCRIPTION').'</em>', save_on_enter: false, display_buttons: 'inherit'});
-	$('category-linktitle').editInPlace({});
-	$('category-logocaption').editInPlace({});
-	$('category-metadescription').editInPlace({form_type: 'textarea', empty_text: '<em>Click to add a meta description.</em>'});
-	$('category-metakeywords').editInPlace({});
-	$('category-metatitle').editInPlace({});
-	$('category-pagename').editInPlace({});
+	$('category-title').editInPlace({url: save_url});
+	$('category-description').editInPlace({url: save_url, field_type: 'textarea', empty_text: '<em>'.gTT('EDITINPLACE_ADD_DESCRIPTION').'</em>'});
+	$('category-descriptionbottom').editInPlace({url: save_url, field_type: 'textarea', empty_text: '<em>'.gTT('EDITINPLACE_ADD_DESCRIPTION').'</em>'});
+	$('category-linktitle').editInPlace({url: save_url});
+	$('category-logocaption').editInPlace({url: save_url});
+	$('category-metadescription').editInPlace({url: save_url, ffield_type: 'textarea', empty_text: '<em>'.gTT('EDITINPLACE_ADD_META_DESCRIPTION').'</em>'});
+	$('category-metakeywords').editInPlace({url: save_url});
+	$('category-metatitle').editInPlace({url: save_url});
+	$('category-pagename').editInPlace({url: save_url});
 </script>

@@ -139,6 +139,11 @@
 	# Edit in place
 	$tt['EDITINPLACE_ADD_DESCRIPTION'] = 'Click to add a description.';
 	$tt['EDITINPLACE_ADD_METADESCRIPTION'] = 'Click to add a meta description.';
+	$tt['EDITINPLACE_LINKTITLE'] = 'Link Title:';
+	$tt['EDITINPLACE_METADESCRIPTION'] = 'Meta Description:';
+	$tt['EDITINPLACE_METAKEYWORDS'] = 'Meta Keywords:';
+	$tt['EDITINPLACE_METATITLE'] = 'Meta Title:';
+	$tt['EDITINPLACE_PAGENAME'] = 'Pagename:';
 	
 	# Miscellaneous
 	$tt['PAGE'] = 'page';
