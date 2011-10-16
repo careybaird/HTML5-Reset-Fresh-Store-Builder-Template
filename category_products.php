@@ -30,4 +30,4 @@
 
 <?php loadTemplateElement('productlisting', 'previousnext', array('pagination' => $pagination)); ?>
 
-<div id="page-bottomtext" class="category-description"><?= $thiscategory['descriptionbottom'] ?></div>
+<div id="page-descriptionbottom" class="category-description"><?= $thiscategory['descriptionbottom'] ?></div>
