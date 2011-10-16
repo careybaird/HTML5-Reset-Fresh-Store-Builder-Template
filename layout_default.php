@@ -20,6 +20,7 @@
 			loadTemplateElement('header', 'stylesheets');
 			loadTemplateElement('header', 'rss', array('pagetype' => $pagetype));
 		?>
+		<script type="text/javascript" src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/scripts/jquery.js"></script>
 	</head>
 	
 	<body<?= $body_onload ?>>
@@ -85,8 +86,7 @@
 			</footer>
 			
 		</div>
-		
-	<script type="text/javascript" src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/scripts/jquery.js"></script>
+	
 	<script type="text/javascript" src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/scripts/jquery.editinplace.js"></script>
 	<?php
 		#if (isset($includescripts) && is_array($includescripts))
