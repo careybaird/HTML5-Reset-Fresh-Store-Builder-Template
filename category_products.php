@@ -3,8 +3,8 @@
 	loadTemplateElement('category', 'images', array('categoryimages' => $categoryimages));
 ?>
 
-<h2 id="page-title" class="category-title"><?= $thiscategory['title'] ?></h2>
-<div id="page-maintext" class="category-description"><?= $thiscategory['description'] ?></div>
+<h2 id="category-title" class="category-title"><?= $thiscategory['title'] ?></h2>
+<div id="category-maintext" class="category-description"><?= $thiscategory['description'] ?></div>
 <div class="clearall"></div>
 
 <?php
@@ -30,4 +30,4 @@
 
 <?php loadTemplateElement('productlisting', 'previousnext', array('pagination' => $pagination)); ?>
 
-<div id="page-descriptionbottom" class="category-description"><?= $thiscategory['descriptionbottom'] ?></div>
+<div id="category-descriptionbottom" class="category-description"><?= $thiscategory['descriptionbottom'] ?></div>
