@@ -135,6 +135,10 @@
 	$tt['CATEGORY_PRODUCT_STOCK'] = '%d products in stock.';
 	$tt['CATEGORY_VIEW_ALL'] = 'View all';
 	$tt['CATEGORY_NO_CATEGORIES'] = 'Sorry, we currently have no categories here. Please check the other categories to the left.';
+
+	# Edit in place
+	$tt['EDITINPLACE_ADD_DESCRIPTION'] = 'Click to add a description.';
+	$tt['EDITINPLACE_ADD_METADESCRIPTION'] = 'Click to add a meta description.';
 	
 	# Miscellaneous
 	$tt['PAGE'] = 'page';
