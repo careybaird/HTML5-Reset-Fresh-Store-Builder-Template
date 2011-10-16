@@ -86,11 +86,12 @@
 			
 		</div>
 		
-	<script type="text/javascript" src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/scripts/main.js"></script>
+	<script type="text/javascript" src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/scripts/jquery.js"></script>
+	<script type="text/javascript" src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/scripts/jquery.editinplace.js"></script>
 	<?php
-		if (isset($includescripts) && is_array($includescripts))
-			foreach ($includescripts as $script)
-				echo "<script type=\"text/javascript\" src=\"{$script}\"></script>";
+		#if (isset($includescripts) && is_array($includescripts))
+		#	foreach ($includescripts as $script)
+		#		echo "<script type=\"text/javascript\" src=\"{$script}\"></script>";
 		loadTemplateElement('footer', 'analytics', array('pagetype' => $pagetype, 'amazon' => $amazon));
 	?>
 	</body>
