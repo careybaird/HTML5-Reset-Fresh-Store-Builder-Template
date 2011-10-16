@@ -28,7 +28,7 @@
 					{
 						$i++;
 						?>	
-							<option value="<?= buildListingLink($pagination['baselink'], $pagination['currentpage'], $pagination['currentsort'], '', ($i * PER_PAGE_PRODUCTSBYCATEGORY), PER_PAGE_PRODUCTSBYCATEGORY) ?>" <?= (($i * PER_PAGE_PRODUCTSBYCATEGORY) == $pagination['currentperpage'] ? 'selected' : '') ?>><?=sprint_f(gTT('PER_PAGE'), $i * PER_PAGE_PRODUCTSBYCATEGORY) ?></option>
+							<option value="<?= buildListingLink($pagination['baselink'], $pagination['currentpage'], $pagination['currentsort'], '', ($i * PER_PAGE_PRODUCTSBYCATEGORY), PER_PAGE_PRODUCTSBYCATEGORY) ?>" <?= (($i * PER_PAGE_PRODUCTSBYCATEGORY) == $pagination['currentperpage'] ? 'selected' : '') ?>><?=sprintf(gTT('PER_PAGE'), $i * PER_PAGE_PRODUCTSBYCATEGORY) ?></option>
 						<?php
 					}
 				?>
