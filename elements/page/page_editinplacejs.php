@@ -1,12 +1,10 @@
 <script type="text/javascript">
-	EditInPlace.defaults['save_url'] = '/ajax/page_savefield.php?id=<?= $page['id'] ?>';
+	save_url = '/ajax/page_savefield.php?id=<?=$page['id']?>';
 	
-	$('page-title').editInPlace({});
-	$('page-linktitle').editInPlace({});
-	$('custompage-logocaption').editInPlace({});
-	$('page-maintext').editInPlace({form_type: 'textarea', empty_text: '<em>Click to add a description.</em>', save_on_enter: false, display_buttons: 'inherit'});
-	$('page-metadescription').editInPlace({form_type: 'textarea', empty_text: '<em>Click to add a meta description.</em>'});
-	$('page-metakeywords').editInPlace({});
-	$('page-metatitle').editInPlace({});
-	$('page-pagename').editInPlace({});
+	$('#page-title').editInPlace({url: save_url});
+	$('#page-linktitle').editInPlace({url: save_url});
+	$('#page-maintext').editInPlace({url: save_url, form_type: 'textarea', empty_text: '<em><?=gTT('EDITINPLACE_ADD_DESCRIPTION')?></em>'});
+	$('#page-metadescription').editInPlace({url: save_url, form_type: 'textarea', empty_text: '<em><?=gTT('EDITINPLACE_ADD_METADESCRIPTION')?></em>'});
+	$('#page-metakeywords').editInPlace({url: save_url});
+	$('#page-metatitle').editInPlace({url: save_url});
 </script>
