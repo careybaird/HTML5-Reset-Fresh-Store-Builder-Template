@@ -152,7 +152,7 @@
 	$tt['TO'] = 'to';
 	$tt['NEXT'] = 'Next &rsaquo;';
 	$tt['PREVIOUS'] = '&lsaquo; Previous';
-	$tt['CONTROL PANEL'] = 'Control Panel';
+	$tt['CONTROL_PANEL'] = 'Control Panel';
 	$tt['LOG_OUT'] = 'Log Out';
 	$tt['MY_ACCOUNT'] = 'My Account';
 	$tt['GUIDES'] = 'Guides';
