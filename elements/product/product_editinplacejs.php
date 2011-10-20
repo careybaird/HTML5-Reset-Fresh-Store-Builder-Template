@@ -2,11 +2,11 @@
 	save_url = '/ajax/product_savefield.php?id=<?=$product['id']?>';
 	
 	$('#product-title').editInPlace({url: save_url});
-	$('#product-description').editInPlace({url: save_url, form_type: 'textarea', empty_text: '<em><?=gTT('EDITINPLACE_ADD_DESCRIPTION')?></em>'});
-	$('#product-descriptionsecondary').editInPlace({url: save_url, form_type: 'textarea', empty_text: '<em><?=gTT('EDITINPLACE_ADD_SECONDARYDESCRIPTION')?></em>'});
-	$('#product-keyfeatures').editInPlace({url: save_url, form_type: 'textarea', empty_text: '<em><?=gTT('EDITINPLACE_ADD_KEYFEATURES')?></em>'});
+	$('#product-description').editInPlace({url: save_url, form_type: 'textarea', default_text: '<em><?=gTT('EDITINPLACE_ADD_DESCRIPTION')?></em>'});
+	$('#product-descriptionsecondary').editInPlace({url: save_url, form_type: 'textarea', default_text: '<em><?=gTT('EDITINPLACE_ADD_SECONDARYDESCRIPTION')?></em>'});
+	$('#product-keyfeatures').editInPlace({url: save_url, form_type: 'textarea', default_text: '<em><?=gTT('EDITINPLACE_ADD_KEYFEATURES')?></em>'});
 	$('#product-linktitle').editInPlace({url: save_url});
-	$('#product-metadescription').editInPlace({url: save_url, form_type: 'textarea', empty_text: '<em><?=gTT('EDITINPLACE_ADD_METADESCRIPTION')?></em>'});
+	$('#product-metadescription').editInPlace({url: save_url, form_type: 'textarea', default_text: '<em><?=gTT('EDITINPLACE_ADD_METADESCRIPTION')?></em>'});
 	$('#product-metakeywords').editInPlace({url: save_url});
 	$('#product-metatitle').editInPlace({url: save_url});
 	$('#product-pagename').editInPlace({url: save_url});

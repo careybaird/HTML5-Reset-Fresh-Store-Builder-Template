@@ -146,6 +146,10 @@
 	$tt['EDITINPLACE_METAKEYWORDS'] = 'Meta Keywords:';
 	$tt['EDITINPLACE_METATITLE'] = 'Meta Title:';
 	$tt['EDITINPLACE_PAGENAME'] = 'Pagename:';
+	$tt['EDITINPLACE_PAGETITLE'] = 'Page title:';
+	$tt['EDITINPLACE_MAINTEXT'] = 'Main text:';
+	$tt['EDITINPLACE_NAME'] = 'Name:';
+	$tt['EDITINPLACE_CATEGORIES'] = 'Categories:';
 	
 	# Miscellaneous
 	$tt['PAGE'] = 'page';
