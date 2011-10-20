@@ -59,18 +59,3 @@
 		if ($offer && $offer['quantity'] > 0 && $offer['quantity'] < 5)
 			echo '<div class="product-lowstock">',sprintf(gTT('PRODUCT_STOCK_LOW'), $offer['quantity']),'</div>';
 	}
-	
-	function generateEditInPlaceVariables()
-	{
-		// Some form of hierarchy should be made
-		global $product, $category, $page;
-		if($product)
-			$editinplacevariables = array('product' => $product);
-		elseif($category)
-			$editinplacevariables = array('category' => $category);
-		elseif($page)
-			$editinplacevariables = array('page' => $page);
-		else
-			$editinplacevariables = array();
-		return $editinplacevariables;
-	}
