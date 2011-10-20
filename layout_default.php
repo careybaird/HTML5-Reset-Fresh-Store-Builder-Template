@@ -1,3 +1,6 @@
+<?php
+	$editinplacevariables = generateEditInPlaceVariables();
+?>
 <!DOCTYPE HTML>
 <html>
 	<head>

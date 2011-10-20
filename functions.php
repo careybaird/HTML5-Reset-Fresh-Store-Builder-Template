@@ -60,15 +60,17 @@
 			echo '<div class="product-lowstock">',sprintf(gTT('PRODUCT_STOCK_LOW'), $offer['quantity']),'</div>';
 	}
 	
-	/* Template functions end here, general logic starts
-	   This should probably be moved to somewhere else */
-	
-	// Generate edit and place options, this will probably require refinement
-	if($product)
-		$editinplacevariables = array('product' => $product);
-	elseif($category)
-		$editinplacevariables = array('category' => $category);
-	elseif($page)
-		$editinplacevariables = array('page' => $page);
-	else
-		$editinplacevariables = array();
+	function generateEditInPlaceVariables()
+	{
+		// Some form of hierarchy should be made
+		global $product, $category, $page;
+		if($product)
+			$editinplacevariables = array('product' => $product);
+		elseif($category)
+			$editinplacevariables = array('category' => $category);
+		elseif($page)
+			$editinplacevariables = array('page' => $page);
+		else
+			$editinplacevariables = array();
+		return $editinplacevariables;
+	}
