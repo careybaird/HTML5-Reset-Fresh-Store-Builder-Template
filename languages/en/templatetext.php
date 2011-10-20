@@ -137,9 +137,10 @@
 	$tt['CATEGORY_NO_CATEGORIES'] = 'Sorry, we currently have no categories here. Please check the other categories to the left.';
 
 	# Edit in place
-	$tt['EDITINPLACE_ADD_DESCRIPTION'] = 'Click to add a description.';
-	$tt['EDITINPLACE_ADD_METADESCRIPTION'] = 'Click to add a meta description.';
-	$tt['EDITINPLACE_ADD_SECONDARYDESCRIPTION'] = 'Click to add a secondary description.';
+	$tt['EDITINPLACE_ADD_TEXT'] = 'Click to add text';
+	$tt['EDITINPLACE_ADD_DESCRIPTION'] = 'Click to add a description';
+	$tt['EDITINPLACE_ADD_METADESCRIPTION'] = 'Click to add a meta description';
+	$tt['EDITINPLACE_ADD_SECONDARYDESCRIPTION'] = 'Click to add a secondary description';
 	$tt['EDITINPLACE_ADD_KEYFEATURES'] = 'Click to add key features.';
 	$tt['EDITINPLACE_LINKTITLE'] = 'Link Title:';
 	$tt['EDITINPLACE_METADESCRIPTION'] = 'Meta Description:';

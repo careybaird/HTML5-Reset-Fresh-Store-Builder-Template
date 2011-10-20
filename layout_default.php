@@ -60,6 +60,7 @@
 						echo $pagecontents;
 						if (ADMIN_LOGGED_IN && $editinplacename != '')
 							loadTemplateElement($editinplacename, 'editinplacejs', $editinplacevariables);
+						print_r($editinplacevariables);
 					?>
 				</div>
 				
