@@ -1,6 +1,6 @@
 <div id="page_editinplacebox" class="editinplace-box" style="display:none;">
 	<div class="editinplace-close">
-		<a href="#" onclick="$('#page_editinplacebox')).hide('fast','swing'); return false;">
+		<a href="#" onclick="$('#page_editinplacebox').hide('slow','swing'); return false;">
 			<img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/icons/admin_quickedithide.png" />
 		</a>
 	</div>

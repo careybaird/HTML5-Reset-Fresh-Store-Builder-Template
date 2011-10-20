@@ -68,5 +68,7 @@
 		$editinplacevariables = array('product' => $product);
 	elseif($category)
 		$editinplacevariables = array('category' => $category);
+	elseif($page)
+		$editinplacevariables = array('page' => $page);
 	else
 		$editinplacevariables = array();
