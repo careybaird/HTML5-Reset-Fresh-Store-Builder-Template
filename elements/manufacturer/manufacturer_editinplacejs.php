@@ -1,4 +1,6 @@
 <script type="text/javascript">
+$(document).ready(function()
+{
 	save_url = '/ajax/manufacturer_savefield.php?id=<?=$manufacturer['id']?>';
 	
 	$('#manufacturer-name').editInPlace({url: save_url});
@@ -9,4 +11,5 @@
 	$('#manufacturer-metakeywords').editInPlace({url: save_url});
 	$('#manufacturer-metatitle').editInPlace({url: save_url});
 	$('#manufacturer-pagename').editInPlace({url: save_url});
+});
 </script>

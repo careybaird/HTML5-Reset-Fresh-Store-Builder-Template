@@ -1,4 +1,6 @@
 <script type="text/javascript">
+$(document).ready(function()
+{
 	save_url = '/ajax/product_savefield.php?id=<?=$product['id']?>';
 	
 	$('#product-title').editInPlace({url: save_url});
@@ -16,4 +18,5 @@
 		// This will have to be updated
 		new Ajax.Request('/ajax/product_removefromcategory.php?product_id='+product_id+'&category_id='+category_id,{method:'get',onLoading:function(){ element.src = '/icons/common_loading.gif'; },onComplete:function(){ element.src = '/icons/admin_success.png'; }});
 	}
+}
 </script>
