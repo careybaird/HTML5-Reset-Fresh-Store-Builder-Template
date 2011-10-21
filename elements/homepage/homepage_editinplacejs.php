@@ -5,8 +5,9 @@ $(document).ready(function()
 	
 	$('#page-title').editInPlace({url: save_url, default_text: '(<?=gTT('EDITINPLACE_ADD_TEXT')?>)'});
 	$('#page-linktitle').editInPlace({url: save_url, default_text: '(<?=gTT('EDITINPLACE_ADD_TEXT')?>)'});
-	$('#page-maintext').editInPlace({url: save_url, form_type: 'textarea', default_text: '(<?=gTT('EDITINPLACE_ADD_DESCRIPTION')?>)'});
-	$('#page-metadescription').editInPlace({url: save_url, form_type: 'textarea', default_text: '(<?=gTT('EDITINPLACE_ADD_METADESCRIPTION')?>)'});
+	$('#page-maintext').editInPlace({url: save_url, field_type: 'textarea', default_text: '(<?=gTT('EDITINPLACE_ADD_DESCRIPTION')?>)'});
+	$('#page-pagename').editInPlace({url: save_url, default_text: '(<?=gTT('EDITINPLACE_ADD_TEXT')?>)'});
+	$('#page-metadescription').editInPlace({url: save_url, field_type: 'textarea', default_text: '(<?=gTT('EDITINPLACE_ADD_METADESCRIPTION')?>)'});
 	$('#page-metakeywords').editInPlace({url: save_url, default_text: '(<?=gTT('EDITINPLACE_ADD_TEXT')?>)'});
 	$('#page-metatitle').editInPlace({url: save_url, default_text: '(<?=gTT('EDITINPLACE_ADD_TEXT')?>)'});
 });
