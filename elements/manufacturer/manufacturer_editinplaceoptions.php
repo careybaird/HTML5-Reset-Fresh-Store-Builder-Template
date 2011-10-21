@@ -1,6 +1,10 @@
+<?php
+	// This is temporarily, it will be moved to the controller as soon as edits start on the core files
+	global $manufacturer;
+?>
 <div id="manufacturer_editinplacebox" class="editinplace-box" style="display:none;">
 	<div class="editinplace-close">
-		<a href="#" onclick="$('#manufacturer_editinplacebox').hide('fast','swing'); ; return false;">
+		<a href="#" onclick="$('#manufacturer_editinplacebox').hide('slow','swing'); return false;">
 			<img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/icons/admin_quickedithide.png" />
 		</a>
 	</div>

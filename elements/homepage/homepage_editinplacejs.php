@@ -1,7 +1,7 @@
 <script type="text/javascript">
 $(document).ready(function()
 {
-	save_url = '/ajax/page_savefield.php?id=<?=$page['id']?>';
+	save_url = '/ajax/page_savefield.php?id=<?= $page['id'] ?>';
 	
 	$('#page-title').editInPlace({url: save_url, default_text: '(<?=gTT('EDITINPLACE_ADD_TEXT')?>)'});
 	$('#page-linktitle').editInPlace({url: save_url, default_text: '(<?=gTT('EDITINPLACE_ADD_TEXT')?>)'});
