@@ -1,9 +1,13 @@
+<?php
+	// This is temporarily, it will be moved to the controller as soon as edits start on the core files
+	global $product;
+?>
 <div id="admin-stripe">
 	<?php loadTemplateElement('adminstripe', 'left'); ?>
 	
 	<div id="admin-stripe-right">
 		Sales Rank: <?= $product['salesrank'] ?> &nbsp;-&nbsp; ASIN: <?= $product['asin'] ?>
-		<a href="#" id="stripe_togglefields" onclick="$('product_editinplacebox').show('fast','swing'); return false;">
+		<a href="#" id="stripe_togglefields" onclick="$('product_editinplacebox').show('slow','swing'); return false;">
 			<img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/icons/admin_quickeditshow.png" alt="<?=gTT('ADMINSTRIPE_QUICK_EDIT')?>" title="<?=gTT('ADMINSTRIPE_QUICK_EDIT')?>" />
 		</a>
 		<a href="<?= URL_SITE ?>freshadmin/product/edit/<?= $product['id'] ?>/">

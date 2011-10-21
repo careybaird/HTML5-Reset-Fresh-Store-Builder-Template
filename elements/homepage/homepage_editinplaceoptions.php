@@ -12,7 +12,6 @@
 	<p><span class="editinplace-label"><?=gTT('EDITINPLACE_PAGETITLE')?></span> <span class="editinplace-value" id="page-title"><?= $page['title'] ?></span></p>
 	<p><span class="editinplace-label"><?=gTT('EDITINPLACE_LINKTITLE')?></span> <span class="editinplace-value" id="page-linktitle"><?= $page['linktitle'] ?></span></p>
 	<p><span class="editinplace-label"><?=gTT('EDITINPLACE_MAINTEXT')?></span> <span class="editinplace-value" id="page-maintext"><?= htmlentities($page['maintext']) ?></span></p>
-	<p><span class="editinplace-label"><?=gTT('EDITINPLACE_PAGENAME')?></span> <span class="editinplace-value" id="page-metadescription"><?= $page['pagename'] ?></span></p>
 	<p><span class="editinplace-label"><?=gTT('EDITINPLACE_METADESCRIPTION')?></span> <span class="editinplace-value" id="page-metadescription"><?= $page['metadescription'] ?></span></p>
 	<p><span class="editinplace-label"><?=gTT('EDITINPLACE_METAKEYWORDS')?></span> <span class="editinplace-value" id="page-metakeywords"><?= $page['metakeywords'] ?></span></p>
 	<p><span class="editinplace-label"><?=gTT('EDITINPLACE_METATITLE')?></span> <span class="editinplace-value" id="page-metatitle"><?= $page['metatitle'] ?></span></p>

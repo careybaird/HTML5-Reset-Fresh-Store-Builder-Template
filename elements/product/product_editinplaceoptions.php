@@ -1,6 +1,10 @@
+<?php
+	// This is temporarily, it will be moved to the controller as soon as edits start on the core files
+	global $product;
+?>
 <div id="product_editinplacebox" class="editinplace-box" style="display:none;">
 	<div class="editinplace-close">
-		<a href="#" onclick="$('#product_editinplacebox').hide('fast','swing'); return false;">
+		<a href="#" onclick="$('#product_editinplacebox').hide('slow','swing'); return false;">
 			<img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/icons/admin_quickedithide.png" />
 		</a>
 	</div>
@@ -27,7 +31,7 @@
 					}
 				}
 				?>
-					<a href="javascript:removeProductFromCategory(<?= $product['id'] ?>, <?= $deletecategory_id ?>, $('removefromcategory_<?= $deletecategory_id ?>'))"><img id="removefromcategory_<?= $deletecategory_id ?>" src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/icons/admin_delete.png" /></a> <?= $deletecategoryname ?><br />
+					<a href="javascript:removeProductFromCategory(<?= $product['id'] ?>, <?= $deletecategory_id ?>, '#removefromcategory_<?= $deletecategory_id ?>')"><img id="removefromcategory_<?= $deletecategory_id ?>" src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/icons/admin_delete.png" /></a> <?= $deletecategoryname ?><br />
 				<?php
 			}			
 		?>
