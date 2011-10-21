@@ -26,7 +26,7 @@
 			<img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/icons/amazon_<?= strtolower(AMAZON_LOCALE) ?>.png" alt="<?=gTT('ADMIN_STRIPE_AMAZON')?>" title="<?=gTT('ADMIN_STRIPE_AMAZON')?>" />
 		</a>
 		<a href="<?= URL_SITE ?>freshadmin/product/changestatus/<?= $product['id'] ?>/">
-			<img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/icons/admin_<?= ($product['enabled'] ? 'disable' : 'enable') ?>.png" alt="<?=gTT('ADMIN_STRIPE_PRODUCT_STATUS')?>" title="<?=gTT('ADMIN_STRIPE_PRODUCT_STATUS)?>" />
+			<img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/icons/admin_<?= ($product['enabled'] ? 'disable' : 'enable') ?>.png" alt="<?=gTT('ADMIN_STRIPE_PRODUCT_STATUS')?>" title="<?=gTT('ADMIN_STRIPE_PRODUCT_STATUS')?>" />
 		</a>
 		<a href="<?= URL_SITE ?>freshadmin/product/hide/<?= $product['id'] ?>/">
 			<img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/icons/admin_hide.png" alt="<?=gTT('ADMIN_STRIPE_HIDE')?>" title="<?=gTT('ADMIN_STRIPE_HIDE')?>" />
