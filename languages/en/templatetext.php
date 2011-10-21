@@ -151,6 +151,7 @@
 	$tt['EDITINPLACE_MAINTEXT'] = 'Main text:';
 	$tt['EDITINPLACE_NAME'] = 'Name:';
 	$tt['EDITINPLACE_CATEGORIES'] = 'Categories:';
+	$tt['EDITINPLACE_KEYFEATURES'] = 'Key Features:';
 	
 	# Miscellaneous
 	$tt['PAGE'] = 'page';

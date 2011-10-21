@@ -1,6 +1,6 @@
 <?php
 	// This is temporarily, it will be moved to the controller as soon as edits start on the core files
-	global $product;
+	global $product, $breadcrumb;
 ?>
 <div id="product_editinplacebox" class="editinplace-box" style="display:none;">
 	<div class="editinplace-close">
