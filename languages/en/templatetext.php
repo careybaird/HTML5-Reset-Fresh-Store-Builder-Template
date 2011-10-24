@@ -14,6 +14,7 @@
 	$tt['HEAD_RSS_CATEGORY'] = '%s Products in category %s';
 	$tt['HEAD_RSS_PRODUCTS'] = '%s Products';
 	$tt['HEAD_RSS_SPECIAL_OFFERS'] = '%s Special Offers';
+	$tt['HEAD_HOME'] = 'Home';
 	$tt['FOOT_COPYRIGHT'] = 'Copyright &copy; %s. All rights reserved.';
 	$tt['FOOT_TERMS_OF_USE'] = 'Terms of Use';
 	$tt['FOOT_PRIVACY_POLICY'] = 'Privacy Policy';

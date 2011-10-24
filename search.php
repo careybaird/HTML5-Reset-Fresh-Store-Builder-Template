@@ -19,7 +19,7 @@
 		}
 	
 		if ($i == 0)
-			loadTemplateElement('productlisting', 'noproducts', array('text' => sprintf(gTT('SEARCH_NORESULTS'), $keywords));
+			loadTemplateElement('productlisting', 'noproducts', array('text' => sprintf(gTT('SEARCH_NORESULTS'), $keywords)));
 	?>
 	<div class="clearall"></div>
 </div>
