@@ -67,10 +67,10 @@ $.fn.editInPlace.defaults = {
 	saving_animation_color: 'transparent', // hex color string, will be the color the pulsing animation during the save pulses to. Note: Only works if jquery-ui is loaded
 	
 	value_required:		false, // boolean: if set to true, the element will not be saved unless a value is entered
-	element_id:			"element_id", // string: name of parameter holding the id or the editable
-	update_value:		"update_value", // string: name of parameter holding the updated/edited value
+	element_id:			"id", // string: name of parameter holding the id or the editable
+	update_value:		"new_content", // string: name of parameter holding the updated/edited value
 	original_value:		'original_value', // string: name of parameter holding the updated/edited value
-	original_html:		"original_html", // string: name of parameter holding original_html value of the editable /* DEPRECATED in 2.2.0 */ use original_value instead.
+	original_html:		"value", // string: name of parameter holding original_html value of the editable /* DEPRECATED in 2.2.0 */ use original_value instead.
 	save_if_nothing_changed:	false,  // boolean: submit to function or server even if the user did not change anything
 	on_blur:			"save", // string: "save" or null; what to do on blur; will be overridden if show_buttons is true
 	cancel:				"", // string: if not empty, a jquery selector for elements that will not cause the editor to open even though they are clicked. E.g. if you have extra buttons inside editable fields
