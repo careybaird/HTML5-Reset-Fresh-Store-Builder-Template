@@ -1,6 +1,6 @@
 <div class="product product-full">
 
-	<h2 id="page-title" class="product-title"><?= $product['title'] ?></h2>
+	<h2 id="product-title" class="product-title"><?= $product['title'] ?></h2>
 	<div class="clearall"></div>
 
 	<?php

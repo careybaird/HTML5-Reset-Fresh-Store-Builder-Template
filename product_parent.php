@@ -1,6 +1,6 @@
 <div class="product product-full product-parent">
 
-	<h2 id="page-title" class="product-title<?= ($manufacturer['display'] ? ' product-title-manufacturer' : '') ?>"><?= $product['title'] ?></h2>
+	<h2 id="product-title" class="product-title<?= ($manufacturer['display'] ? ' product-title-manufacturer' : '') ?>"><?= $product['title'] ?></h2>
 	<div class="clearall"></div>
 
 	<?php
