@@ -4,8 +4,6 @@
 # Configuration File
 # http://www.freshstorebuilder.com/
 
-require_once 'functions.php';
-
 # General template information
 $template['meta']['uid'] = 'html5-reset';
 $template['meta']['name'] = 'HTML5 Reset';
@@ -105,5 +103,3 @@ $i['default_linknofollow'] = '0';
 $i['disable_link_settings'] = '0';
 $i['default_disabled'] = '0';
 $template['images']['HEAD_LOGO'] = $i;
-
-require_once 'functions.php';
