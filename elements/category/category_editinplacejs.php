@@ -1,3 +1,7 @@
+<?php
+	// This is temporarily, it will be moved to the controller as soon as edits start on the core files
+	global $thiscategory;
+?>
 <script type="text/javascript">
 	$(document).ready(function()
 	{
