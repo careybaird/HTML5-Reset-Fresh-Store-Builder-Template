@@ -34,7 +34,7 @@
 					loadTemplateElement($editinplacename, 'editinplaceoptions', $editinplacevariables);
 			?>
 				
-			<div id="main">
+			<div id="main" class="main-<?=PAGENAME?>">
 				<?php
 					loadTemplateElement('header', 'messages');
 				 	echo $pagecontents;

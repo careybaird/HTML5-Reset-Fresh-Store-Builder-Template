@@ -20,7 +20,7 @@
 					?>
 				</select>
 				
-				<label>Show</label>
+				<label><?=gTT('SHOW')?></label>
 				<select onchange="window.location = this.value;">
 					<?php
 					$i = 0;

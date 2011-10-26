@@ -78,6 +78,7 @@
 	$tt['PRODUCT_OPTION_CHOOSE'] = '-- Choose %s --';
 	$tt['PRODUCT_OPTION_DESCRIPTION'] = 'Please choose from the options above to see price and availability.';
 	$tt['PRODUCT_VIEW'] = 'View Product';
+	$tt['PRODUCT_SORT_BY'] = 'Sort by:'
 	
 	
 	# Home page
@@ -171,4 +172,5 @@
 	$tt['SUPPORT'] = 'Support';
 	$tt['SORT_BY'] = 'Sort by';
 	$tt['PER_PAGE'] = '%d per page';
+	$tt['SHOW'] = 'Show';
 ?>

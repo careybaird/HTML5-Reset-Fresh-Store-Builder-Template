@@ -52,7 +52,7 @@
 				<div class="clearall"></div>
 			</header>
 			
-			<div id="main">
+			<div id="main" class="main-<?=PAGENAME?>">
 				<div id="content-right">
 					<?php
 						loadTemplateElement('header', 'breadcrumb', array('breadcrumb' => $breadcrumb));

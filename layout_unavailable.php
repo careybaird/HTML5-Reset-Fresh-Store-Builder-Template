@@ -24,7 +24,7 @@
 	<body<?= $body_onload ?>>
 	
 		<div id="container">		
-			<div id="main">
+			<div id="main" class="main-<?=PAGENAME?>">
 				<?= $pagecontents ?>
 			</div>
 		</div>

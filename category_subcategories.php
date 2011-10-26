@@ -1,10 +1,7 @@
 <?php
 	loadTemplateElement('category', 'images');
+	loadTemplateElement('category', 'titles', array('thiscategory' => $thiscategory));
 ?>
-
-<h2 id="page-title" class="category-title"><?= $thiscategory['title'] ?></h2>
-<div id="page-maintext" class="category-description"><?= $thiscategory['description'] ?></div>
-<div class="clearall"></div>
 
 <div class="category-listing">
 	<?php

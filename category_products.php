@@ -1,13 +1,7 @@
 <?php
 	loadTemplateElement('productlisting', 'filteroptions', array('currentproductfilters' => $currentproductfilters));
 	loadTemplateElement('category', 'images', array('categoryimages' => $categoryimages));
-?>
-
-<h2 id="category-title" class="category-title"><?= $thiscategory['title'] ?></h2>
-<div id="category-description" class="category-description"><?= $thiscategory['description'] ?></div>
-<div class="clearall"></div>
-
-<?php
+	loadTemplateElement('category', 'titles', array('thiscategory' => $thiscategory));
 	loadTemplateElement('productlisting', 'options', array('pagination' => $pagination));
 	loadTemplateElement('productlisting', 'previousnext', array('pagination' => $pagination));
 ?>

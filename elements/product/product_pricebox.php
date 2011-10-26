@@ -31,7 +31,7 @@
 				?>
 					<span class="product-availability">
 						<span class="value-title" title="In stock"><?=gTT('PRODUCT_STOCK_IN')?></span><br />
-						<a href="<?= URL_SITE ?>basket/add/<?= $product['id'] ?>/<?= $offer['id'] ?>/" rel="nofollow">
+						<a href="<?= URL_SITE ?><?=$pages['basket']['pagename']?>/add/<?= $product['id'] ?>/<?= $offer['id'] ?>/" rel="nofollow">
 							<?= ($offer['ispreorder'])? gTT('PRODUCT_BUY_PREORDER') : gTT('PRODUCT_BUY'); ?>
 						</a>
 					</span>

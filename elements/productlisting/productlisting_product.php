@@ -47,7 +47,7 @@
 			if ($product['offer'])
 			{
 				?>
-				<a rel="nofollow" href="<?= URL_SITE ?>basket/add/<?= $product['id'] ?>/<?= $product['offer']['id'] ?>/" class="product-listing-button product-listing-button-add">
+				<a rel="nofollow" href="<?= URL_SITE ?><?=$pages['basket']['pagename']?>/add/<?= $product['id'] ?>/<?= $product['offer']['id'] ?>/" class="product-listing-button product-listing-button-add">
 				<?php
 			}
 			else
