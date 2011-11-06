@@ -9,7 +9,7 @@
 		foreach ($subcategories as $subcategory)
 		{
 			$i++;
-			loadTemplateElement('categorylisting', 'category');
+			loadTemplateElement('categorylisting', 'category', array('subcategory' => $subcategory));
 			clearAll($i, CATEGORYLISTING_ROW_COUNT);
 		}
 	
