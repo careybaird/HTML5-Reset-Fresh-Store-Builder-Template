@@ -9,7 +9,7 @@
 	
 	// Loads a template file, right now it's just a require but in the future it will look to parent template(s) if necessary
 	// A similar function will need to be available for controllers to access the main template files
-	if(!is_defined('loadTemplateElement'))
+	if(!function_exists('loadTemplateElement'))
 	{
 		function loadTemplateElement($type, $name, $variables = array())
 		{
