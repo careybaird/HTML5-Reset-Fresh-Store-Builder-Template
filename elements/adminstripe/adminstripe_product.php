@@ -26,7 +26,8 @@
 			<?=getTemplateImage('ADMINSTRIPE_AMAZON','','',gTT('ADMINSTRIPE_AMAZON'))?>
 		</a>
 		<a href="<?= URL_SITE ?>freshadmin/product/changestatus/<?= $product['id'] ?>/">
-			<?=getTemplateImage('ADMINSTRIPE_PRODUCT_STATUS','','',gTT('ADMINSTRIPE_PRODUCT_STATUS'))?>
+			<?php $disable = ($product['enabled'])? 'DISABLE' : 'ENABLE'; ?>
+			<?=getTemplateImage('ADMINSTRIPE_PRODUCT_STATUS_'.$disable,'','',gTT('ADMINSTRIPE_PRODUCT_STATUS_'.$disable))?>
 		</a>
 		<a href="<?= URL_SITE ?>freshadmin/product/hide/<?= $product['id'] ?>/">
 			<?=getTemplateImage('ADMINSTRIPE_HIDE','','',gTT('ADMINSTRIPE_HIDE'))?>

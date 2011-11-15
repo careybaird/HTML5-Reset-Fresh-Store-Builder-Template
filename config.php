@@ -207,6 +207,26 @@ $i['disable_link_settings'] = '0';
 $i['default_disabled'] = '0';
 $template['images']['ADMINSTRIPE_RUN_AUTOPOPULATE'] = $i;
 
+# List Products
+$i = array();
+$i['name'] = 'Admin Stripe List Products';
+$i['description'] = 'The icon that appears in the admin stripe for list products.';
+$i['type'] = 'html';
+$i['cssselector'] = '';
+$i['default_cssdecleration'] = '';
+$i['width'] = '16';
+$i['height'] = '16';
+$i['forcedimensions'] = '0';
+$i['default_src'] = '%TEMPLATEFOLDER%/icons/admin_productlist.png';
+$i['default_alt'] = '';
+$i['default_title'] = '';
+$i['default_link'] = '';
+$i['default_linktarget'] = '';
+$i['default_linknofollow'] = '0';
+$i['disable_link_settings'] = '0';
+$i['default_disabled'] = '0';
+$template['images']['ADMINSTRIPE_LIST_PRODUCTS'] = $i;
+
 # List Categories
 $i = array();
 $i['name'] = 'Admin Stripe List Categories';
@@ -225,7 +245,7 @@ $i['default_linktarget'] = '';
 $i['default_linknofollow'] = '0';
 $i['disable_link_settings'] = '0';
 $i['default_disabled'] = '0';
-$template['images']['ADMINSTRIPE_RUN_LIST_CATEGORIES'] = $i;
+$template['images']['ADMINSTRIPE_LIST_CATEGORIES'] = $i;
 
 # List Manufacturers
 $i = array();
@@ -245,7 +265,7 @@ $i['default_linktarget'] = '';
 $i['default_linknofollow'] = '0';
 $i['disable_link_settings'] = '0';
 $i['default_disabled'] = '0';
-$template['images']['ADMINSTRIPE_RUN_LIST_MANUFACTURERS'] = $i;
+$template['images']['ADMINSTRIPE_LIST_MANUFACTURERS'] = $i;
 
 # List Pages
 $i = array();
@@ -265,7 +285,7 @@ $i['default_linktarget'] = '';
 $i['default_linknofollow'] = '0';
 $i['disable_link_settings'] = '0';
 $i['default_disabled'] = '0';
-$template['images']['ADMINSTRIPE_RUN_LIST_PAGES'] = $i;
+$template['images']['ADMINSTRIPE_LIST_PAGES'] = $i;
 
 # Generate Content
 $i = array();
@@ -309,7 +329,7 @@ $template['images']['ADMINSTRIPE_EDIT_MANUFACTURER'] = $i;
 
 # Amazon
 $i = array();
-$i['name'] = 'Admin Stripe Edit Manufacturer';
+$i['name'] = 'Admin Stripe Amazon';
 $i['description'] = 'The icon that appears in the admin stripe for Amazon.';
 $i['type'] = 'html';
 $i['cssselector'] = '';
@@ -318,11 +338,111 @@ $i['width'] = '16';
 $i['height'] = '16';
 $i['forcedimensions'] = '0';
 $i['default_src'] = '%TEMPLATEFOLDER%/icons/amazon_'.strtolower(AMAZON_LOCALE).'.png';
-$i['default_alt'] = gTT('ADMINSTRIPE_AMAZON');
-$i['default_title'] = gTT('ADMINSTRIPE_AMAZON');
+$i['default_alt'] = '';
+$i['default_title'] = '';
 $i['default_link'] = '';
 $i['default_linktarget'] = '';
 $i['default_linknofollow'] = '0';
 $i['disable_link_settings'] = '0';
 $i['default_disabled'] = '0';
 $template['images']['ADMINSTRIPE_AMAZON'] = $i;
+
+# Product Status (Disable)
+$i = array();
+$i['name'] = 'Admin Stripe Product Status (Disable)';
+$i['description'] = 'The icon that appears in the admin stripe for disabling product status.';
+$i['type'] = 'html';
+$i['cssselector'] = '';
+$i['default_cssdecleration'] = '';
+$i['width'] = '16';
+$i['height'] = '16';
+$i['forcedimensions'] = '0';
+$i['default_src'] = '%TEMPLATEFOLDER%/icons/admin_disable.png';
+$i['default_alt'] = '';
+$i['default_title'] = '';
+$i['default_link'] = '';
+$i['default_linktarget'] = '';
+$i['default_linknofollow'] = '0';
+$i['disable_link_settings'] = '0';
+$i['default_disabled'] = '0';
+$template['images']['ADMINSTRIPE_PRODUCT_STATUS_DISABLE'] = $i;
+
+# Product Status (Enable)
+$i = array();
+$i['name'] = 'Admin Stripe Product Status (Enable)';
+$i['description'] = 'The icon that appears in the admin stripe for enabling product status.';
+$i['type'] = 'html';
+$i['cssselector'] = '';
+$i['default_cssdecleration'] = '';
+$i['width'] = '16';
+$i['height'] = '16';
+$i['forcedimensions'] = '0';
+$i['default_src'] = '%TEMPLATEFOLDER%/icons/admin_enable.png';
+$i['default_alt'] = '';
+$i['default_title'] = '';
+$i['default_link'] = '';
+$i['default_linktarget'] = '';
+$i['default_linknofollow'] = '0';
+$i['disable_link_settings'] = '0';
+$i['default_disabled'] = '0';
+$template['images']['ADMINSTRIPE_PRODUCT_STATUS_ENABLE'] = $i;
+
+# Hide
+$i = array();
+$i['name'] = 'Admin Stripe Hide';
+$i['description'] = 'The icon that appears in the admin stripe for hide.';
+$i['type'] = 'html';
+$i['cssselector'] = '';
+$i['default_cssdecleration'] = '';
+$i['width'] = '16';
+$i['height'] = '16';
+$i['forcedimensions'] = '0';
+$i['default_src'] = '%TEMPLATEFOLDER%/icons/admin_hide.png';
+$i['default_alt'] = '';
+$i['default_title'] = '';
+$i['default_link'] = '';
+$i['default_linktarget'] = '';
+$i['default_linknofollow'] = '0';
+$i['disable_link_settings'] = '0';
+$i['default_disabled'] = '0';
+$template['images']['ADMINSTRIPE_HIDE'] = $i;
+
+# Delete
+$i = array();
+$i['name'] = 'Admin Stripe Delete';
+$i['description'] = 'The icon that appears in the admin stripe for delete.';
+$i['type'] = 'html';
+$i['cssselector'] = '';
+$i['default_cssdecleration'] = '';
+$i['width'] = '16';
+$i['height'] = '16';
+$i['forcedimensions'] = '0';
+$i['default_src'] = '%TEMPLATEFOLDER%/icons/admin_delete.png';
+$i['default_alt'] = '';
+$i['default_title'] = '';
+$i['default_link'] = '';
+$i['default_linktarget'] = '';
+$i['default_linknofollow'] = '0';
+$i['disable_link_settings'] = '0';
+$i['default_disabled'] = '0';
+$template['images']['ADMINSTRIPE_DELETE'] = $i;
+
+# Edit Images
+$i = array();
+$i['name'] = 'Admin Stripe Edit Images';
+$i['description'] = 'The icon that appears in the admin stripe for edit images.';
+$i['type'] = 'html';
+$i['cssselector'] = '';
+$i['default_cssdecleration'] = '';
+$i['width'] = '16';
+$i['height'] = '16';
+$i['forcedimensions'] = '0';
+$i['default_src'] = '%TEMPLATEFOLDER%/icons/admin_image.png';
+$i['default_alt'] = '';
+$i['default_title'] = '';
+$i['default_link'] = '';
+$i['default_linktarget'] = '';
+$i['default_linknofollow'] = '0';
+$i['disable_link_settings'] = '0';
+$i['default_disabled'] = '0';
+$template['images']['ADMINSTRIPE_EDIT_IMAGES'] = $i;
