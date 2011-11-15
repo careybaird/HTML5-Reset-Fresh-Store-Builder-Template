@@ -1,8 +1,8 @@
-<h2 id="page-title"><?=sprintf(gTT('CONTACT_TITLE'), SITE_TITLE)?></h2>
+<h2 id="page-title"><?=sprintf(gTT('CONTACT_TITLE'), SITE_NAME)?></h2>
 <div id="page-maintext"><?= $page['maintext'] ?></div>
 <div class="clear"></div>
 
-<h3 class="page-subtitle"><?=sprintf(gTT('CONTACT_SUBTITLE'), SITE_TITLE)?></h3>
+<h3 class="page-subtitle"><?=sprintf(gTT('CONTACT_SUBTITLE'), SITE_NAME)?></h3>
 <p><em><?=gTT('CONTACT_OPTIONAL')?></em></p>
 
 <div class="contact-form">

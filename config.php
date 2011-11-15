@@ -305,7 +305,7 @@ $i['default_linktarget'] = '';
 $i['default_linknofollow'] = '0';
 $i['disable_link_settings'] = '0';
 $i['default_disabled'] = '0';
-$template['images']['ADMINSTRIPE_RUN_GENERATE_CONTENT'] = $i;
+$template['images']['ADMINSTRIPE_GENERATE_CONTENT'] = $i;
 
 # Edit Manufacturer
 $i = array();
