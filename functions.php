@@ -9,15 +9,18 @@
 	
 	// Loads a template file, right now it's just a require but in the future it will look to parent template(s) if necessary
 	// A similar function will need to be available for controllers to access the main template files
-	if(!is_defined('loadTemplateElement')) function loadTemplateElement($type, $name, $variables = array())
+	if(!is_defined('loadTemplateElement'))
 	{
-		foreach ($variables as $key => $item)
+		function loadTemplateElement($type, $name, $variables = array())
 		{
-			# Defined here so they are in scope
-			$$key = $item;
-		}
+			foreach ($variables as $key => $item)
+			{
+				# Defined here so they are in scope
+				$$key = $item;
+			}
 		
-		require PATH_TEMPLATES.TEMPLATE_FOLDER."/elements/{$type}/{$type}_{$name}.php";
+			require PATH_TEMPLATES.TEMPLATE_FOLDER."/elements/{$type}/{$type}_{$name}.php";
+		}
 	}
 	
 	// Logic to determine the product price
