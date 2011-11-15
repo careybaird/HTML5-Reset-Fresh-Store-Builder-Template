@@ -1,11 +1,1 @@
 The HTML5 Reset Fresh Store Builder Template is a blank template created for use in template development. It focuses on having clean, semantic HTML as well as easy to build on CSS.
-
-This is the fully backwards compatible version of the template designed to work with version 2.4.0 without any changes. It includes most of the features of the full version except for the override system.
-
-IN ORDER TO GET THIS TO WORK:
-
-There is one change that is required. You must add the line:
-	require_once 'templates/'.TEMPLATE_FOLDER.'/functions.php';
-To /controllers/app.php somewhere, near the end should be fine.
-
-That is the only change required.
