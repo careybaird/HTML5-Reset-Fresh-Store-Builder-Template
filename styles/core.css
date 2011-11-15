@@ -181,9 +181,9 @@ h4{font-size:125%;}
 
 /* Site messages */
 .message-success,.message-error,.message-information{border:1px solid #fcfcfc;margin:20px 0;padding:10px 5px 10px 20px;text-align:center;background-position:left center;background-repeat:no-repeat;font-weight:bold;}
-.message-success{background-image:url('../icons/message_success.png');background-color:#E9FFEC;}
-.message-error{background-image:url('../icons/message_error.png');background-color:#FFE9E9;}
-.message-information{background-image:url('../icons/message_information.png');background-color:#FFFFE9;}
+.message-success{background-image:url('../icons/admin_success.png');background-color:#E9FFEC;}
+.message-error{background-image:url('../icons/admin_error.png');background-color:#FFE9E9;}
+.message-information{background-image:url('../icons/admin_information.png');background-color:#FFFFE9;}
 
 /* Edit In Place */
 .editinplace-box{margin:10px 10px;border:2px dashed #eeeeee;background-color:#ffffee;padding:10px;}
