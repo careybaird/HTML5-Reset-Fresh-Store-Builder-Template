@@ -307,6 +307,26 @@ $i['disable_link_settings'] = '0';
 $i['default_disabled'] = '0';
 $template['images']['ADMINSTRIPE_GENERATE_CONTENT'] = $i;
 
+# Update
+$i = array();
+$i['name'] = 'Admin Stripe Update';
+$i['description'] = 'The icon that appears in the admin stripe for update.';
+$i['type'] = 'html';
+$i['cssselector'] = '';
+$i['default_cssdecleration'] = '';
+$i['width'] = '16';
+$i['height'] = '16';
+$i['forcedimensions'] = '0';
+$i['default_src'] = '%TEMPLATEFOLDER%/icons/admin_update.png';
+$i['default_alt'] = '';
+$i['default_title'] = '';
+$i['default_link'] = '';
+$i['default_linktarget'] = '';
+$i['default_linknofollow'] = '0';
+$i['disable_link_settings'] = '0';
+$i['default_disabled'] = '0';
+$template['images']['ADMINSTRIPE_UPDATE'] = $i;
+
 # Edit Manufacturer
 $i = array();
 $i['name'] = 'Admin Stripe Edit Manufacturer';
