@@ -7,13 +7,13 @@
 	
 	<div id="admin-stripe-right">
 		<a href="#" id="stripe_togglefields" onclick="$('page_editinplacebox').show('slow','swing'); return false;">
-			<img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/icons/admin_quickeditshow.png" alt="<?=gTT('ADMINSTRIPE_QUICK_EDIT')?>" title="<?=gTT('ADMINSTRIPE_QUICK_EDIT')?>" />
+			<?=getTemplateImage('ADMINSTRIPE_QUICK_EDIT','','',gTT('ADMINSTRIPE_QUICK_EDIT'))?>
 		</a>
 		<a href="<?= URL_SITE ?>freshadmin/page/edit/<?= $page['id'] ?>/">
-			<img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/icons/admin_edit.png" alt="<?=gTT('ADMINSTRIPE_EDIT')?>" title="<?=gTT('ADMINSTRIPE_EDIT')?>" />
+			<?=getTemplateImage('ADMINSTRIPE_EDIT','','',gTT('ADMINSTRIPE_EDIT'))?>
 		</a>
 		<a href="<?= URL_SITE ?>freshadmin/page/list/">
-			<img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/icons/admin_productlist.png" alt="<?=gTT('ADMIN_STRIPE_LIST_PAGES')?>" title="<?=gTT('ADMIN_STRIPE_LIST_PAGES')?>" />
+			<?=getTemplateImage('ADMINSTRIPE_LIST_PAGES','','',gTT('ADMINSTRIPE_LIST_PAGES'))?>
 		</a>
 	</div>
 	

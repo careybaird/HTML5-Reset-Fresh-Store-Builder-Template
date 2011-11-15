@@ -7,23 +7,23 @@
 	
 	<div id="admin-stripe-right">
 		<a href="#" id="stripe_togglefields" onclick="$('#category_editinplacebox').show('slow','swing'); return false;">
-			<img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/icons/admin_quickeditshow.png" alt="<?=gTT('ADMINSTRIPE_QUICK_EDIT')?>" title="<?=gTT('ADMINSTRIPE_QUICK_EDIT')?>" />
+			<?=getTemplateImage('ADMINSTRIPE_QUICK_EDIT','','',gTT('ADMINSTRIPE_QUICK_EDIT'))?>
 		</a>
 		<a href="<?= URL_SITE ?>freshadmin/category/edit/<?= $thiscategory['id'] ?>/">
-			<img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/icons/admin_edit.png" alt="<?=gTT('ADMINSTRIPE_EDIT')?>" title="<?=gTT('ADMINSTRIPE_EDIT')?>" />
+			<?=getTemplateImage('ADMINSTRIPE_EDIT','','',gTT('ADMINSTRIPE_EDIT'))?>
 		</a>
 		<a href="<?= URL_SITE ?>freshadmin/product/bycategorylist/<?= $thiscategory['id'] ?>/">
-			<img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/icons/admin_productlist.png" alt="<?=gTT('ADMINSTRIPE_LIST_PRODUCTS')?>" title="<?=gTT('ADMINSTRIPE_LIST_PRODUCTS')?>" />
+			<?=getTemplateImage('ADMINSTRIPE_LIST_PRODUCTS','','',gTT('ADMINSTRIPE_LIST_PRODUCTS'))?>
 		</a>
 		<a href="<?= URL_SITE ?>freshadmin/category/populate/<?= $thiscategory['id'] ?>/">
-			<img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/icons/admin_autopopulateedit.png" alt="<?=gTT('ADMINSTRIPE_AUTOPOPULATE')?>" title="<?=gTT('ADMINSTRIPE_AUTOPOPULATE')?>" />
+			<?=getTemplateImage('ADMINSTRIPE_AUTOPOPULATE','','',gTT('ADMINSTRIPE_AUTOPOPULATE'))?>
 		</a>
 		<?php
 			if ($thiscategory['populationtype'] !== '' && $thiscategory['populationtype'] !== 'cancel' )
 			{
 				?>
 					<a href="<?= URL_SITE ?>freshadmin/category/runpopulate/<?= $thiscategory['id'] ?>/">
-						<img src="<?= URL_SITE ?>templates/<?= TEMPLATE_FOLDER ?>/icons/admin_autopopulatego.png" alt="<?=gTT('ADMINSTRIPE_RUN_AUTOPOPULATE')?>" title="<?=gTT('ADMINSTRIPE_RUN_AUTOPOPULATE')?>" class="middle" />
+						<?=getTemplateImage('ADMINSTRIPE_RUN_AUTOPOPULATE','','',gTT('ADMINSTRIPE_RUN_AUTOPOPULATE'))?>
 					</a>
 				<?php
 			}
