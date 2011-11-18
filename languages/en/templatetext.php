@@ -131,7 +131,8 @@
 	$tt['ADMIN_STRIPE_HIDE'] = 'Hide';
 	$tt['ADMIN_STRIPE_DELETE'] = 'Delete';
 	$tt['ADMIN_STRIPE_REMOVE_CATEGORY'] = 'Remove from category';
-	$tt['ADMIN_STRIPE_PRODUCT_STATUS'] = 'Change Product Status';
+	$tt['ADMIN_STRIPE_PRODUCT_STATUS_ENABLE'] = 'Enable Product';
+	$tt['ADMIN_STRIPE_PRODUCT_STATUS_DISABLE'] = 'Disable Product';
 
 	# Category page
 	$tt['CATEGORY_PRODUCT_STOCK'] = '%d products in stock.';

@@ -78,7 +78,7 @@
 				<div class="clearall"></div>		
 			</div>
 
-			<footer>
+			<footer id="footer">
 				<?php
 					loadTemplateElement('footer', 'securepayments');
 					loadTemplateElement('footer', 'links');
