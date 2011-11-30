@@ -1,11 +1,7 @@
-<?php
-	// This is temporarily, it will be moved to the controller as soon as edits start on the core files
-	global $thiscategory;
-?>
 <script type="text/javascript">
 	$(document).ready(function()
 	{
-		save_url = '/ajax/category_savefield.php?id=<?= $thiscategory['id'] ?>';
+		save_url = '/ajax/category_savefield.php?id=<?= $category['id'] ?>';
 	
 		$('#category-title').editInPlace({url: save_url, default_text: '(<?=gTT('EDITINPLACE_ADD_TEXT')?>)'});
 		$('#category-description').editInPlace({url: save_url, field_type: 'textarea', default_text: '(<?=gTT('EDITINPLACE_ADD_DESCRIPTION')?>)'});
