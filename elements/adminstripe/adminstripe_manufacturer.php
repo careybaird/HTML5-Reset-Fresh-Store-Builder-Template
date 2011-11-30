@@ -1,7 +1,3 @@
-<?php
-	// This is temporarily, it will be moved to the controller as soon as edits start on the core files
-	global $manufacturer;
-?>
 <div id="admin-stripe">
 	<?php loadTemplateElement('adminstripe', 'left'); ?>
 	
