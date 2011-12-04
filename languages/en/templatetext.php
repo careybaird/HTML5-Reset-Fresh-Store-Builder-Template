@@ -92,6 +92,7 @@
 	$tt['BASKET_COL_PRICE'] = 'Price';
 	$tt['BASKET_DELIVERY'] = 'Delivery:';
 	$tt['BASKET_TOTAL'] = 'Total:';
+	$tt['BASKET_PROCEED_CHECKOUT'] = 'Proceed to checkout';
 	$tt['BASKET_SHIPPINGTEXT_FREE'] = '<strong>Shipping</strong> - your order qualifies for free super saver delivery. Simply select "Super Saver Shipping" during checkout. Alternative shipping options will be shown during checkout.';
 	$tt['BASKET_SHIPPINGTEXT_PARTSUPERSAVER'] = '<strong>Shipping</strong> - part of your order qualifies for free super saver delivery. Super saver delivery applies to products over %s, on selected products only. <em>Your full shipping options will be shown during checkout.</em>';
 	$tt['BASKET_SHIPPINGTEXT_NOSUPERSAVER'] = '<strong>Shipping</strong> - Your full shipping options will be shown during checkout.';
